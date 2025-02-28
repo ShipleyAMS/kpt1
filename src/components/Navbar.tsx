@@ -67,7 +67,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <img 
-            src="/lovable-uploads/a7c499a9-3110-4ce1-a120-a25d5afce1c0.png" 
+            src="/lovable-uploads/7b19f840-c217-43f6-a925-82c05b1102a9.png" 
             alt="King Tai Logo" 
             className="h-14 w-auto" 
           />
@@ -75,11 +75,11 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <nav className="flex space-x-8">
+          <nav className="flex items-center space-x-8">
             {navLinks.map((link) => (
-              <div key={link.name} className="relative group">
+              <div key={link.name} className="relative group flex items-center h-full">
                 {link.hasDropdown ? (
-                  <div>
+                  <div className="flex items-center h-full">
                     <button 
                       onClick={toggleProductsDropdown}
                       className={cn(
@@ -93,7 +93,7 @@ const Navbar = () => {
                     
                     {/* Products Dropdown */}
                     {productsDropdownOpen && (
-                      <div className="absolute left-0 mt-2 z-10 bg-white rounded-md shadow-lg py-2 w-48 animate-fade-in">
+                      <div className="absolute left-0 mt-2 top-full z-10 bg-white rounded-md shadow-lg py-2 w-48 animate-fade-in">
                         {productCategories.map((category) => (
                           <Link
                             key={category.name}

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-1">
             <img 
-              src="/lovable-uploads/a7c499a9-3110-4ce1-a120-a25d5afce1c0.png" 
+              src="/lovable-uploads/7b19f840-c217-43f6-a925-82c05b1102a9.png" 
               alt="King Tai Logo" 
               className="h-16 w-auto bg-white p-2 rounded-md"
             />
