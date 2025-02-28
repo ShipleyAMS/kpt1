@@ -1,0 +1,97 @@
+
+import React, { useEffect, useRef } from 'react';
+import { ArrowDown } from 'lucide-react';
+import { cn } from '@/lib/utils';
+
+const Hero = () => {
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const subtitleRef = useRef<HTMLParagraphElement>(null);
+  const ctaRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100');
+            entry.target.classList.remove('opacity-0', 'translate-y-10');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (titleRef.current) observer.observe(titleRef.current);
+    if (subtitleRef.current) observer.observe(subtitleRef.current);
+    if (ctaRef.current) observer.observe(ctaRef.current);
+
+    return () => {
+      if (titleRef.current) observer.unobserve(titleRef.current);
+      if (subtitleRef.current) observer.unobserve(subtitleRef.current);
+      if (ctaRef.current) observer.unobserve(ctaRef.current);
+    };
+  }, []);
+
+  return (
+    <section 
+      id="home" 
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      style={{
+        background: 'linear-gradient(120deg, #f2f9f1 0%, #e4f2e1 50%, #f1eee7 100%)'
+      }}
+    >
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyMjIiIGZpbGwtb3BhY2l0eT0iLjAyIj48cGF0aCBkPSJNMzYgMzRjMC0yLjIxIDEuNzktNCA0LTRzNCAxLjc5IDQgNC0xLjc5IDQtNCA0LTQtMS43OS00LTR6TTQwIDBDMTcuOTEgMCAwIDE3LjkxIDAgNDBzMTcuOTEgNDAgNDAgNDAgNDAtMTcuOTEgNDAtNDBTNjIuMDkgMCA0MCAwem0wIDEyYy0xNS40NiAwLTI4IDEyLjU0LTI4IDI4czEyLjU0IDI4IDI4IDI4IDI4LTEyLjU0IDI4LTI4LTEyLjU0LTI4LTI4LTI4eiIvPjwvZz48L2c+PC9zdmc+')] opacity-10" />
+      </div>
+      
+      <div className="container mx-auto px-4 z-10 pt-20 md:pt-0">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 
+            ref={titleRef}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-forest-800 opacity-0 translate-y-10 transition-all duration-1000 ease-out"
+          >
+            <span className="text-forest-600">Premium</span> Printing & Packaging Solutions
+          </h1>
+          
+          <p 
+            ref={subtitleRef}
+            className="mt-6 text-lg md:text-xl text-forest-700 opacity-0 translate-y-10 transition-all duration-1000 delay-300 ease-out"
+          >
+            Crafting exceptional quality books and packaging products 
+            for international clients across over 30 countries worldwide.
+          </p>
+          
+          <div 
+            ref={ctaRef}
+            className="mt-10 flex flex-col sm:flex-row justify-center gap-4 opacity-0 translate-y-10 transition-all duration-1000 delay-500 ease-out"
+          >
+            <a
+              href="#products"
+              className="btn-shine px-8 py-3 rounded-md bg-forest-600 text-white font-medium hover:bg-forest-700 transition-colors"
+            >
+              Explore Our Products
+            </a>
+            
+            <a
+              href="#contact"
+              className="px-8 py-3 rounded-md bg-earth-100 text-forest-800 font-medium hover:bg-earth-200 transition-colors"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <a href="#about" className="text-forest-600 hover:text-forest-800 transition-colors">
+          <ArrowDown className="h-8 w-8" />
+        </a>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

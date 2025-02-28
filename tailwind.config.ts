@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,12 +19,42 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				serif: ['Playfair Display', 'serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				forest: {
+					50: '#f2f9f1',
+					100: '#e4f2e1',
+					200: '#c9e5c2',
+					300: '#a1d097',
+					400: '#70b466',
+					500: '#4a9843',
+					600: '#397a34',
+					700: '#2f6129',
+					800: '#284e24',
+					900: '#1a2f17',
+					950: '#0d190c',
+				},
+				earth: {
+					50: '#f9f7f4',
+					100: '#f1eee7',
+					200: '#e3d9ca',
+					300: '#d3c2a9',
+					400: '#bea483',
+					500: '#aa8a65',
+					600: '#97795a',
+					700: '#7d634b',
+					800: '#665240',
+					900: '#554438',
+					950: '#2d241d',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -84,11 +115,53 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { 
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': { 
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fade-in-right': {
+					'0%': { 
+						opacity: '0',
+						transform: 'translateX(20px)'
+					},
+					'100%': { 
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
+				},
+				'background-shine': {
+					'0%': {
+						backgroundPosition: '200% 0',
+					},
+					'100%': {
+						backgroundPosition: '-200% 0',
+					},
+				},
+				'image-fade-in': {
+					'0%': { 
+						opacity: '0',
+						filter: 'blur(8px)'
+					},
+					'100%': { 
+						opacity: '1',
+						filter: 'blur(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'fade-in-right': 'fade-in-right 0.6s ease-out',
+				'background-shine': 'background-shine 8s linear infinite',
+				'image-fade-in': 'image-fade-in 1.2s ease-out forwards'
 			}
 		}
 	},
