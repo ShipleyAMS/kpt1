@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 interface Product {
@@ -7,6 +8,7 @@ interface Product {
   name: string;
   image: string;
   description: string;
+  link: string;
 }
 
 const Products = () => {
@@ -18,73 +20,85 @@ const Products = () => {
       id: 1,
       name: "Bible",
       image: "/lovable-uploads/b98f5f4b-72df-44dc-af9a-311dbd32d7b9.png",
-      description: "High-quality Bibles with premium printing and binding."
+      description: "High-quality Bibles with premium printing and binding.",
+      link: "/products/bibles"
     },
     {
       id: 2,
       name: "Children's Books",
       image: "/lovable-uploads/7dd0ed77-bef4-4667-88b1-5f8a749589f2.png",
-      description: "Colorful and engaging children's books with vibrant illustrations."
+      description: "Colorful and engaging children's books with vibrant illustrations.",
+      link: "/products/books"
     },
     {
       id: 3,
       name: "Calendar",
       image: "/lovable-uploads/513a1818-3b90-4839-979b-a7279d2b013e.png",
-      description: "Custom calendars with beautiful designs and durable construction."
+      description: "Custom calendars with beautiful designs and durable construction.",
+      link: "/products/calendars"
     },
     {
       id: 4,
       name: "Jewelry Box",
       image: "/lovable-uploads/212a47c2-8686-42ba-aa2e-94eea5da96bc.png",
-      description: "Elegant jewelry boxes with premium finishes and lining."
+      description: "Elegant jewelry boxes with premium finishes and lining.",
+      link: "/products/jewelery-boxes"
     },
     {
       id: 5,
       name: "Game Cards",
       image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png",
-      description: "High-quality game cards with vibrant colors and durable coating."
+      description: "High-quality game cards with vibrant colors and durable coating.",
+      link: "/products/game-cards"
     },
     {
       id: 6,
       name: "Gift Box",
       image: "/lovable-uploads/9ac49b3f-55f6-4fd1-a2f8-de698f05988c.png",
-      description: "Custom gift boxes with precise die-cutting and premium finishes."
+      description: "Custom gift boxes with precise die-cutting and premium finishes.",
+      link: "/products/gift-boxes"
     },
     {
       id: 7,
-      name: "Tiger Toy",
-      image: "/lovable-uploads/6e8a3361-9ff8-43b7-af51-4173740b80e6.png",
-      description: "Paper-based tiger toys with detailed printing and assembly."
+      name: "Greeting Cards",
+      image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png",
+      description: "Premium greeting cards with custom designs and special finishes.",
+      link: "/products/greeting-cards"
     },
     {
       id: 8,
       name: "Jewelry Box Custom",
       image: "/lovable-uploads/b9086efc-629a-47ed-8b95-068140735132.png",
-      description: "Customized jewelry boxes with bespoke designs and premium materials."
+      description: "Customized jewelry boxes with bespoke designs and premium materials.",
+      link: "/products/jewelery-boxes"
     },
     {
       id: 9,
-      name: "Notebook",
+      name: "Journal",
       image: "/lovable-uploads/0b092d75-12e1-469a-8aee-6e42bf1cdb30.png",
-      description: "Premium notebooks with various cover options and high-quality paper."
+      description: "Premium notebooks with various cover options and high-quality paper.",
+      link: "/products/journals"
     },
     {
       id: 10,
       name: "Shopping Bag",
       image: "/lovable-uploads/6806d7dc-b1b9-4350-a861-2e3bfd62ae75.png",
-      description: "Durable and stylish shopping bags with custom designs."
+      description: "Durable and stylish shopping bags with custom designs.",
+      link: "/products/shopping-bags"
     },
     {
       id: 11,
       name: "Wine Box",
       image: "/lovable-uploads/7d6d05ad-2a4e-49fa-b367-5206277f9e19.png",
-      description: "Elegant wine boxes with premium finishes and secure closures."
+      description: "Elegant wine boxes with premium finishes and secure closures.",
+      link: "/products/wine-boxes"
     },
     {
       id: 12,
       name: "Wooden Box",
       image: "/lovable-uploads/9821a74b-7319-4c79-bf2b-8e28872a8561.png",
-      description: "Luxurious wooden boxes with custom engraving and premium finishes."
+      description: "Luxurious wooden boxes with custom engraving and premium finishes.",
+      link: "/products/wooden-boxes"
     },
   ];
 
@@ -99,13 +113,13 @@ const Products = () => {
   const filteredProducts = products.filter((product) => {
     if (activeCategory === 'all') return true;
     if (activeCategory === 'books') {
-      return ['Bible', 'Children\'s Books', 'Notebook'].includes(product.name);
+      return ['Bible', 'Children\'s Books', 'Journal'].includes(product.name);
     }
     if (activeCategory === 'packaging') {
       return ['Jewelry Box', 'Gift Box', 'Shopping Bag', 'Wine Box', 'Wooden Box', 'Jewelry Box Custom'].includes(product.name);
     }
     if (activeCategory === 'specialty') {
-      return ['Calendar', 'Game Cards', 'Tiger Toy'].includes(product.name);
+      return ['Calendar', 'Game Cards', 'Greeting Cards'].includes(product.name);
     }
     return true;
   });
@@ -171,22 +185,23 @@ const Products = () => {
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {filteredProducts.map((product) => (
-              <div 
+              <Link 
                 key={product.id} 
-                className="product-card bg-white rounded-lg overflow-hidden shadow-md transform transition-all duration-300"
+                to={product.link}
+                className="product-card bg-white rounded-lg overflow-hidden shadow-md transform transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
               >
                 <div className="h-48 overflow-hidden">
                   <img 
                     src={product.image} 
                     alt={product.name} 
-                    className="w-full h-full object-cover object-center transform transition-transform duration-500"
+                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-5">
                   <h3 className="text-lg font-semibold text-forest-800 mb-2">{product.name}</h3>
                   <p className="text-sm text-forest-600">{product.description}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

@@ -33,26 +33,26 @@ const Navbar = () => {
   };
 
   const productCategories = [
-    "Bibles",
-    "Books",
-    "Calendars",
-    "Cosmetic Boxes",
-    "Game Cards",
-    "Gift Boxes",
-    "Greeting Cards",
-    "Jewelery Boxes",
-    "Journals",
-    "Shopping Bags",
-    "Wine Boxes",
-    "Wooden Boxes"
+    { name: "Bibles", href: "/products/bibles" },
+    { name: "Books", href: "/products/books" },
+    { name: "Calendars", href: "/products/calendars" },
+    { name: "Cosmetic Boxes", href: "/products/cosmetic-boxes" },
+    { name: "Game Cards", href: "/products/game-cards" },
+    { name: "Gift Boxes", href: "/products/gift-boxes" },
+    { name: "Greeting Cards", href: "/products/greeting-cards" },
+    { name: "Jewelery Boxes", href: "/products/jewelery-boxes" },
+    { name: "Journals", href: "/products/journals" },
+    { name: "Shopping Bags", href: "/products/shopping-bags" },
+    { name: "Wine Boxes", href: "/products/wine-boxes" },
+    { name: "Wooden Boxes", href: "/products/wooden-boxes" }
   ];
 
   const navLinks = [
-    { name: 'HOME', href: '#home' },
-    { name: 'ABOUT US', href: '#about' },
-    { name: 'PRODUCTS', href: '#products', hasDropdown: true },
-    { name: 'CONTACT US', href: '#contact' },
-    { name: 'TESTIMONIALS', href: '#testimonials' },
+    { name: 'HOME', href: '/#home' },
+    { name: 'ABOUT US', href: '/#about' },
+    { name: 'PRODUCTS', href: '/#products', hasDropdown: true },
+    { name: 'CONTACT US', href: '/#contact' },
+    { name: 'TESTIMONIALS', href: '/#testimonials' },
   ];
 
   return (
@@ -95,41 +95,41 @@ const Navbar = () => {
                     {productsDropdownOpen && (
                       <div className="absolute left-0 mt-2 z-10 bg-white rounded-md shadow-lg py-2 w-48 animate-fade-in">
                         {productCategories.map((category) => (
-                          <a
-                            key={category}
-                            href="#products"
+                          <Link
+                            key={category.name}
+                            to={category.href}
                             className="block px-4 py-2 text-sm text-forest-700 hover:bg-forest-50 transition-colors"
                             onClick={() => setProductsDropdownOpen(false)}
                           >
-                            {category}
-                          </a>
+                            {category.name}
+                          </Link>
                         ))}
                       </div>
                     )}
                   </div>
                 ) : (
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className={cn(
                       'text-sm font-medium nav-link transition-colors',
                       isScrolled ? 'text-forest-900' : 'text-forest-800'
                     )}
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 )}
               </div>
             ))}
           </nav>
           
           {/* Request Custom Quote Button */}
-          <a 
-            href="#contact" 
+          <Link 
+            to="/#contact" 
             className="inline-flex items-center px-4 py-2 bg-earth-500 text-white rounded-md font-medium hover:bg-earth-600 transition-colors text-sm"
           >
             <MessageSquare className="mr-2 h-4 w-4" />
             Request Custom Quote
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -166,42 +166,42 @@ const Navbar = () => {
                       {productsDropdownOpen && (
                         <div className="pl-6 mt-2 space-y-2">
                           {productCategories.map((category) => (
-                            <a
-                              key={category}
-                              href="#products"
+                            <Link
+                              key={category.name}
+                              to={category.href}
                               className="block py-1 px-4 text-sm text-forest-700 hover:bg-forest-50 rounded-md transition-colors"
                               onClick={() => {
                                 setProductsDropdownOpen(false);
                                 setMobileMenuOpen(false);
                               }}
                             >
-                              {category}
-                            </a>
+                              {category.name}
+                            </Link>
                           ))}
                         </div>
                       )}
                     </>
                   ) : (
-                    <a
-                      href={link.href}
+                    <Link
+                      to={link.href}
                       className="text-forest-800 font-medium py-2 px-4 hover:bg-forest-50 rounded-md transition-colors"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   )}
                 </div>
               ))}
               
               {/* Mobile Request Custom Quote Button */}
-              <a 
-                href="#contact" 
+              <Link 
+                to="/#contact" 
                 className="inline-flex items-center py-2 px-4 bg-earth-500 text-white rounded-md font-medium hover:bg-earth-600 transition-colors text-sm mt-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <MessageSquare className="mr-2 h-4 w-4" />
                 Request Custom Quote
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
