@@ -49,7 +49,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'HOME', href: '/#home' },
-    { name: 'ABOUT US', href: '/#about' },
+    { name: 'ABOUT US', href: '/about-us' },
     { name: 'PRODUCTS', href: '/#products', hasDropdown: true },
     { name: 'CONTACT US', href: '/#contact' },
     { name: 'TESTIMONIALS', href: '/#testimonials' },

@@ -5,7 +5,6 @@ import { cn } from '@/lib/utils';
 const Hero = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
-  const ctaRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -25,12 +24,10 @@ const Hero = () => {
 
     if (titleRef.current) observer.observe(titleRef.current);
     if (subtitleRef.current) observer.observe(subtitleRef.current);
-    if (ctaRef.current) observer.observe(ctaRef.current);
 
     return () => {
       if (titleRef.current) observer.unobserve(titleRef.current);
       if (subtitleRef.current) observer.unobserve(subtitleRef.current);
-      if (ctaRef.current) observer.unobserve(ctaRef.current);
     };
   }, []);
 
@@ -62,25 +59,6 @@ const Hero = () => {
             Crafting exceptional quality books and packaging products 
             for international clients across over 30 countries worldwide.
           </p>
-          
-          <div 
-            ref={ctaRef}
-            className="mt-6 flex flex-col sm:flex-row justify-center gap-4 opacity-0 translate-y-10 transition-all duration-1000 delay-500 ease-out"
-          >
-            <a
-              href="#products"
-              className="btn-shine px-6 py-2 rounded-md bg-forest-600 text-white font-medium hover:bg-forest-700 transition-colors"
-            >
-              Explore Our Products
-            </a>
-            
-            <a
-              href="#contact"
-              className="px-6 py-2 rounded-md bg-earth-100 text-forest-800 font-medium hover:bg-earth-200 transition-colors"
-            >
-              Contact Us
-            </a>
-          </div>
         </div>
       </div>
     </section>
