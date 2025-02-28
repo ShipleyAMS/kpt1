@@ -12,6 +12,7 @@ const About = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('animate-fade-in');
+            entry.target.classList.remove('opacity-0');
             observer.unobserve(entry.target);
           }
         });
@@ -69,14 +70,12 @@ const About = () => {
             <div className="absolute -top-4 -left-4 w-16 h-16 bg-forest-100 rounded-lg"></div>
             <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-earth-100 rounded-lg"></div>
             <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl">
-              <div className="aspect-w-16 aspect-h-9 bg-forest-200">
-                <div className="flex items-center justify-center h-full p-6">
-                  <img 
-                    src="/lovable-uploads/a7c499a9-3110-4ce1-a120-a25d5afce1c0.png" 
-                    alt="King Tai Logo" 
-                    className="max-h-full max-w-full object-contain"
-                  />
-                </div>
+              <div className="bg-forest-200 p-6 flex items-center justify-center aspect-w-16 aspect-h-9">
+                <img 
+                  src="/lovable-uploads/a7c499a9-3110-4ce1-a120-a25d5afce1c0.png" 
+                  alt="King Tai Logo" 
+                  className="max-h-full max-w-full object-contain"
+                />
               </div>
             </div>
           </div>
