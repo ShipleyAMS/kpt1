@@ -1,12 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown, MessageSquare } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,10 +28,29 @@ const Navbar = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  const toggleProductsDropdown = () => {
+    setProductsDropdownOpen(!productsDropdownOpen);
+  };
+
+  const productCategories = [
+    "Bibles",
+    "Books",
+    "Calendars",
+    "Cosmetic Boxes",
+    "Game Cards",
+    "Gift Boxes",
+    "Greeting Cards",
+    "Jewelery Boxes",
+    "Journals",
+    "Shopping Bags",
+    "Wine Boxes",
+    "Wooden Boxes"
+  ];
+
   const navLinks = [
     { name: 'HOME', href: '#home' },
     { name: 'ABOUT US', href: '#about' },
-    { name: 'PRODUCTS', href: '#products' },
+    { name: 'PRODUCTS', href: '#products', hasDropdown: true },
     { name: 'CONTACT US', href: '#contact' },
     { name: 'TESTIMONIALS', href: '#testimonials' },
   ];
@@ -54,20 +74,63 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className={cn(
-                'text-sm font-medium nav-link transition-colors',
-                isScrolled ? 'text-forest-900' : 'text-forest-800'
-              )}
-            >
-              {link.name}
-            </a>
-          ))}
-        </nav>
+        <div className="hidden md:flex items-center space-x-8">
+          <nav className="flex space-x-8">
+            {navLinks.map((link) => (
+              <div key={link.name} className="relative group">
+                {link.hasDropdown ? (
+                  <div>
+                    <button 
+                      onClick={toggleProductsDropdown}
+                      className={cn(
+                        'flex items-center text-sm font-medium nav-link transition-colors',
+                        isScrolled ? 'text-forest-900' : 'text-forest-800'
+                      )}
+                    >
+                      {link.name}
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </button>
+                    
+                    {/* Products Dropdown */}
+                    {productsDropdownOpen && (
+                      <div className="absolute left-0 mt-2 z-10 bg-white rounded-md shadow-lg py-2 w-48 animate-fade-in">
+                        {productCategories.map((category) => (
+                          <a
+                            key={category}
+                            href="#products"
+                            className="block px-4 py-2 text-sm text-forest-700 hover:bg-forest-50 transition-colors"
+                            onClick={() => setProductsDropdownOpen(false)}
+                          >
+                            {category}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <a
+                    href={link.href}
+                    className={cn(
+                      'text-sm font-medium nav-link transition-colors',
+                      isScrolled ? 'text-forest-900' : 'text-forest-800'
+                    )}
+                  >
+                    {link.name}
+                  </a>
+                )}
+              </div>
+            ))}
+          </nav>
+          
+          {/* Request Custom Quote Button */}
+          <a 
+            href="#contact" 
+            className="inline-flex items-center px-4 py-2 bg-earth-500 text-white rounded-md font-medium hover:bg-earth-600 transition-colors text-sm"
+          >
+            <MessageSquare className="mr-2 h-4 w-4" />
+            Request Custom Quote
+          </a>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -89,15 +152,56 @@ const Navbar = () => {
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col space-y-4">
               {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-forest-800 font-medium py-2 px-4 hover:bg-forest-50 rounded-md transition-colors"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
+                <div key={link.name}>
+                  {link.hasDropdown ? (
+                    <>
+                      <button 
+                        onClick={toggleProductsDropdown}
+                        className="flex justify-between items-center w-full text-forest-800 font-medium py-2 px-4 hover:bg-forest-50 rounded-md transition-colors"
+                      >
+                        {link.name}
+                        <ChevronDown className="h-4 w-4" />
+                      </button>
+                      
+                      {productsDropdownOpen && (
+                        <div className="pl-6 mt-2 space-y-2">
+                          {productCategories.map((category) => (
+                            <a
+                              key={category}
+                              href="#products"
+                              className="block py-1 px-4 text-sm text-forest-700 hover:bg-forest-50 rounded-md transition-colors"
+                              onClick={() => {
+                                setProductsDropdownOpen(false);
+                                setMobileMenuOpen(false);
+                              }}
+                            >
+                              {category}
+                            </a>
+                          ))}
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-forest-800 font-medium py-2 px-4 hover:bg-forest-50 rounded-md transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {link.name}
+                    </a>
+                  )}
+                </div>
               ))}
+              
+              {/* Mobile Request Custom Quote Button */}
+              <a 
+                href="#contact" 
+                className="inline-flex items-center py-2 px-4 bg-earth-500 text-white rounded-md font-medium hover:bg-earth-600 transition-colors text-sm mt-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <MessageSquare className="mr-2 h-4 w-4" />
+                Request Custom Quote
+              </a>
             </nav>
           </div>
         </div>
