@@ -71,32 +71,32 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-forest-50">
+    <section id="testimonials" className="py-12 bg-forest-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-forest-800">Client Testimonials</h2>
           <div className="mt-2 h-1 w-20 bg-forest-400 mx-auto rounded-full"></div>
-          <p className="mt-4 text-forest-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-forest-600 max-w-2xl mx-auto text-sm md:text-base">
             Hear what our clients from around the world have to say about their experience working with King Tai.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div className="relative">
-            <div className="bg-white rounded-lg shadow-lg p-8 md:p-10">
-              <div className="flex justify-center mb-6">
-                <Quote className="h-12 w-12 text-forest-200" />
+            <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
+              <div className="flex justify-center mb-4">
+                <Quote className="h-10 w-10 text-forest-200" />
               </div>
               
               <blockquote className="text-center">
-                <p className="text-lg md:text-xl text-forest-700 italic mb-8">
+                <p className="text-md md:text-lg text-forest-700 italic mb-6">
                   "{testimonials[currentIndex].quote}"
                 </p>
-                <footer className="mt-4">
-                  <div className="font-semibold text-forest-800 text-lg">
+                <footer className="mt-3">
+                  <div className="font-semibold text-forest-800 text-base">
                     {testimonials[currentIndex].name}
                   </div>
-                  <div className="text-forest-600">
+                  <div className="text-forest-600 text-sm">
                     {testimonials[currentIndex].company}, {testimonials[currentIndex].country}
                   </div>
                 </footer>
@@ -105,45 +105,45 @@ const Testimonials = () => {
             
             <button
               onClick={prevTestimonial}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-white p-3 rounded-full shadow-md hover:bg-forest-50 focus:outline-none hidden md:block"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-white p-2 rounded-full shadow-md hover:bg-forest-50 focus:outline-none hidden md:block"
             >
-              <ChevronLeft className="h-5 w-5 text-forest-700" />
+              <ChevronLeft className="h-4 w-4 text-forest-700" />
             </button>
             
             <button
               onClick={nextTestimonial}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 bg-white p-3 rounded-full shadow-md hover:bg-forest-50 focus:outline-none hidden md:block"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 bg-white p-2 rounded-full shadow-md hover:bg-forest-50 focus:outline-none hidden md:block"
             >
-              <ChevronRight className="h-5 w-5 text-forest-700" />
+              <ChevronRight className="h-4 w-4 text-forest-700" />
             </button>
           </div>
           
           {/* Mobile navigation buttons */}
-          <div className="flex justify-center space-x-4 mt-6 md:hidden">
+          <div className="flex justify-center space-x-4 mt-4 md:hidden">
             <button
               onClick={prevTestimonial}
-              className="bg-white p-3 rounded-full shadow-md hover:bg-forest-50 focus:outline-none"
+              className="bg-white p-2 rounded-full shadow-md hover:bg-forest-50 focus:outline-none"
             >
-              <ChevronLeft className="h-5 w-5 text-forest-700" />
+              <ChevronLeft className="h-4 w-4 text-forest-700" />
             </button>
             
             <button
               onClick={nextTestimonial}
-              className="bg-white p-3 rounded-full shadow-md hover:bg-forest-50 focus:outline-none"
+              className="bg-white p-2 rounded-full shadow-md hover:bg-forest-50 focus:outline-none"
             >
-              <ChevronRight className="h-5 w-5 text-forest-700" />
+              <ChevronRight className="h-4 w-4 text-forest-700" />
             </button>
           </div>
           
           {/* Dots navigation */}
-          <div className="flex justify-center space-x-2 mt-8">
+          <div className="flex justify-center space-x-2 mt-6">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToTestimonial(index)}
                 className={cn(
-                  "w-3 h-3 rounded-full transition-all duration-300",
-                  currentIndex === index ? "bg-forest-600 w-8" : "bg-forest-300 hover:bg-forest-400"
+                  "w-2 h-2 rounded-full transition-all duration-300",
+                  currentIndex === index ? "bg-forest-600 w-6" : "bg-forest-300 hover:bg-forest-400"
                 )}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

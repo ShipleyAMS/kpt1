@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface Product {
@@ -135,25 +134,10 @@ const Products = () => {
     };
   }, []);
 
-  // Product slider reference and navigation
-  const sliderRef = useRef<HTMLDivElement>(null);
-  
-  const scrollLeft = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollBy({ left: -300, behavior: 'smooth' });
-    }
-  };
-  
-  const scrollRight = () => {
-    if (sliderRef.current) {
-      sliderRef.current.scrollBy({ left: 300, behavior: 'smooth' });
-    }
-  };
-
   return (
-    <section id="products" className="py-20 bg-earth-50">
+    <section id="products" className="py-12 bg-earth-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-forest-800">Our Products</h2>
           <div className="mt-2 h-1 w-20 bg-forest-400 mx-auto rounded-full"></div>
           <p className="mt-4 text-forest-600 max-w-2xl mx-auto">
@@ -162,7 +146,7 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="flex justify-center mb-10 overflow-x-auto pb-4">
+        <div className="flex justify-center mb-8 overflow-x-auto py-2">
           <div className="flex space-x-2">
             {categories.map((category) => (
               <button
@@ -185,51 +169,29 @@ const Products = () => {
           ref={sectionRef}
           className="opacity-0 transition-opacity duration-1000"
         >
-          <div className="relative">
-            <button 
-              onClick={scrollLeft}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-forest-800 p-2 rounded-full shadow-md transition-all focus:outline-none md:-left-5"
-              aria-label="Scroll left"
-            >
-              <ChevronLeft className="h-5 w-5" />
-            </button>
-            
-            <div 
-              ref={sliderRef}
-              className="flex overflow-x-auto py-4 px-1 snap-x snap-mandatory scrollbar-hide"
-              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-            >
-              {filteredProducts.map((product) => (
-                <div 
-                  key={product.id} 
-                  className="min-w-[280px] max-w-[280px] mx-2 snap-start product-card bg-white rounded-lg overflow-hidden shadow-md transform transition-all duration-300"
-                >
-                  <div className="h-48 overflow-hidden">
-                    <img 
-                      src={product.image} 
-                      alt={product.name} 
-                      className="w-full h-full object-cover object-center transform transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <h3 className="text-lg font-semibold text-forest-800 mb-2">{product.name}</h3>
-                    <p className="text-sm text-forest-600">{product.description}</p>
-                  </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {filteredProducts.map((product) => (
+              <div 
+                key={product.id} 
+                className="product-card bg-white rounded-lg overflow-hidden shadow-md transform transition-all duration-300"
+              >
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={product.image} 
+                    alt={product.name} 
+                    className="w-full h-full object-cover object-center transform transition-transform duration-500"
+                  />
                 </div>
-              ))}
-            </div>
-            
-            <button 
-              onClick={scrollRight}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-forest-800 p-2 rounded-full shadow-md transition-all focus:outline-none md:-right-5"
-              aria-label="Scroll right"
-            >
-              <ChevronRight className="h-5 w-5" />
-            </button>
+                <div className="p-5">
+                  <h3 className="text-lg font-semibold text-forest-800 mb-2">{product.name}</h3>
+                  <p className="text-sm text-forest-600">{product.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-10 text-center">
           <a 
             href="#contact" 
             className="inline-flex items-center px-6 py-3 bg-earth-500 text-white rounded-md font-medium hover:bg-earth-600 transition-colors"
