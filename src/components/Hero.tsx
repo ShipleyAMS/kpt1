@@ -49,7 +49,7 @@ const Hero = () => {
             ref={titleRef}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-forest-800 opacity-0 translate-y-10 transition-all duration-1000 ease-out"
           >
-            <span className="text-forest-600">Premium</span> Printing & Packaging Solutions
+            <span className="text-[#117541]">Premium</span> Printing & Packaging Solutions
           </h1>
           
           <p 

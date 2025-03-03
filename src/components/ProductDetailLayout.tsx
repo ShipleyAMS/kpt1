@@ -162,17 +162,7 @@ const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
           </div>
         </section>
         
-        {/* Production Process */}
-        {productionProcess && (
-          <section className="py-8 bg-forest-50">
-            <div className="container mx-auto px-4">
-              <h2 className="text-2xl font-bold text-forest-800 mb-6">Production Process</h2>
-              {productionProcess}
-            </div>
-          </section>
-        )}
-        
-        {/* Featured Products */}
+        {/* Featured Products - Now appears before Production Process */}
         <section className="py-8">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl font-bold text-forest-800 mb-6">Featured Products</h2>
@@ -199,6 +189,17 @@ const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
             </div>
           </div>
         </section>
+        
+        {/* Production Process - Now appears after Featured Products */}
+        {productionProcess && (
+          <section className="py-8 bg-forest-50">
+            <div className="container mx-auto px-4">
+              <h2 className="text-2xl font-bold text-forest-800 mb-6">Production Process</h2>
+              {productionProcess}
+            </div>
+          </section>
+        )}
+        
       </main>
       <Footer />
     </>
