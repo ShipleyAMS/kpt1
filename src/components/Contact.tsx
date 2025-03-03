@@ -36,7 +36,7 @@ const Contact = () => {
     <section id="contact" className="py-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-forest-800">Contact Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-king-primary">Contact Us</h2>
           <div className="mt-2 h-1 w-20 bg-earth-400 mx-auto rounded-full"></div>
           <p className="mt-4 text-forest-600 max-w-2xl mx-auto text-sm md:text-base">
             Have questions or ready to start your next project with us? We're here to help.

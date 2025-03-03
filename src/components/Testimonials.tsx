@@ -74,7 +74,7 @@ const Testimonials = () => {
     <section id="testimonials" className="py-12 bg-forest-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-forest-800">Client Testimonials</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-king-primary">Client Testimonials</h2>
           <div className="mt-2 h-1 w-20 bg-forest-400 mx-auto rounded-full"></div>
           <p className="mt-4 text-forest-600 max-w-2xl mx-auto text-sm md:text-base">
             Hear what our clients from around the world have to say about their experience working with King Tai.

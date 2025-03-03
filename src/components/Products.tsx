@@ -152,7 +152,7 @@ const Products = () => {
     <section id="products" className="py-12 bg-earth-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-forest-800">Our Products</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-king-primary">Our Products</h2>
           <div className="mt-2 h-1 w-20 bg-forest-400 mx-auto rounded-full"></div>
           <p className="mt-4 text-forest-600 max-w-2xl mx-auto">
             Discover our comprehensive range of high-quality printing and packaging solutions,
@@ -198,8 +198,8 @@ const Products = () => {
                   />
                 </div>
                 <div className="p-5">
-                  <h3 className="text-lg font-semibold text-forest-800 mb-2">{product.name}</h3>
-                  <p className="text-sm text-forest-600">{product.description}</p>
+                  <h3 className="text-lg font-semibold text-king-primary mb-2">{product.name}</h3>
+                  <p className="text-sm text-forest-800">{product.description}</p>
                 </div>
               </Link>
             ))}
