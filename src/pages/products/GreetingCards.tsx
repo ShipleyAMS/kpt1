@@ -18,25 +18,25 @@ const GreetingCardsPage = () => {
     {
       id: 1,
       name: "Luxury Greeting Cards",
-      image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png",
+      image: "/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png",
       description: "Premium cards with foil stamping and embossing details."
     },
     {
       id: 2,
       name: "Pop-up Greeting Cards",
-      image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png",
+      image: "/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png",
       description: "Interactive 3D pop-up cards for special occasions."
     },
     {
       id: 3,
       name: "Corporate Holiday Cards",
-      image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png",
+      image: "/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png",
       description: "Customized greeting cards for business and corporate use."
     },
     {
       id: 4,
       name: "Die-Cut Specialty Cards",
-      image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png",
+      image: "/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png",
       description: "Unique shaped cards with custom die-cutting and special finishes."
     },
   ];
@@ -46,7 +46,7 @@ const GreetingCardsPage = () => {
       title="Greeting Cards"
       description="Our greeting cards combine creativity with quality craftsmanship to create memorable communication pieces. From traditional folded cards to innovative pop-up and interactive designs, we offer comprehensive printing and finishing options for greeting card publishers and retailers. Our cards feature premium paper stocks, vibrant color reproduction, and specialty finishes to create products that recipients will treasure."
       images={[
-        "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png",
+        "/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png",
       ]}
       specifications={specifications}
       featuredProducts={featuredProducts}

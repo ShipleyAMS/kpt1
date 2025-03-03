@@ -39,7 +39,7 @@ const Products = () => {
     },
     {
       id: 4,
-      name: "Jewelry Box",
+      name: "Make-up Box",
       image: "/lovable-uploads/212a47c2-8686-42ba-aa2e-94eea5da96bc.png",
       description: "Elegant jewelry boxes with premium finishes and lining.",
       link: "/products/jewelery-boxes"
@@ -61,13 +61,13 @@ const Products = () => {
     {
       id: 7,
       name: "Greeting Cards",
-      image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png",
+      image: "/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png",
       description: "Premium greeting cards with custom designs and special finishes.",
       link: "/products/greeting-cards"
     },
     {
       id: 8,
-      name: "Jewelry Box Custom",
+      name: "Jewelry Box",
       image: "/lovable-uploads/b9086efc-629a-47ed-8b95-068140735132.png",
       description: "Customized jewelry boxes with bespoke designs and premium materials.",
       link: "/products/jewelery-boxes"
