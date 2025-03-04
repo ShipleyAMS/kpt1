@@ -37,7 +37,7 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-king-primary">Contact Us</h2>
-          <div className="mt-2 h-1 w-20 bg-earth-400 mx-auto rounded-full"></div>
+          <div className="mt-2 h-1 w-20 bg-[#AA8066] mx-auto rounded-full"></div>
           <p className="mt-4 text-forest-600 max-w-2xl mx-auto text-sm md:text-base">
             Have questions or ready to start your next project with us? We're here to help.
             Reach out to our team using the information below.
@@ -46,16 +46,16 @@ const Contact = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           <div>
-            <div className="bg-earth-50 p-6 rounded-lg shadow-md h-full">
-              <h3 className="text-xl font-semibold text-earth-800 mb-4">Get in Touch</h3>
+            <div className="bg-[#EAF3E8] p-6 rounded-lg shadow-md h-full">
+              <h3 className="text-xl font-semibold text-[#007041] mb-4">Get in Touch</h3>
               
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 bg-earth-100 p-2 rounded-full">
-                    <MapPin className="h-5 w-5 text-earth-600" />
+                  <div className="flex-shrink-0 bg-white p-2 rounded-full">
+                    <MapPin className="h-5 w-5 text-[#007041]" />
                   </div>
                   <div className="ml-3">
-                    <h4 className="text-base font-medium text-earth-800">Our Address</h4>
+                    <h4 className="text-base font-medium text-[#007041]">Our Address</h4>
                     <p className="mt-1 text-forest-600 text-sm">
                       Rm 9/F Silvercorp Int'l Tower<br />
                       707-713 Nathan Road Mongkok,<br />
@@ -65,11 +65,11 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 bg-earth-100 p-2 rounded-full">
-                    <Phone className="h-5 w-5 text-earth-600" />
+                  <div className="flex-shrink-0 bg-white p-2 rounded-full">
+                    <Phone className="h-5 w-5 text-[#007041]" />
                   </div>
                   <div className="ml-3">
-                    <h4 className="text-base font-medium text-earth-800">Contact Numbers</h4>
+                    <h4 className="text-base font-medium text-[#007041]">Contact Numbers</h4>
                     <p className="mt-1 text-forest-600 text-sm">
                       <strong>Andy Zhang</strong><br />
                       Tel: +86 150 1316 9618<br />
@@ -80,11 +80,11 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 bg-earth-100 p-2 rounded-full">
-                    <Mail className="h-5 w-5 text-earth-600" />
+                  <div className="flex-shrink-0 bg-white p-2 rounded-full">
+                    <Mail className="h-5 w-5 text-[#007041]" />
                   </div>
                   <div className="ml-3">
-                    <h4 className="text-base font-medium text-earth-800">Email</h4>
+                    <h4 className="text-base font-medium text-[#007041]">Email</h4>
                     <p className="mt-1 text-forest-600 text-sm">
                       info@kingtaipp.com
                     </p>
@@ -93,7 +93,7 @@ const Contact = () => {
               </div>
               
               <div className="mt-6">
-                <h4 className="text-base font-medium text-earth-800 mb-2">Factory Locations</h4>
+                <h4 className="text-base font-medium text-[#007041] mb-2">Factory Locations</h4>
                 <p className="text-forest-600 mb-2 text-sm">
                   Our state-of-the-art facilities are strategically located in:
                 </p>
@@ -107,8 +107,8 @@ const Contact = () => {
           </div>
           
           <div>
-            <form onSubmit={handleSubmit} className="bg-forest-50 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-forest-800 mb-4">Send Us a Message</h3>
+            <form onSubmit={handleSubmit} className="bg-[#F8F7F2] p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-[#007041] mb-4">Send Us a Message</h3>
               
               <div className="space-y-4">
                 <div>
@@ -121,7 +121,7 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 border border-forest-200 rounded-md focus:ring-2 focus:ring-forest-500 focus:border-transparent outline-none text-sm"
+                    className="w-full px-3 py-2 border border-forest-200 rounded-md focus:ring-2 focus:ring-[#007041] focus:border-transparent outline-none text-sm"
                     required
                   />
                 </div>
@@ -136,7 +136,7 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 border border-forest-200 rounded-md focus:ring-2 focus:ring-forest-500 focus:border-transparent outline-none text-sm"
+                    className="w-full px-3 py-2 border border-forest-200 rounded-md focus:ring-2 focus:ring-[#007041] focus:border-transparent outline-none text-sm"
                     required
                   />
                 </div>
@@ -151,7 +151,7 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 border border-forest-200 rounded-md focus:ring-2 focus:ring-forest-500 focus:border-transparent outline-none text-sm"
+                    className="w-full px-3 py-2 border border-forest-200 rounded-md focus:ring-2 focus:ring-[#007041] focus:border-transparent outline-none text-sm"
                     required
                   />
                 </div>
@@ -166,14 +166,14 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full px-3 py-2 border border-forest-200 rounded-md focus:ring-2 focus:ring-forest-500 focus:border-transparent outline-none resize-none text-sm"
+                    className="w-full px-3 py-2 border border-forest-200 rounded-md focus:ring-2 focus:ring-[#007041] focus:border-transparent outline-none resize-none text-sm"
                     required
                   />
                 </div>
                 
                 <button
                   type="submit"
-                  className="w-full bg-forest-600 text-white font-medium py-2 px-4 rounded-md hover:bg-forest-700 transition-colors flex items-center justify-center text-sm"
+                  className="w-full bg-[#AA8066] text-white font-medium py-2 px-4 rounded-md hover:bg-[#96705a] transition-colors flex items-center justify-center text-sm"
                 >
                   <Send className="h-4 w-4 mr-2" />
                   Send Message

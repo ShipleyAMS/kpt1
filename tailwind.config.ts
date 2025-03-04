@@ -92,6 +92,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				kingTai: {
+					primary: '#007041',
+					button: '#AA8066',
+					bgLight: '#EAF3E8',
+					bgCream: '#F8F7F2',
+					buttonHover: '#96705a',
 				}
 			},
 			borderRadius: {

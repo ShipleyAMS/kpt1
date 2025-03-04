@@ -84,7 +84,7 @@ const Navbar = () => {
                       onClick={toggleProductsDropdown}
                       className={cn(
                         'flex items-center text-sm font-medium nav-link transition-colors',
-                        isScrolled ? 'text-forest-900' : 'text-forest-800'
+                        isScrolled ? 'text-[#007041]' : 'text-[#007041]'
                       )}
                     >
                       {link.name}
@@ -98,7 +98,7 @@ const Navbar = () => {
                           <Link
                             key={category.name}
                             to={category.href}
-                            className="block px-4 py-2 text-sm text-forest-700 hover:bg-forest-50 transition-colors"
+                            className="block px-4 py-2 text-sm text-forest-700 hover:bg-[#EAF3E8] transition-colors"
                             onClick={() => setProductsDropdownOpen(false)}
                           >
                             {category.name}
@@ -112,7 +112,7 @@ const Navbar = () => {
                     to={link.href}
                     className={cn(
                       'text-sm font-medium nav-link transition-colors',
-                      isScrolled ? 'text-forest-900' : 'text-forest-800'
+                      isScrolled ? 'text-[#007041]' : 'text-[#007041]'
                     )}
                   >
                     {link.name}
@@ -125,7 +125,7 @@ const Navbar = () => {
           {/* Request Custom Quote Button */}
           <Link 
             to="/#contact" 
-            className="inline-flex items-center px-4 py-2 bg-earth-500 text-white rounded-md font-medium hover:bg-earth-600 transition-colors text-sm"
+            className="inline-flex items-center px-4 py-2 bg-[#AA8066] text-white rounded-md font-medium hover:bg-[#96705a] transition-colors text-sm"
           >
             <MessageSquare className="mr-2 h-4 w-4" />
             Request Custom Quote
@@ -134,7 +134,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-forest-800 focus:outline-none"
+          className="md:hidden text-[#007041] focus:outline-none"
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
         >
@@ -157,7 +157,7 @@ const Navbar = () => {
                     <>
                       <button 
                         onClick={toggleProductsDropdown}
-                        className="flex justify-between items-center w-full text-forest-800 font-medium py-2 px-4 hover:bg-forest-50 rounded-md transition-colors"
+                        className="flex justify-between items-center w-full text-[#007041] font-medium py-2 px-4 hover:bg-[#EAF3E8] rounded-md transition-colors"
                       >
                         {link.name}
                         <ChevronDown className="h-4 w-4" />
@@ -169,7 +169,7 @@ const Navbar = () => {
                             <Link
                               key={category.name}
                               to={category.href}
-                              className="block py-1 px-4 text-sm text-forest-700 hover:bg-forest-50 rounded-md transition-colors"
+                              className="block py-1 px-4 text-sm text-forest-700 hover:bg-[#EAF3E8] rounded-md transition-colors"
                               onClick={() => {
                                 setProductsDropdownOpen(false);
                                 setMobileMenuOpen(false);
@@ -184,7 +184,7 @@ const Navbar = () => {
                   ) : (
                     <Link
                       to={link.href}
-                      className="text-forest-800 font-medium py-2 px-4 hover:bg-forest-50 rounded-md transition-colors"
+                      className="text-[#007041] font-medium py-2 px-4 hover:bg-[#EAF3E8] rounded-md transition-colors"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {link.name}
@@ -196,7 +196,7 @@ const Navbar = () => {
               {/* Mobile Request Custom Quote Button */}
               <Link 
                 to="/#contact" 
-                className="inline-flex items-center py-2 px-4 bg-earth-500 text-white rounded-md font-medium hover:bg-earth-600 transition-colors text-sm mt-2"
+                className="inline-flex items-center py-2 px-4 bg-[#AA8066] text-white rounded-md font-medium hover:bg-[#96705a] transition-colors text-sm mt-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <MessageSquare className="mr-2 h-4 w-4" />

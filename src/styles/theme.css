@@ -10,10 +10,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 110 20% 20%;
 
-    --primary: 150 74% 26%;
+    --primary: 153 100% 22%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 34 38% 52%;
+    --secondary: 25 35% 53%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 36 20% 94%;
@@ -27,7 +27,7 @@
 
     --border: 36 20% 85%;
     --input: 36 20% 85%;
-    --ring: 150 74% 26%;
+    --ring: 153 100% 22%;
 
     --radius: 0.5rem;
 
@@ -51,10 +51,10 @@
     --popover: 110 25% 8%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 150 74% 26%;
+    --primary: 153 100% 22%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 34 38% 52%;
+    --secondary: 25 35% 53%;
     --secondary-foreground: 0 0% 98%;
 
     --muted: 110 20% 20%;
@@ -68,7 +68,7 @@
 
     --border: 110 20% 25%;
     --input: 110 20% 25%;
-    --ring: 150 74% 26%;
+    --ring: 153 100% 22%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -88,5 +88,5 @@
 }
 
 .text-king-primary {
-  color: #117541;
+  color: #007041;
 }

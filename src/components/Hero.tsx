@@ -36,7 +36,7 @@ const Hero = () => {
       id="home" 
       className="pt-24 pb-16 relative overflow-hidden"
       style={{
-        background: 'linear-gradient(120deg, #f2f9f1 0%, #e4f2e1 50%, #f1eee7 100%)'
+        background: 'linear-gradient(120deg, #EAF3E8 0%, #EAF3E8 50%, #F8F7F2 100%)'
       }}
     >
       <div className="absolute inset-0 z-0">
@@ -49,7 +49,7 @@ const Hero = () => {
             ref={titleRef}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-forest-800 opacity-0 translate-y-10 transition-all duration-1000 ease-out"
           >
-            <span className="text-[#117541]">Premium</span> Printing & Packaging Solutions
+            <span className="text-[#007041]">Premium</span> Printing & Packaging Solutions
           </h1>
           
           <p 
