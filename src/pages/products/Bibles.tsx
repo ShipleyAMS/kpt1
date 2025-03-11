@@ -43,40 +43,52 @@ const BiblesPage = () => {
 
   const ProductionProcess = () => (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div className="bg-white p-6 rounded-lg shadow-md">
-        <h3 className="text-lg font-semibold text-forest-800 mb-3">1. Printing & Binding</h3>
-        <img 
-          src="/lovable-uploads/efc2096b-4148-4f2e-894f-cad1a146d9ac.png" 
-          alt="Bible printing process" 
-          className="w-full h-48 object-cover rounded-md mb-4"
-        />
-        <p className="text-sm text-forest-600">
-          Our bible production begins with high-quality printing on specialized bible paper, followed by precise binding techniques to ensure durability and ease of use.
-        </p>
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="h-52 overflow-hidden">
+          <img 
+            src="/lovable-uploads/efc2096b-4148-4f2e-894f-cad1a146d9ac.png" 
+            alt="Bible printing process" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="p-6">
+          <h3 className="text-xl font-semibold text-[#007041] mb-3">1. Printing & Binding</h3>
+          <p className="text-forest-600">
+            Our bible production begins with high-quality printing on specialized bible paper, followed by precise binding techniques to ensure durability and ease of use.
+          </p>
+        </div>
       </div>
       
-      <div className="bg-white p-6 rounded-lg shadow-md">
-        <h3 className="text-lg font-semibold text-forest-800 mb-3">2. Cover Crafting</h3>
-        <img 
-          src="/lovable-uploads/c1ca3f78-92fc-42db-9165-7fa2854a9436.png" 
-          alt="Bible cover crafting" 
-          className="w-full h-48 object-cover rounded-md mb-4"
-        />
-        <p className="text-sm text-forest-600">
-          Premium materials are selected for covers, from PU to genuine leather, with detailed embossing, foil stamping, and other custom finishes.
-        </p>
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="h-52 overflow-hidden">
+          <img 
+            src="/lovable-uploads/c1ca3f78-92fc-42db-9165-7fa2854a9436.png" 
+            alt="Bible cover crafting" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="p-6">
+          <h3 className="text-xl font-semibold text-[#007041] mb-3">2. Cover Crafting</h3>
+          <p className="text-forest-600">
+            Premium materials are selected for covers, from PU to genuine leather, with detailed embossing, foil stamping, and other custom finishes.
+          </p>
+        </div>
       </div>
       
-      <div className="bg-white p-6 rounded-lg shadow-md">
-        <h3 className="text-lg font-semibold text-forest-800 mb-3">3. Finishing Touches</h3>
-        <img 
-          src="/lovable-uploads/0d72df48-8c36-45ea-9e05-859074df084a.png" 
-          alt="Bible finishing process" 
-          className="w-full h-48 object-cover rounded-md mb-4"
-        />
-        <p className="text-sm text-forest-600">
-          Each bible receives careful inspection and finishing touches, including ribbon markers, gilt edges, and quality control to ensure perfection.
-        </p>
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="h-52 overflow-hidden">
+          <img 
+            src="/lovable-uploads/0d72df48-8c36-45ea-9e05-859074df084a.png" 
+            alt="Bible finishing process" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="p-6">
+          <h3 className="text-xl font-semibold text-[#007041] mb-3">3. Finishing Touches</h3>
+          <p className="text-forest-600">
+            Each bible receives careful inspection and finishing touches, including ribbon markers, gilt edges, and quality control to ensure perfection.
+          </p>
+        </div>
       </div>
     </div>
   );

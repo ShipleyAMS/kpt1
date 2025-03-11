@@ -39,6 +39,13 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Custom King Tai colors */
+    --king-primary: 153 100% 22%; /* #007041 */
+    --king-bg-light: 80 33% 95%; /* #EAF3E8 */
+    --king-bg-cream: 36 33% 98%; /* #F8F7F2 */
+    --king-button: 25 35% 53%; /* #AA8066 */
+    --king-button-hover: 25 25% 47%; /* #96705a */
   }
 
   .dark {
@@ -88,5 +95,25 @@
 }
 
 .text-king-primary {
+  color: #007041;
+}
+
+.bg-kingTai-bgLight {
+  background-color: #EAF3E8;
+}
+
+.bg-kingTai-bgCream {
+  background-color: #F8F7F2;
+}
+
+.bg-kingTai-button {
+  background-color: #AA8066;
+}
+
+.bg-kingTai-buttonHover {
+  background-color: #96705a;
+}
+
+.text-kingTai-primary {
   color: #007041;
 }

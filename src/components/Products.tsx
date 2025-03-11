@@ -36,12 +36,12 @@ const Products = () => {
   }, []);
 
   return (
-    <section id="products" className="py-12 bg-[#F8F7F2]">
+    <section id="products" className="py-16 bg-[#F8F7F2]">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-king-primary">Our Products</h2>
-          <div className="mt-2 h-1 w-20 bg-[#007041] mx-auto rounded-full"></div>
-          <p className="mt-4 text-forest-600 max-w-2xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#007041]">Our Products</h2>
+          <div className="mt-2 h-1 w-24 bg-[#007041] mx-auto rounded-full"></div>
+          <p className="mt-5 text-forest-600 max-w-2xl mx-auto">
             Discover our comprehensive range of high-quality printing and packaging solutions,
             crafted with precision and attention to detail.
           </p>
@@ -55,12 +55,12 @@ const Products = () => {
 
         <div 
           ref={sectionRef}
-          className="opacity-0 transition-opacity duration-1000"
+          className="opacity-0 transition-opacity duration-1000 mt-10"
         >
           <ProductsGrid products={filteredProducts} />
         </div>
 
-        <div className="mt-10 text-center">
+        <div className="mt-14 text-center">
           <a 
             href="#contact" 
             className="inline-flex items-center px-6 py-3 bg-[#AA8066] text-white rounded-md font-medium hover:bg-[#96705a] transition-colors"
