@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, MessageSquare } from 'lucide-react';
@@ -52,7 +51,7 @@ const Navbar = () => {
     { name: 'ABOUT US', href: '/about-us' },
     { name: 'PRODUCTS', href: '/#products', hasDropdown: true },
     { name: 'CONTACT US', href: '/#contact' },
-    { name: 'TESTIMONIALS', href: '/#testimonials' },
+    { name: 'TESTIMONIALS', href: '/testimonials' },
   ];
 
   return (
