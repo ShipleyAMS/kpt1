@@ -38,7 +38,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Products />
-      <Testimonials />
+      <Testimonials limit={2} />
       <Contact />
       <Footer />
     </div>

@@ -2,66 +2,62 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
 
 interface Testimonial {
   id: number;
   name: string;
   company: string;
-  country: string;
+  country?: string;
   quote: string;
+  position?: string;
 }
 
-const Testimonials = () => {
+const Testimonials = ({ limit }: { limit?: number }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      company: "Brightstar Publishing",
-      country: "United States",
-      quote: "King Tai has been our trusted printing partner for over 5 years. Their attention to detail and commitment to quality is unmatched in the industry. Our premium book series wouldn't be the same without them."
+      name: "Kevin R.",
+      company: "Company",
+      position: "General Manager",
+      quote: "After receiving the delivery and opening one of the boxes, I was completely blown away on the quality and craftsmanship of your work. We are so very satisfied, thank you as always for your incredible work, we look forward to working with you in the future. Thanks for all your hard work and efforts!"
     },
     {
       id: 2,
-      name: "David Wilson",
-      company: "Luxury Wines Ltd.",
-      country: "Australia",
-      quote: "The wine boxes produced by King Tai have elevated our brand presence. The craftsmanship and premium finish on each box perfectly represents the quality of our wines. Highly recommended!"
+      name: "Sarah M.",
+      company: "Luxe Home Interiors",
+      position: "Marketing Director",
+      quote: "We recently ordered catalogues and brochures for our latest product line, and I couldn't be more impressed with the results! The quality of the print work was absolutely top-notch, and our clients were blown away by the vibrant colors and sleek finish. The attention to detail was evident in every page. This company truly understands the importance of great print materials for our brand, and I'll definitely be back for future orders!"
     },
     {
       id: 3,
-      name: "Laura Chen",
-      company: "Elegant Cosmetics",
-      country: "Singapore",
-      quote: "Working with King Tai for our cosmetics packaging needs has been a game-changer. Their innovative designs and attention to sustainability align perfectly with our brand values."
+      name: "James L.",
+      company: "Author",
+      quote: "We decided to print our new book with this company, and the final product exceeded all expectations. The quality of the paper, the binding, and the overall finish was simply outstanding. It's clear that they take great pride in their work. Our readers have already commented on how professional the book feels. We're so impressed, we'll definitely be placing another order for our next project!"
     },
     {
       id: 4,
-      name: "Michael Roberts",
-      company: "Global Gifts",
-      country: "United Kingdom",
-      quote: "The shopping bags and gift boxes we order from King Tai always exceed our expectations. Our customers frequently comment on how premium our packaging feels. A truly exceptional supplier."
-    },
-    {
-      id: 5,
-      name: "Sophia Li",
-      company: "Children's Learning Press",
-      country: "Canada",
-      quote: "The children's books printed by King Tai feature vibrant colors and durable binding that withstand even the most enthusiastic young readers. Their quality control is impeccable."
+      name: "Emily R.",
+      company: "Jewelry Startup",
+      position: "Founder",
+      quote: "As a new jewelry startup, packaging is everything, and I couldn't be happier with the jewelry boxes I ordered. The boxes are sturdy, beautifully designed, and the perfect complement to our brand. The best part? The price was incredibly reasonable for the quality we received. I'll definitely be ordering again as we grow!"
     }
   ];
 
+  const displayedTestimonials = limit ? testimonials.slice(0, limit) : testimonials;
+
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) => {
-      if (prevIndex === testimonials.length - 1) return 0;
+      if (prevIndex === displayedTestimonials.length - 1) return 0;
       return prevIndex + 1;
     });
   };
 
   const prevTestimonial = () => {
     setCurrentIndex((prevIndex) => {
-      if (prevIndex === 0) return testimonials.length - 1;
+      if (prevIndex === 0) return displayedTestimonials.length - 1;
       return prevIndex - 1;
     });
   };
@@ -77,8 +73,26 @@ const Testimonials = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-king-primary">Client Testimonials</h2>
           <div className="mt-2 h-1 w-20 bg-forest-400 mx-auto rounded-full"></div>
           <p className="mt-4 text-forest-600 max-w-2xl mx-auto text-sm md:text-base">
-            Hear what our clients from around the world have to say about their experience working with King Tai.
+            Hear what our clients have to say about their experience working with King Tai.
           </p>
+          {!limit && (
+            <Link
+              to="/#contact"
+              className="inline-block mt-6 px-6 py-3 bg-[#AA8066] text-white font-semibold rounded-md hover:bg-[#96705a] transition-colors"
+            >
+              REQUEST CUSTOM QUOTE
+            </Link>
+          )}
+          {limit && (
+            <div className="mt-4">
+              <Link
+                to="/testimonials"
+                className="text-forest-700 hover:text-king-primary transition-colors underline"
+              >
+                View all testimonials
+              </Link>
+            </div>
+          )}
         </div>
 
         <div className="max-w-3xl mx-auto">
@@ -90,14 +104,18 @@ const Testimonials = () => {
               
               <blockquote className="text-center">
                 <p className="text-md md:text-lg text-forest-700 italic mb-6">
-                  "{testimonials[currentIndex].quote}"
+                  "{displayedTestimonials[currentIndex].quote}"
                 </p>
                 <footer className="mt-3">
                   <div className="font-semibold text-forest-800 text-base">
-                    {testimonials[currentIndex].name}
+                    {displayedTestimonials[currentIndex].name}
                   </div>
                   <div className="text-forest-600 text-sm">
-                    {testimonials[currentIndex].company}, {testimonials[currentIndex].country}
+                    {displayedTestimonials[currentIndex].position && 
+                      `${displayedTestimonials[currentIndex].position}, `}
+                    {displayedTestimonials[currentIndex].company}
+                    {displayedTestimonials[currentIndex].country && 
+                      `, ${displayedTestimonials[currentIndex].country}`}
                   </div>
                 </footer>
               </blockquote>
@@ -137,7 +155,7 @@ const Testimonials = () => {
           
           {/* Dots navigation */}
           <div className="flex justify-center space-x-2 mt-6">
-            {testimonials.map((_, index) => (
+            {displayedTestimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToTestimonial(index)}

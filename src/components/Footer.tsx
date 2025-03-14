@@ -4,7 +4,7 @@ import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from 'luc
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-kingTai-primary border-t border-gray-200">
+    <footer className="bg-gray-50 text-kingTai-primary border-t border-gray-200">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-1">
@@ -48,7 +48,7 @@ const Footer = () => {
                 <a href="#contact" className="text-gray-600 hover:text-kingTai-primary transition-colors">Contact Us</a>
               </li>
               <li>
-                <a href="#testimonials" className="text-gray-600 hover:text-kingTai-primary transition-colors">Testimonials</a>
+                <a href="/testimonials" className="text-gray-600 hover:text-kingTai-primary transition-colors">Testimonials</a>
               </li>
             </ul>
           </div>
