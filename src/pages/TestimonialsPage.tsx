@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
+import { Link } from 'react-router-dom';
 
 const TestimonialsPage = () => {
   // Update document title
@@ -20,13 +21,20 @@ const TestimonialsPage = () => {
             What Our Clients Say
           </h1>
           <div className="mt-2 h-1 w-20 bg-forest-400 mx-auto rounded-full"></div>
-          <p className="mt-4 text-forest-600 max-w-2xl mx-auto text-center">
-            At King Tai, customer satisfaction is our top priority. Here's what some of our clients have to say about our products and services.
-          </p>
         </div>
       </div>
       
-      <Testimonials />
+      <Testimonials showControls={false} />
+      
+      <div className="py-8 bg-forest-50 text-center">
+        <Link
+          to="/#contact"
+          className="inline-block px-6 py-3 bg-[#AA8066] text-white font-semibold rounded-md hover:bg-[#96705a] transition-colors"
+        >
+          REQUEST CUSTOM QUOTE
+        </Link>
+      </div>
+      
       <Footer />
     </div>
   );
