@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import CategorySelector from './products/CategorySelector';
 import ProductsGrid from './products/ProductsGrid';
 import { products, categories, filterProductsByCategory } from './products/productData';
@@ -61,12 +62,18 @@ const Products = () => {
         </div>
 
         <div className="mt-14 text-center">
-          <a 
-            href="#contact" 
+          <Link 
+            to="/products" 
+            className="inline-flex items-center px-6 py-3 bg-[#007041] text-white rounded-md font-medium hover:bg-[#007041]/90 transition-colors mr-4"
+          >
+            View All Products
+          </Link>
+          <Link 
+            to="/#contact" 
             className="inline-flex items-center px-6 py-3 bg-[#AA8066] text-white rounded-md font-medium hover:bg-[#96705a] transition-colors"
           >
             Request Custom Quote
-          </a>
+          </Link>
         </div>
       </div>
     </section>

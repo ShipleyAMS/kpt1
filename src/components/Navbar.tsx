@@ -1,12 +1,22 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, MessageSquare } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { 
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle
+} from "@/components/ui/navigation-menu";
+import { products, categories, filterProductsByCategory } from './products/productData';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,25 +37,18 @@ const Navbar = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  const toggleProductsDropdown = () => {
-    setProductsDropdownOpen(!productsDropdownOpen);
-  };
-
-  const productCategories = [
-    { name: "All Products", href: "/products" },
-    { name: "Printing", href: "/products/printing" },
-    { name: "Stationery", href: "/products/stationery" },
-    { name: "Packaging", href: "/products/packaging" },
-    { name: "Games & Cards", href: "/products/games" }
-  ];
-
   const navLinks = [
-    { name: 'HOME', href: '/#home' },
+    { name: 'HOME', href: '/' },
     { name: 'ABOUT US', href: '/about-us' },
-    { name: 'PRODUCTS', href: '/#products', hasDropdown: true },
-    { name: 'CONTACT US', href: '/#contact' },
     { name: 'TESTIMONIALS', href: '/testimonials' },
+    { name: 'CONTACT US', href: '/#contact' },
   ];
+
+  // Getting products for each category
+  const printingProducts = filterProductsByCategory(products, 'printing');
+  const stationeryProducts = filterProductsByCategory(products, 'stationery');
+  const packagingProducts = filterProductsByCategory(products, 'packaging');
+  const gamesProducts = filterProductsByCategory(products, 'games');
 
   return (
     <header
@@ -69,49 +72,132 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8">
           <nav className="flex items-center space-x-8">
             {navLinks.map((link) => (
-              <div key={link.name} className="relative group flex items-center h-full">
-                {link.hasDropdown ? (
-                  <div className="flex items-center h-full">
-                    <button 
-                      onClick={toggleProductsDropdown}
-                      className={cn(
-                        'flex items-center text-sm font-medium nav-link transition-colors',
-                        isScrolled ? 'text-[#007041]' : 'text-[#007041]'
-                      )}
-                    >
-                      {link.name}
-                      <ChevronDown className="ml-1 h-4 w-4" />
-                    </button>
-                    
-                    {/* Products Dropdown */}
-                    {productsDropdownOpen && (
-                      <div className="absolute left-0 mt-2 top-full z-10 bg-white rounded-md shadow-lg py-2 w-48 animate-fade-in">
-                        {productCategories.map((category) => (
-                          <Link
-                            key={category.name}
-                            to={category.href}
-                            className="block px-4 py-2 text-sm text-forest-700 hover:bg-[#EAF3E8] transition-colors"
-                            onClick={() => setProductsDropdownOpen(false)}
+              <Link
+                key={link.name}
+                to={link.href}
+                className={cn(
+                  'text-sm font-medium nav-link transition-colors',
+                  isScrolled ? 'text-[#007041]' : 'text-[#007041]'
+                )}
+              >
+                {link.name}
+              </Link>
+            ))}
+            
+            {/* Products Navigation Menu */}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className={cn(
+                    'text-sm font-medium transition-colors',
+                    isScrolled ? 'text-[#007041]' : 'text-[#007041]'
+                  )}>PRODUCTS</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="grid grid-cols-5 gap-3 p-4 w-screen max-w-screen-lg">
+                      {/* All Products Column */}
+                      <div className="flex flex-col space-y-3">
+                        <h3 className="font-bold text-[#007041] text-sm">ALL PRODUCTS</h3>
+                        <Link 
+                          to="/products" 
+                          className="text-sm text-forest-700 hover:text-[#AA8066] transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          View All Products
+                        </Link>
+                      </div>
+                      
+                      {/* Printing Column */}
+                      <div className="flex flex-col space-y-3">
+                        <h3 className="font-bold text-[#007041] text-sm">PRINTING</h3>
+                        <Link 
+                          to="/products/printing" 
+                          className="text-sm text-forest-700 hover:text-[#AA8066] transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          View All Printing
+                        </Link>
+                        {printingProducts.map(product => (
+                          <Link 
+                            key={product.id}
+                            to={product.link} 
+                            className="text-sm text-forest-700 hover:text-[#AA8066] transition-colors"
+                            onClick={() => setMobileMenuOpen(false)}
                           >
-                            {category.name}
+                            {product.name}
                           </Link>
                         ))}
                       </div>
-                    )}
-                  </div>
-                ) : (
-                  <Link
-                    to={link.href}
-                    className={cn(
-                      'text-sm font-medium nav-link transition-colors',
-                      isScrolled ? 'text-[#007041]' : 'text-[#007041]'
-                    )}
-                  >
-                    {link.name}
-                  </Link>
-                )}
-              </div>
-            ))}
+                      
+                      {/* Stationery Column */}
+                      <div className="flex flex-col space-y-3">
+                        <h3 className="font-bold text-[#007041] text-sm">STATIONERY</h3>
+                        <Link 
+                          to="/products/stationery" 
+                          className="text-sm text-forest-700 hover:text-[#AA8066] transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          View All Stationery
+                        </Link>
+                        {stationeryProducts.map(product => (
+                          <Link 
+                            key={product.id}
+                            to={product.link} 
+                            className="text-sm text-forest-700 hover:text-[#AA8066] transition-colors"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {product.name}
+                          </Link>
+                        ))}
+                      </div>
+                      
+                      {/* Packaging Column */}
+                      <div className="flex flex-col space-y-3">
+                        <h3 className="font-bold text-[#007041] text-sm">PACKAGING</h3>
+                        <Link 
+                          to="/products/packaging" 
+                          className="text-sm text-forest-700 hover:text-[#AA8066] transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          View All Packaging
+                        </Link>
+                        {packagingProducts.map(product => (
+                          <Link 
+                            key={product.id}
+                            to={product.link} 
+                            className="text-sm text-forest-700 hover:text-[#AA8066] transition-colors"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {product.name}
+                          </Link>
+                        ))}
+                      </div>
+                      
+                      {/* Games & Cards Column */}
+                      <div className="flex flex-col space-y-3">
+                        <h3 className="font-bold text-[#007041] text-sm">GAMES & CARDS</h3>
+                        <Link 
+                          to="/products/games" 
+                          className="text-sm text-forest-700 hover:text-[#AA8066] transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          View All Games & Cards
+                        </Link>
+                        {gamesProducts.map(product => (
+                          <Link 
+                            key={product.id}
+                            to={product.link} 
+                            className="text-sm text-forest-700 hover:text-[#AA8066] transition-colors"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {product.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </nav>
           
           {/* Request Custom Quote Button */}
@@ -140,50 +226,127 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-sm animate-fade-in">
+        <div className="md:hidden bg-white/95 backdrop-blur-sm animate-fade-in max-h-[80vh] overflow-y-auto">
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col space-y-4">
               {navLinks.map((link) => (
-                <div key={link.name}>
-                  {link.hasDropdown ? (
-                    <>
-                      <button 
-                        onClick={toggleProductsDropdown}
-                        className="flex justify-between items-center w-full text-[#007041] font-medium py-2 px-4 hover:bg-[#EAF3E8] rounded-md transition-colors"
-                      >
-                        {link.name}
-                        <ChevronDown className="h-4 w-4" />
-                      </button>
-                      
-                      {productsDropdownOpen && (
-                        <div className="pl-6 mt-2 space-y-2">
-                          {productCategories.map((category) => (
-                            <Link
-                              key={category.name}
-                              to={category.href}
-                              className="block py-1 px-4 text-sm text-forest-700 hover:bg-[#EAF3E8] rounded-md transition-colors"
-                              onClick={() => {
-                                setProductsDropdownOpen(false);
-                                setMobileMenuOpen(false);
-                              }}
-                            >
-                              {category.name}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </>
-                  ) : (
-                    <Link
-                      to={link.href}
-                      className="text-[#007041] font-medium py-2 px-4 hover:bg-[#EAF3E8] rounded-md transition-colors"
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  className="text-[#007041] font-medium py-2 px-4 hover:bg-[#EAF3E8] rounded-md transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              ))}
+              
+              {/* Mobile Products Section */}
+              <div className="border-t border-gray-200 pt-4">
+                <h3 className="font-bold text-[#007041] px-4 py-2">PRODUCTS</h3>
+                
+                {/* Product Categories */}
+                <div className="pl-4">
+                  <Link 
+                    to="/products"
+                    className="block py-2 px-4 text-forest-700 hover:bg-[#EAF3E8] rounded-md transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    All Products
+                  </Link>
+                  
+                  {/* Printing Category */}
+                  <div className="py-2">
+                    <Link 
+                      to="/products/printing"
+                      className="block px-4 font-medium text-forest-700 hover:bg-[#EAF3E8] rounded-md transition-colors"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {link.name}
+                      Printing
                     </Link>
-                  )}
+                    <div className="pl-4">
+                      {printingProducts.map(product => (
+                        <Link 
+                          key={product.id}
+                          to={product.link}
+                          className="block py-1 px-4 text-sm text-forest-700 hover:bg-[#EAF3E8] rounded-md transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {product.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Stationery Category */}
+                  <div className="py-2">
+                    <Link 
+                      to="/products/stationery"
+                      className="block px-4 font-medium text-forest-700 hover:bg-[#EAF3E8] rounded-md transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Stationery
+                    </Link>
+                    <div className="pl-4">
+                      {stationeryProducts.map(product => (
+                        <Link 
+                          key={product.id}
+                          to={product.link}
+                          className="block py-1 px-4 text-sm text-forest-700 hover:bg-[#EAF3E8] rounded-md transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {product.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Packaging Category */}
+                  <div className="py-2">
+                    <Link 
+                      to="/products/packaging"
+                      className="block px-4 font-medium text-forest-700 hover:bg-[#EAF3E8] rounded-md transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Packaging
+                    </Link>
+                    <div className="pl-4">
+                      {packagingProducts.map(product => (
+                        <Link 
+                          key={product.id}
+                          to={product.link}
+                          className="block py-1 px-4 text-sm text-forest-700 hover:bg-[#EAF3E8] rounded-md transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {product.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Games & Cards Category */}
+                  <div className="py-2">
+                    <Link 
+                      to="/products/games"
+                      className="block px-4 font-medium text-forest-700 hover:bg-[#EAF3E8] rounded-md transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Games & Cards
+                    </Link>
+                    <div className="pl-4">
+                      {gamesProducts.map(product => (
+                        <Link 
+                          key={product.id}
+                          to={product.link}
+                          className="block py-1 px-4 text-sm text-forest-700 hover:bg-[#EAF3E8] rounded-md transition-colors"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {product.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-              ))}
+              </div>
               
               {/* Mobile Request Custom Quote Button */}
               <Link 
