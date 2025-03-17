@@ -32,18 +32,11 @@ const Navbar = () => {
   };
 
   const productCategories = [
-    { name: "Bibles", href: "/products/bibles" },
-    { name: "Books", href: "/products/books" },
-    { name: "Calendars", href: "/products/calendars" },
-    { name: "Cosmetic Boxes", href: "/products/cosmetic-boxes" },
-    { name: "Game Cards", href: "/products/game-cards" },
-    { name: "Gift Boxes", href: "/products/gift-boxes" },
-    { name: "Greeting Cards", href: "/products/greeting-cards" },
-    { name: "Jewelery Boxes", href: "/products/jewelery-boxes" },
-    { name: "Journals", href: "/products/journals" },
-    { name: "Shopping Bags", href: "/products/shopping-bags" },
-    { name: "Wine Boxes", href: "/products/wine-boxes" },
-    { name: "Wooden Boxes", href: "/products/wooden-boxes" }
+    { name: "All Products", href: "/products" },
+    { name: "Printing", href: "/products/printing" },
+    { name: "Stationery", href: "/products/stationery" },
+    { name: "Packaging", href: "/products/packaging" },
+    { name: "Games & Cards", href: "/products/games" }
   ];
 
   const navLinks = [

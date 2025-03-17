@@ -27,8 +27,8 @@ export const products: Product[] = [
     id: 4,
     name: "Make-up Box",
     image: "/lovable-uploads/212a47c2-8686-42ba-aa2e-94eea5da96bc.png",
-    description: "Elegant jewelry boxes with premium finishes and lining.",
-    link: "/products/jewelery-boxes"
+    description: "Elegant cosmetic boxes with premium finishes and secure closures.",
+    link: "/products/cosmetic-boxes"
   },
   {
     id: 5,
@@ -86,33 +86,82 @@ export const products: Product[] = [
     description: "Luxurious wooden boxes with custom engraving and premium finishes.",
     link: "/products/wooden-boxes"
   },
+  {
+    id: 13,
+    name: "Notebook",
+    image: "/placeholder.svg",
+    description: "High-quality notebooks with premium paper and customizable covers.",
+    link: "/products/notebooks"
+  },
+  {
+    id: 14,
+    name: "Planner",
+    image: "/placeholder.svg",
+    description: "Organizational planners with practical layouts and premium binding.",
+    link: "/products/planners"
+  },
+  {
+    id: 15,
+    name: "Gift Bag",
+    image: "/placeholder.svg",
+    description: "Elegant gift bags for special occasions with premium finishes.",
+    link: "/products/gift-bags"
+  },
+  {
+    id: 16,
+    name: "Card Game",
+    image: "/placeholder.svg",
+    description: "Custom card games with high-quality printing and finishes.",
+    link: "/products/card-games"
+  },
+  {
+    id: 17,
+    name: "Jigsaw",
+    image: "/placeholder.svg",
+    description: "Custom jigsaw puzzles with vibrant printing and precision cutting.",
+    link: "/products/jigsaws"
+  },
+  {
+    id: 18,
+    name: "3D Card",
+    image: "/placeholder.svg",
+    description: "Innovative 3D cards with special effects and premium materials.",
+    link: "/products/3d-cards"
+  }
 ];
 
 export const categories: Category[] = [
   { id: 'all', name: 'All Products' },
-  { id: 'books', name: 'Books & Print' },
+  { id: 'printing', name: 'Printing' },
+  { id: 'stationery', name: 'Stationery' },
   { id: 'packaging', name: 'Packaging' },
-  { id: 'specialty', name: 'Specialty Items' },
+  { id: 'games', name: 'Games & Cards' },
 ];
 
 export const filterProductsByCategory = (products: Product[], categoryId: string): Product[] => {
   if (categoryId === 'all') return products;
   
-  if (categoryId === 'books') {
+  if (categoryId === 'printing') {
     return products.filter(product => 
-      ['Bible', 'Children\'s Books', 'Journal'].includes(product.name)
+      ['Bible', 'Children\'s Books', 'Calendar'].includes(product.name)
+    );
+  }
+  
+  if (categoryId === 'stationery') {
+    return products.filter(product => 
+      ['Journal', 'Notebook', 'Planner'].includes(product.name)
     );
   }
   
   if (categoryId === 'packaging') {
     return products.filter(product => 
-      ['Jewelry Box', 'Gift Box', 'Shopping Bag', 'Wine Box', 'Wooden Box', 'Make-up Box'].includes(product.name)
+      ['Jewelry Box', 'Gift Box', 'Shopping Bag', 'Wine Box', 'Wooden Box', 'Make-up Box', 'Gift Bag'].includes(product.name)
     );
   }
   
-  if (categoryId === 'specialty') {
+  if (categoryId === 'games') {
     return products.filter(product => 
-      ['Calendar', 'Game Cards', 'Greeting Cards'].includes(product.name)
+      ['Game Cards', 'Greeting Cards', 'Card Game', 'Jigsaw', '3D Card'].includes(product.name)
     );
   }
   
