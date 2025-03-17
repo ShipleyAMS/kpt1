@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -36,12 +35,8 @@ import StationeryPage from '@/pages/products/Stationery';
 import PackagingPage from '@/pages/products/Packaging';
 import GamesCardsPage from '@/pages/products/GamesCards';
 
-import './App.css';
-import './styles/fonts.css';
-import './styles/utilities.css';
-import './styles/components.css';
-import './styles/animations.css';
-import './styles/theme.css';
+// Import only necessary CSS
+import './index.css';
 
 function App() {
   return (
