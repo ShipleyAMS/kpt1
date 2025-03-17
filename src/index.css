@@ -3,8 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import other stylesheets after Tailwind directives */
 @import './styles/fonts.css';
-@import './styles/theme.css';
+@import './styles/utilities.css';
 @import './styles/components.css';
 @import './styles/animations.css';
-@import './styles/utilities.css';
+@import './styles/theme.css';
