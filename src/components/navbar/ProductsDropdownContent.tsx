@@ -11,7 +11,7 @@ export const ProductsDropdownContent: React.FC = () => {
   const gamesProducts = filterProductsByCategory(products, 'games');
 
   return (
-    <div className="grid grid-cols-5 gap-3 p-4 w-screen max-w-screen-lg">
+    <div className="grid grid-cols-5 gap-3 p-4 w-screen max-w-screen-lg bg-[#F8F7F2]">
       {/* All Products Column */}
       <div className="flex flex-col space-y-3">
         <h3 className="font-bold text-[#007041] text-sm">ALL PRODUCTS</h3>
