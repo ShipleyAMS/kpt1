@@ -127,6 +127,13 @@ export const products: Product[] = [
     image: "/placeholder.svg",
     description: "Innovative 3D cards with special effects and premium materials.",
     link: "/products/3d-cards"
+  },
+  {
+    id: 19,
+    name: "Catalogues",
+    image: "/placeholder.svg",
+    description: "Professional catalogues with high-quality printing and binding options.",
+    link: "/products/catalogues"
   }
 ];
 
@@ -143,7 +150,7 @@ export const filterProductsByCategory = (products: Product[], categoryId: string
   
   if (categoryId === 'printing') {
     return products.filter(product => 
-      ['Bible', 'Children\'s Books', 'Calendar'].includes(product.name)
+      ['Bible', 'Children\'s Books', 'Calendar', 'Catalogues'].includes(product.name)
     );
   }
   
