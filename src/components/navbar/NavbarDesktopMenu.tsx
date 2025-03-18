@@ -1,8 +1,13 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { RequestQuoteButton } from './RequestQuoteButton';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 interface NavbarDesktopMenuProps {
   isScrolled: boolean;
@@ -12,7 +17,7 @@ export const NavbarDesktopMenu: React.FC<NavbarDesktopMenuProps> = ({ isScrolled
   return (
     <div className="hidden md:flex items-center space-x-8">
       <nav className="flex items-center space-x-8">
-        {/* Navigation links */}
+        {/* Home link */}
         <Link
           to="/"
           className={cn(
@@ -23,16 +28,30 @@ export const NavbarDesktopMenu: React.FC<NavbarDesktopMenuProps> = ({ isScrolled
           HOME
         </Link>
         
-        <Link
-          to="/products"
-          className={cn(
-            'text-sm font-medium nav-link transition-colors',
-            isScrolled ? 'text-[#007041]' : 'text-[#007041]'
-          )}
-        >
-          PRODUCTS
-        </Link>
+        {/* Products Dropdown */}
+        <DropdownMenu>
+          <DropdownMenuTrigger 
+            className={cn(
+              'text-sm font-medium nav-link transition-colors outline-none',
+              isScrolled ? 'text-[#007041]' : 'text-[#007041]'
+            )}
+          >
+            PRODUCTS
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="bg-white">
+            <DropdownMenuItem className="cursor-pointer">
+              <Link to="/products/printing" className="w-full">PRINTING</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="cursor-pointer">
+              <Link to="/products/packaging" className="w-full">PACKAGING</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="cursor-pointer">
+              <Link to="/products/stationery" className="w-full">STATIONERY</Link>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
         
+        {/* Other navigation links */}
         <Link
           to="/about-us"
           className={cn(
