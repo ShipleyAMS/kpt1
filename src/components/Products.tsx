@@ -35,36 +35,90 @@ const Products = () => {
       title: "PRINTING",
       icon: <Printer className="h-12 w-12 mb-4 text-[#007041]" />,
       items: [
-        "Catalogues",
-        "Leaflets",
-        "Books",
-        "Bibles",
-        "Calendar",
-        "Game Cards",
-        "Greeting Cards",
-        "Tarot Cards",
-        "Jigsaw Puzzles"
+        {
+          name: "Catalogues",
+          description: "Professional product showcases with premium printing."
+        },
+        {
+          name: "Leaflets",
+          description: "Eye-catching promotional materials for effective marketing."
+        },
+        {
+          name: "Books",
+          description: "High-quality book printing with various binding options."
+        },
+        {
+          name: "Bibles",
+          description: "Premium bible printing with delicate papers and binding."
+        },
+        {
+          name: "Calendar",
+          description: "Custom calendars for promotional and personal use."
+        },
+        {
+          name: "Game Cards",
+          description: "Durable game cards with premium finishes."
+        },
+        {
+          name: "Greeting Cards",
+          description: "Personalized cards for every occasion."
+        },
+        {
+          name: "Tarot Cards",
+          description: "Specialized card printing with custom finishes."
+        },
+        {
+          name: "Jigsaw Puzzles",
+          description: "Custom puzzles with precise cutting and vibrant colors."
+        }
       ]
     },
     {
       title: "PACKAGING",
       icon: <Package className="h-12 w-12 mb-4 text-[#007041]" />,
       items: [
-        "Make-up Box",
-        "Jewelery Box",
-        "Gift Box",
-        "Wine Box",
-        "Wooden Box",
-        "Shopping Bag"
+        {
+          name: "Make-up Box",
+          description: "Elegant cosmetic packaging solutions."
+        },
+        {
+          name: "Jewelery Box",
+          description: "Premium jewelry presentation boxes."
+        },
+        {
+          name: "Gift Box",
+          description: "Custom gift boxes for special occasions."
+        },
+        {
+          name: "Wine Box",
+          description: "Elegant wine packaging and presentation boxes."
+        },
+        {
+          name: "Wooden Box",
+          description: "Premium wooden boxes with custom finishes."
+        },
+        {
+          name: "Shopping Bag",
+          description: "Custom retail bags with brand designs."
+        }
       ]
     },
     {
       title: "STATIONERY",
       icon: <PenTool className="h-12 w-12 mb-4 text-[#007041]" />,
       items: [
-        "Notebook",
-        "Journal",
-        "Planner"
+        {
+          name: "Notebook",
+          description: "Professional notebooks with custom designs."
+        },
+        {
+          name: "Journal",
+          description: "Premium journals with various paper options."
+        },
+        {
+          name: "Planner",
+          description: "Organizational planners for productivity."
+        }
       ]
     }
   ];
@@ -94,15 +148,24 @@ const Products = () => {
                 {category.icon}
                 <h3 className="text-xl font-bold text-[#007041]">{category.title}</h3>
               </div>
-              <ul className="space-y-2">
+              <div className="space-y-4">
                 {category.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="text-forest-600 hover:text-[#AA8066] transition-colors">
-                    <Link to={`/products/${item.toLowerCase().replace(/\s+/g, '-')}`}>
-                      {item}
-                    </Link>
-                  </li>
+                  <Link 
+                    key={itemIndex}
+                    to={`/products/${item.name.toLowerCase().replace(/\s+/g, '-')}`}
+                    className="block group"
+                  >
+                    <div className="p-3 rounded-lg hover:bg-[#F8F7F2] transition-colors">
+                      <div className="text-[#007041] font-medium group-hover:text-[#AA8066] transition-colors">
+                        {item.name}
+                      </div>
+                      <p className="text-sm text-gray-600 mt-1">
+                        {item.description}
+                      </p>
+                    </div>
+                  </Link>
                 ))}
-              </ul>
+              </div>
             </div>
           ))}
         </div>
