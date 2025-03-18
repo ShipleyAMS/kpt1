@@ -1,7 +1,8 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MessageSquare } from 'lucide-react';
+import { MessageSquare, ChevronDown, ChevronUp } from 'lucide-react';
+import { useState } from 'react';
 
 interface NavbarMobileMenuProps {
   isOpen: boolean;
@@ -9,7 +10,13 @@ interface NavbarMobileMenuProps {
 }
 
 export const NavbarMobileMenu: React.FC<NavbarMobileMenuProps> = ({ isOpen, onClose }) => {
+  const [productsOpen, setProductsOpen] = useState(false);
+
   if (!isOpen) return null;
+
+  const toggleProducts = () => {
+    setProductsOpen(!productsOpen);
+  };
 
   return (
     <div className="md:hidden bg-white/95 backdrop-blur-sm animate-fade-in max-h-[80vh] overflow-y-auto">
@@ -22,6 +29,43 @@ export const NavbarMobileMenu: React.FC<NavbarMobileMenuProps> = ({ isOpen, onCl
           >
             HOME
           </Link>
+          
+          {/* Products Dropdown */}
+          <div className="relative">
+            <button
+              className="flex items-center justify-between w-full text-[#007041] font-medium py-2 px-4 hover:bg-[#EAF3E8] rounded-md transition-colors"
+              onClick={toggleProducts}
+            >
+              <span>PRODUCTS</span>
+              {productsOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+            </button>
+            
+            {productsOpen && (
+              <div className="pl-4 mt-2 space-y-2">
+                <Link
+                  to="/products/printing"
+                  className="block text-[#007041] py-2 px-4 rounded-md hover:bg-[#EAF3E8] transition-colors"
+                  onClick={onClose}
+                >
+                  PRINTING
+                </Link>
+                <Link
+                  to="/products/packaging"
+                  className="block text-[#007041] py-2 px-4 rounded-md hover:bg-[#EAF3E8] transition-colors"
+                  onClick={onClose}
+                >
+                  PACKAGING
+                </Link>
+                <Link
+                  to="/products/stationery"
+                  className="block text-[#007041] py-2 px-4 rounded-md hover:bg-[#EAF3E8] transition-colors"
+                  onClick={onClose}
+                >
+                  STATIONERY
+                </Link>
+              </div>
+            )}
+          </div>
           
           <Link
             to="/about-us"

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { RequestQuoteButton } from './RequestQuoteButton';
+import { ProductsDropdown } from './ProductsDropdown';
 
 interface NavbarDesktopMenuProps {
   isScrolled: boolean;
@@ -21,6 +22,9 @@ export const NavbarDesktopMenu: React.FC<NavbarDesktopMenuProps> = ({ isScrolled
         >
           HOME
         </Link>
+        
+        {/* Products Dropdown */}
+        <ProductsDropdown isScrolled={isScrolled} />
         
         {/* Other navigation links */}
         <Link

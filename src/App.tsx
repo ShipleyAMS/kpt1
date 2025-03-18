@@ -8,6 +8,11 @@ import AboutUs from '@/pages/AboutUs';
 import TestimonialsPage from '@/pages/TestimonialsPage';
 import NotFound from '@/pages/NotFound';
 
+// Product Category Pages
+import PrintingPage from '@/pages/products/PrintingPage';
+import PackagingPage from '@/pages/products/PackagingPage';
+import StationeryPage from '@/pages/products/StationeryPage';
+
 // Product Pages
 import CataloguesPage from '@/pages/products/CataloguesPage';
 import LeafletsPage from '@/pages/products/LeafletsPage';
@@ -38,6 +43,11 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/testimonials" element={<TestimonialsPage />} />
+        
+        {/* Product Category Routes */}
+        <Route path="/products/printing" element={<PrintingPage />} />
+        <Route path="/products/packaging" element={<PackagingPage />} />
+        <Route path="/products/stationery" element={<StationeryPage />} />
         
         {/* Product routes */}
         <Route path="/products/catalogues" element={<CataloguesPage />} />
