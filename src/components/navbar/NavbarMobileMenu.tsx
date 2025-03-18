@@ -24,14 +24,6 @@ export const NavbarMobileMenu: React.FC<NavbarMobileMenuProps> = ({ isOpen, onCl
           </Link>
           
           <Link
-            to="/products"
-            className="text-[#007041] font-medium py-2 px-4 hover:bg-[#EAF3E8] rounded-md transition-colors"
-            onClick={onClose}
-          >
-            PRODUCTS
-          </Link>
-          
-          <Link
             to="/about-us"
             className="text-[#007041] font-medium py-2 px-4 hover:bg-[#EAF3E8] rounded-md transition-colors"
             onClick={onClose}

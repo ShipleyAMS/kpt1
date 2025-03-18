@@ -22,17 +22,6 @@ export const NavbarDesktopMenu: React.FC<NavbarDesktopMenuProps> = ({ isScrolled
           HOME
         </Link>
         
-        {/* Products link */}
-        <Link
-          to="/products"
-          className={cn(
-            'text-sm font-medium nav-link transition-colors',
-            isScrolled ? 'text-[#007041]' : 'text-[#007041]'
-          )}
-        >
-          PRODUCTS
-        </Link>
-        
         {/* Other navigation links */}
         <Link
           to="/about-us"
