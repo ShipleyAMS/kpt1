@@ -2,11 +2,13 @@
 import React, { useRef, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Printer, Package, BookOpen } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface ProductItem {
   name: string;
   icon?: React.ReactNode;
   image: string;
+  link: string;
 }
 
 const Products = () => {
@@ -19,15 +21,15 @@ const Products = () => {
       icon: <Printer className="h-8 w-8 text-[#007041] mb-2" />,
       image: "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png",
       products: [
-        { name: "Catalogues", image: "/placeholder.svg" },
-        { name: "Leaflets", image: "/placeholder.svg" },
-        { name: "Books", image: "/lovable-uploads/7dd0ed77-bef4-4667-88b1-5f8a749589f2.png" },
-        { name: "Bibles", image: "/lovable-uploads/b98f5f4b-72df-44dc-af9a-311dbd32d7b9.png" },
-        { name: "Calendar", image: "/lovable-uploads/513a1818-3b90-4839-979b-a7279d2b013e.png" },
-        { name: "Game Cards", image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png" },
-        { name: "Greeting Cards", image: "/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png" },
-        { name: "Tarot Cards", image: "/placeholder.svg" },
-        { name: "Jigsaw Puzzles", image: "/placeholder.svg" },
+        { name: "Catalogues", image: "/placeholder.svg", link: "/products/catalogues" },
+        { name: "Leaflets", image: "/placeholder.svg", link: "/products/leaflets" },
+        { name: "Books", image: "/lovable-uploads/7dd0ed77-bef4-4667-88b1-5f8a749589f2.png", link: "/products/books" },
+        { name: "Bibles", image: "/lovable-uploads/b98f5f4b-72df-44dc-af9a-311dbd32d7b9.png", link: "/products/bibles" },
+        { name: "Calendar", image: "/lovable-uploads/513a1818-3b90-4839-979b-a7279d2b013e.png", link: "/products/calendar" },
+        { name: "Game Cards", image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png", link: "/products/game-cards" },
+        { name: "Greeting Cards", image: "/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png", link: "/products/greeting-cards" },
+        { name: "Tarot Cards", image: "/placeholder.svg", link: "/products/tarot-cards" },
+        { name: "Jigsaw Puzzles", image: "/placeholder.svg", link: "/products/jigsaw-puzzles" },
       ]
     },
     {
@@ -35,12 +37,12 @@ const Products = () => {
       icon: <Package className="h-8 w-8 text-[#007041] mb-2" />,
       image: "/lovable-uploads/ec48376c-2d1f-499d-a57d-da6f1b634ac2.png",
       products: [
-        { name: "Make-up Box", image: "/lovable-uploads/212a47c2-8686-42ba-aa2e-94eea5da96bc.png" },
-        { name: "Jewelery Box", image: "/lovable-uploads/b9086efc-629a-47ed-8b95-068140735132.png" },
-        { name: "Gift Box", image: "/lovable-uploads/9ac49b3f-55f6-4fd1-a2f8-de698f05988c.png" },
-        { name: "Wine Box", image: "/lovable-uploads/7d6d05ad-2a4e-49fa-b367-5206277f9e19.png" },
-        { name: "Wooden Box", image: "/lovable-uploads/9821a74b-7319-4c79-bf2b-8e28872a8561.png" },
-        { name: "Shopping Bag", image: "/lovable-uploads/6806d7dc-b1b9-4350-a861-2e3bfd62ae75.png" },
+        { name: "Make-up Boxes", image: "/lovable-uploads/212a47c2-8686-42ba-aa2e-94eea5da96bc.png", link: "/products/makeup-boxes" },
+        { name: "Jewelery Boxes", image: "/lovable-uploads/b9086efc-629a-47ed-8b95-068140735132.png", link: "/products/jewelery-boxes" },
+        { name: "Gift Boxes", image: "/lovable-uploads/9ac49b3f-55f6-4fd1-a2f8-de698f05988c.png", link: "/products/gift-boxes" },
+        { name: "Wine Boxes", image: "/lovable-uploads/7d6d05ad-2a4e-49fa-b367-5206277f9e19.png", link: "/products/wine-boxes" },
+        { name: "Wooden Boxes", image: "/lovable-uploads/9821a74b-7319-4c79-bf2b-8e28872a8561.png", link: "/products/wooden-boxes" },
+        { name: "Shopping Bags", image: "/lovable-uploads/6806d7dc-b1b9-4350-a861-2e3bfd62ae75.png", link: "/products/shopping-bags" },
       ]
     },
     {
@@ -48,9 +50,9 @@ const Products = () => {
       icon: <BookOpen className="h-8 w-8 text-[#007041] mb-2" />,
       image: "/lovable-uploads/e3399284-14ec-4e5a-9139-92cd61ed0d70.png",
       products: [
-        { name: "Notebook", image: "/placeholder.svg" },
-        { name: "Journal", image: "/lovable-uploads/0b092d75-12e1-469a-8aee-6e42bf1cdb30.png" },
-        { name: "Planner", image: "/placeholder.svg" },
+        { name: "Notebooks", image: "/placeholder.svg", link: "/products/notebooks" },
+        { name: "Journals", image: "/lovable-uploads/0b092d75-12e1-469a-8aee-6e42bf1cdb30.png", link: "/products/journals" },
+        { name: "Planners", image: "/placeholder.svg", link: "/products/planners" },
       ]
     }
   ];
@@ -103,7 +105,7 @@ const Products = () => {
                     <img 
                       src={category.image} 
                       alt={category.name} 
-                      className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105" 
+                      className="w-full h-full object-cover" 
                     />
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
@@ -113,12 +115,13 @@ const Products = () => {
                     </div>
                     <div className="grid grid-cols-2 gap-2 mt-4">
                       {category.products.map((product, idx) => (
-                        <div 
+                        <Link 
                           key={idx}
+                          to={product.link}
                           className="bg-[#EAF3E8] p-3 rounded-md hover:bg-[#d9ead2] cursor-pointer transition-colors text-center text-sm font-medium text-[#007041]"
                         >
                           {product.name}
-                        </div>
+                        </Link>
                       ))}
                     </div>
                   </div>
