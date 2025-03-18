@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -28,45 +29,6 @@ const Products = () => {
     };
   }, []);
 
-  const categories = [
-    {
-      title: "PRINTING",
-      image: "/lovable-uploads/52d60be2-0fad-48e1-b8cf-fb89e84b8024.png",
-      items: [
-        "Catalogues",
-        "Leaflets",
-        "Books",
-        "Bibles",
-        "Calendar",
-        "Game Cards",
-        "Greeting Cards",
-        "Tarot Cards",
-        "Jigsaw Puzzles"
-      ]
-    },
-    {
-      title: "PACKAGING",
-      image: "/lovable-uploads/42a79d26-50fc-4ec6-9437-c89c30bd03f1.png",
-      items: [
-        "Make-up Box",
-        "Jewelery Box",
-        "Gift Box",
-        "Wine Box",
-        "Wooden Box",
-        "Shopping Bag"
-      ]
-    },
-    {
-      title: "STATIONERY",
-      image: "/lovable-uploads/eb8f5372-488f-44f7-9708-e97b95d40294.png",
-      items: [
-        "Notebook",
-        "Journal",
-        "Planner"
-      ]
-    }
-  ];
-
   return (
     <section id="products" className="py-16 bg-[#F8F7F2]">
       <div className="container mx-auto px-4">
@@ -77,47 +39,20 @@ const Products = () => {
 
         <div 
           ref={sectionRef}
-          className="opacity-0 transition-opacity duration-1000 grid md:grid-cols-3 gap-8 mt-10"
+          className="opacity-0 transition-opacity duration-1000 max-w-3xl mx-auto text-center"
         >
-          {categories.map((category, index) => (
-            <div 
-              key={index}
-              className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
-            >
-              <div className="relative h-52 overflow-hidden">
-                <img 
-                  src={category.image} 
-                  alt={category.title} 
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black/50 flex items-center justify-center group-hover:bg-black/40 transition-colors">
-                  <h3 className="text-3xl font-bold text-white tracking-wider">{category.title}</h3>
-                </div>
-              </div>
-              
-              <div className="p-6">
-                <div className="grid grid-cols-2 gap-4">
-                  {category.items.map((item, itemIndex) => (
-                    <Link 
-                      key={itemIndex}
-                      to={`/products/${item.toLowerCase().replace(/\s+/g, '-')}`}
-                      className="px-4 py-2.5 rounded-md bg-[#F8F7F2] hover:bg-[#007041] hover:text-white transition-all duration-300 text-[#007041] text-sm font-medium text-center transform hover:-translate-y-1"
-                    >
-                      {item}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-14 text-center">
+          <div className="prose prose-lg text-forest-700 mx-auto mb-8">
+            <p>
+              We offer a comprehensive range of high-quality printing and packaging solutions. 
+              Visit our products page to explore our full catalog of offerings.
+            </p>
+          </div>
+          
           <Link 
-            to="/#contact" 
+            to="/products" 
             className="inline-flex items-center px-8 py-4 bg-[#AA8066] text-white rounded-md font-medium hover:bg-[#96705a] transition-all duration-300 text-lg transform hover:-translate-y-1"
           >
-            Request Custom Quote
+            View All Products
           </Link>
         </div>
       </div>
