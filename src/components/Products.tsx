@@ -1,16 +1,10 @@
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import CategorySelector from './products/CategorySelector';
-import ProductsGrid from './products/ProductsGrid';
-import { products, categories, filterProductsByCategory } from './products/productData';
+import { Printer, Package, PenTool } from 'lucide-react';
 
 const Products = () => {
-  const [activeCategory, setActiveCategory] = useState<string>('all');
   const sectionRef = useRef<HTMLDivElement>(null);
-  
-  // Filter products based on active category
-  const filteredProducts = filterProductsByCategory(products, activeCategory);
 
   // Scroll animation
   useEffect(() => {
@@ -36,6 +30,45 @@ const Products = () => {
     };
   }, []);
 
+  const categories = [
+    {
+      title: "PRINTING",
+      icon: <Printer className="h-12 w-12 mb-4 text-[#007041]" />,
+      items: [
+        "Catalogues",
+        "Leaflets",
+        "Books",
+        "Bibles",
+        "Calendar",
+        "Game Cards",
+        "Greeting Cards",
+        "Tarot Cards",
+        "Jigsaw Puzzles"
+      ]
+    },
+    {
+      title: "PACKAGING",
+      icon: <Package className="h-12 w-12 mb-4 text-[#007041]" />,
+      items: [
+        "Make-up Box",
+        "Jewelery Box",
+        "Gift Box",
+        "Wine Box",
+        "Wooden Box",
+        "Shopping Bag"
+      ]
+    },
+    {
+      title: "STATIONERY",
+      icon: <PenTool className="h-12 w-12 mb-4 text-[#007041]" />,
+      items: [
+        "Notebook",
+        "Journal",
+        "Planner"
+      ]
+    }
+  ];
+
   return (
     <section id="products" className="py-16 bg-[#F8F7F2]">
       <div className="container mx-auto px-4">
@@ -48,26 +81,33 @@ const Products = () => {
           </p>
         </div>
 
-        <CategorySelector 
-          categories={categories} 
-          activeCategory={activeCategory} 
-          setActiveCategory={setActiveCategory} 
-        />
-
         <div 
           ref={sectionRef}
-          className="opacity-0 transition-opacity duration-1000 mt-10"
+          className="opacity-0 transition-opacity duration-1000 grid md:grid-cols-3 gap-8 mt-10"
         >
-          <ProductsGrid products={filteredProducts} />
+          {categories.map((category, index) => (
+            <div 
+              key={index}
+              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            >
+              <div className="text-center mb-6">
+                {category.icon}
+                <h3 className="text-xl font-bold text-[#007041]">{category.title}</h3>
+              </div>
+              <ul className="space-y-2">
+                {category.items.map((item, itemIndex) => (
+                  <li key={itemIndex} className="text-forest-600 hover:text-[#AA8066] transition-colors">
+                    <Link to={`/products/${item.toLowerCase().replace(/\s+/g, '-')}`}>
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         <div className="mt-14 text-center">
-          <Link 
-            to="/products" 
-            className="inline-flex items-center px-6 py-3 bg-[#007041] text-white rounded-md font-medium hover:bg-[#007041]/90 transition-colors mr-4"
-          >
-            View All Products
-          </Link>
           <Link 
             to="/#contact" 
             className="inline-flex items-center px-6 py-3 bg-[#AA8066] text-white rounded-md font-medium hover:bg-[#96705a] transition-colors"

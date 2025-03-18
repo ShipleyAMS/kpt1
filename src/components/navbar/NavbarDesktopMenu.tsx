@@ -1,14 +1,7 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
-import { 
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
-import { ProductsDropdownContent } from './ProductsDropdownContent';
 import { RequestQuoteButton } from './RequestQuoteButton';
 
 interface NavbarDesktopMenuProps {
@@ -19,7 +12,7 @@ export const NavbarDesktopMenu: React.FC<NavbarDesktopMenuProps> = ({ isScrolled
   return (
     <div className="hidden md:flex items-center space-x-8">
       <nav className="flex items-center space-x-8">
-        {/* Home link */}
+        {/* Navigation links */}
         <Link
           to="/"
           className={cn(
@@ -30,22 +23,16 @@ export const NavbarDesktopMenu: React.FC<NavbarDesktopMenuProps> = ({ isScrolled
           HOME
         </Link>
         
-        {/* Products Navigation Menu */}
-        <NavigationMenu>
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className={cn(
-                'text-sm font-medium transition-colors',
-                isScrolled ? 'text-[#007041]' : 'text-[#007041]'
-              )}>PRODUCTS</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ProductsDropdownContent />
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+        <Link
+          to="/products"
+          className={cn(
+            'text-sm font-medium nav-link transition-colors',
+            isScrolled ? 'text-[#007041]' : 'text-[#007041]'
+          )}
+        >
+          PRODUCTS
+        </Link>
         
-        {/* Other navigation links */}
         <Link
           to="/about-us"
           className={cn(
@@ -55,6 +42,7 @@ export const NavbarDesktopMenu: React.FC<NavbarDesktopMenuProps> = ({ isScrolled
         >
           ABOUT US
         </Link>
+        
         <Link
           to="/testimonials"
           className={cn(
@@ -64,6 +52,7 @@ export const NavbarDesktopMenu: React.FC<NavbarDesktopMenuProps> = ({ isScrolled
         >
           TESTIMONIALS
         </Link>
+        
         <Link
           to="/#contact"
           className={cn(
@@ -75,7 +64,6 @@ export const NavbarDesktopMenu: React.FC<NavbarDesktopMenuProps> = ({ isScrolled
         </Link>
       </nav>
       
-      {/* Request Custom Quote Button */}
       <RequestQuoteButton />
     </div>
   );
