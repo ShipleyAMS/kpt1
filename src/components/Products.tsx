@@ -25,7 +25,7 @@ const Products = () => {
         { name: "Leaflets", image: "/placeholder.svg", link: "/products/leaflets" },
         { name: "Books", image: "/lovable-uploads/7dd0ed77-bef4-4667-88b1-5f8a749589f2.png", link: "/products/books" },
         { name: "Bibles", image: "/lovable-uploads/b98f5f4b-72df-44dc-af9a-311dbd32d7b9.png", link: "/products/bibles" },
-        { name: "Calendar", image: "/lovable-uploads/513a1818-3b90-4839-979b-a7279d2b013e.png", link: "/products/calendar" },
+        { name: "Calendars", image: "/lovable-uploads/513a1818-3b90-4839-979b-a7279d2b013e.png", link: "/products/calendar" },
         { name: "Game Cards", image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png", link: "/products/game-cards" },
         { name: "Greeting Cards", image: "/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png", link: "/products/greeting-cards" },
         { name: "Tarot Cards", image: "/placeholder.svg", link: "/products/tarot-cards" },

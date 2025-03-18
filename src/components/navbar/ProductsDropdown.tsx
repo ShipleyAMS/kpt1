@@ -35,27 +35,18 @@ export const ProductsDropdown: React.FC<ProductsDropdownProps> = ({ isScrolled }
                 className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-white p-4 text-sm font-medium transition-colors hover:bg-[#EAF3E8]"
               >
                 <div className="text-sm font-medium text-[#007041] group-hover:text-[#007041]/80">PRINTING</div>
-                <div className="text-xs leading-tight text-muted-foreground group-hover:text-[#007041]/80">
-                  Catalogues, books, cards & more
-                </div>
               </Link>
               <Link
                 to="/products/packaging"
                 className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-white p-4 text-sm font-medium transition-colors hover:bg-[#EAF3E8]"
               >
                 <div className="text-sm font-medium text-[#007041] group-hover:text-[#007041]/80">PACKAGING</div>
-                <div className="text-xs leading-tight text-muted-foreground group-hover:text-[#007041]/80">
-                  Boxes, bags & premium packaging
-                </div>
               </Link>
               <Link
                 to="/products/stationery"
                 className="group grid h-auto w-full items-center justify-start gap-1 rounded-md bg-white p-4 text-sm font-medium transition-colors hover:bg-[#EAF3E8]"
               >
                 <div className="text-sm font-medium text-[#007041] group-hover:text-[#007041]/80">STATIONERY</div>
-                <div className="text-xs leading-tight text-muted-foreground group-hover:text-[#007041]/80">
-                  Notebooks, journals & planners
-                </div>
               </Link>
             </div>
           </NavigationMenuContent>
