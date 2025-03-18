@@ -1,6 +1,5 @@
-
 import React, { useEffect, useRef } from 'react';
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/Footer';
 import { MapPin, Users, Award, Briefcase, Factory, BookOpen, Globe, Shield } from 'lucide-react';
 

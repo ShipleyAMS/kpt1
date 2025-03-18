@@ -1,6 +1,5 @@
-
 import React from 'react';
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/navbar/Navbar';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
