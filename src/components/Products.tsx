@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Printer, Package, PenTool } from 'lucide-react';
@@ -34,91 +33,40 @@ const Products = () => {
     {
       title: "PRINTING",
       icon: <Printer className="h-12 w-12 mb-4 text-[#007041]" />,
+      image: "/lovable-uploads/52d60be2-0fad-48e1-b8cf-fb89e84b8024.png",
       items: [
-        {
-          name: "Catalogues",
-          description: "Professional product showcases with premium printing."
-        },
-        {
-          name: "Leaflets",
-          description: "Eye-catching promotional materials for effective marketing."
-        },
-        {
-          name: "Books",
-          description: "High-quality book printing with various binding options."
-        },
-        {
-          name: "Bibles",
-          description: "Premium bible printing with delicate papers and binding."
-        },
-        {
-          name: "Calendar",
-          description: "Custom calendars for promotional and personal use."
-        },
-        {
-          name: "Game Cards",
-          description: "Durable game cards with premium finishes."
-        },
-        {
-          name: "Greeting Cards",
-          description: "Personalized cards for every occasion."
-        },
-        {
-          name: "Tarot Cards",
-          description: "Specialized card printing with custom finishes."
-        },
-        {
-          name: "Jigsaw Puzzles",
-          description: "Custom puzzles with precise cutting and vibrant colors."
-        }
+        "Catalogues",
+        "Leaflets",
+        "Books",
+        "Bibles",
+        "Calendar",
+        "Game Cards",
+        "Greeting Cards",
+        "Tarot Cards",
+        "Jigsaw Puzzles"
       ]
     },
     {
       title: "PACKAGING",
       icon: <Package className="h-12 w-12 mb-4 text-[#007041]" />,
+      image: "/lovable-uploads/42a79d26-50fc-4ec6-9437-c89c30bd03f1.png",
       items: [
-        {
-          name: "Make-up Box",
-          description: "Elegant cosmetic packaging solutions."
-        },
-        {
-          name: "Jewelery Box",
-          description: "Premium jewelry presentation boxes."
-        },
-        {
-          name: "Gift Box",
-          description: "Custom gift boxes for special occasions."
-        },
-        {
-          name: "Wine Box",
-          description: "Elegant wine packaging and presentation boxes."
-        },
-        {
-          name: "Wooden Box",
-          description: "Premium wooden boxes with custom finishes."
-        },
-        {
-          name: "Shopping Bag",
-          description: "Custom retail bags with brand designs."
-        }
+        "Make-up Box",
+        "Jewelery Box",
+        "Gift Box",
+        "Wine Box",
+        "Wooden Box",
+        "Shopping Bag"
       ]
     },
     {
       title: "STATIONERY",
       icon: <PenTool className="h-12 w-12 mb-4 text-[#007041]" />,
+      image: "/lovable-uploads/eb8f5372-488f-44f7-9708-e97b95d40294.png",
       items: [
-        {
-          name: "Notebook",
-          description: "Professional notebooks with custom designs."
-        },
-        {
-          name: "Journal",
-          description: "Premium journals with various paper options."
-        },
-        {
-          name: "Planner",
-          description: "Organizational planners for productivity."
-        }
+        "Notebook",
+        "Journal",
+        "Planner"
       ]
     }
   ];
@@ -129,10 +77,6 @@ const Products = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#007041]">Our Products</h2>
           <div className="mt-2 h-1 w-24 bg-[#007041] mx-auto rounded-full"></div>
-          <p className="mt-5 text-forest-600 max-w-2xl mx-auto">
-            Discover our comprehensive range of high-quality printing and packaging solutions,
-            crafted with precision and attention to detail.
-          </p>
         </div>
 
         <div 
@@ -142,29 +86,34 @@ const Products = () => {
           {categories.map((category, index) => (
             <div 
               key={index}
-              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
             >
-              <div className="text-center mb-6">
-                {category.icon}
-                <h3 className="text-xl font-bold text-[#007041]">{category.title}</h3>
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={category.image} 
+                  alt={category.title} 
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                  <div className="text-center">
+                    {category.icon}
+                    <h3 className="text-xl font-bold text-white">{category.title}</h3>
+                  </div>
+                </div>
               </div>
-              <div className="space-y-4">
-                {category.items.map((item, itemIndex) => (
-                  <Link 
-                    key={itemIndex}
-                    to={`/products/${item.name.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="block group"
-                  >
-                    <div className="p-3 rounded-lg hover:bg-[#F8F7F2] transition-colors">
-                      <div className="text-[#007041] font-medium group-hover:text-[#AA8066] transition-colors">
-                        {item.name}
-                      </div>
-                      <p className="text-sm text-gray-600 mt-1">
-                        {item.description}
-                      </p>
-                    </div>
-                  </Link>
-                ))}
+              
+              <div className="p-6">
+                <div className="grid grid-cols-2 gap-3">
+                  {category.items.map((item, itemIndex) => (
+                    <Link 
+                      key={itemIndex}
+                      to={`/products/${item.toLowerCase().replace(/\s+/g, '-')}`}
+                      className="px-3 py-2 rounded-md hover:bg-[#F8F7F2] transition-colors text-[#007041] hover:text-[#AA8066] text-sm font-medium"
+                    >
+                      {item}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
