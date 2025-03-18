@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Printer, Package, PenTool } from 'lucide-react';
 
 const Products = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -32,7 +31,6 @@ const Products = () => {
   const categories = [
     {
       title: "PRINTING",
-      icon: <Printer className="h-12 w-12 mb-4 text-[#007041]" />,
       image: "/lovable-uploads/52d60be2-0fad-48e1-b8cf-fb89e84b8024.png",
       items: [
         "Catalogues",
@@ -48,7 +46,6 @@ const Products = () => {
     },
     {
       title: "PACKAGING",
-      icon: <Package className="h-12 w-12 mb-4 text-[#007041]" />,
       image: "/lovable-uploads/42a79d26-50fc-4ec6-9437-c89c30bd03f1.png",
       items: [
         "Make-up Box",
@@ -61,7 +58,6 @@ const Products = () => {
     },
     {
       title: "STATIONERY",
-      icon: <PenTool className="h-12 w-12 mb-4 text-[#007041]" />,
       image: "/lovable-uploads/eb8f5372-488f-44f7-9708-e97b95d40294.png",
       items: [
         "Notebook",
@@ -88,27 +84,24 @@ const Products = () => {
               key={index}
               className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-52 overflow-hidden">
                 <img 
                   src={category.image} 
                   alt={category.title} 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                  <div className="text-center">
-                    {category.icon}
-                    <h3 className="text-xl font-bold text-white">{category.title}</h3>
-                  </div>
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center group-hover:bg-black/40 transition-colors">
+                  <h3 className="text-3xl font-bold text-white tracking-wider">{category.title}</h3>
                 </div>
               </div>
               
               <div className="p-6">
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-2 gap-4">
                   {category.items.map((item, itemIndex) => (
                     <Link 
                       key={itemIndex}
                       to={`/products/${item.toLowerCase().replace(/\s+/g, '-')}`}
-                      className="px-3 py-2 rounded-md hover:bg-[#F8F7F2] transition-colors text-[#007041] hover:text-[#AA8066] text-sm font-medium"
+                      className="px-4 py-2.5 rounded-md bg-[#F8F7F2] hover:bg-[#007041] hover:text-white transition-all duration-300 text-[#007041] text-sm font-medium text-center transform hover:-translate-y-1"
                     >
                       {item}
                     </Link>
@@ -122,7 +115,7 @@ const Products = () => {
         <div className="mt-14 text-center">
           <Link 
             to="/#contact" 
-            className="inline-flex items-center px-6 py-3 bg-[#AA8066] text-white rounded-md font-medium hover:bg-[#96705a] transition-colors"
+            className="inline-flex items-center px-8 py-4 bg-[#AA8066] text-white rounded-md font-medium hover:bg-[#96705a] transition-all duration-300 text-lg transform hover:-translate-y-1"
           >
             Request Custom Quote
           </Link>
