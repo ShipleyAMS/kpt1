@@ -1,3 +1,4 @@
+
 import { Product, Category } from './types';
 
 export const products: Product[] = [
@@ -95,7 +96,7 @@ export const products: Product[] = [
   {
     id: 12,
     name: "Wooden Box",
-    image: "/lovable-uploads/9821a74b-7319-4c79-bf2b-8e28872a8561.png",
+    image: "/lovable-uploads/33abf773-6299-4658-aea2-6515350a7907.png",
     description: "Luxurious wooden boxes with custom engraving and premium finishes.",
     link: "/products/wooden-boxes"
   },
