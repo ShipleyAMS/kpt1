@@ -23,7 +23,7 @@ import GameCardsPage from '@/pages/products/GameCardsPage';
 import GreetingCardsPage from '@/pages/products/GreetingCardsPage';
 import TarotCardsPage from '@/pages/products/TarotCardsPage';
 import JigsawPuzzlesPage from '@/pages/products/JigsawPuzzlesPage';
-import MakeupBoxesPage from '@/pages/products/MakeupBoxesPage';
+import CosmeticBoxesPage from '@/pages/products/CosmeticBoxesPage';
 import JeweleryBoxesPage from '@/pages/products/JeweleryBoxesPage';
 import GiftBoxesPage from '@/pages/products/GiftBoxesPage';
 import GiftBagsPage from '@/pages/products/GiftBagsPage';
@@ -62,7 +62,7 @@ function App() {
         <Route path="/products/tarot-cards" element={<TarotCardsPage />} />
         <Route path="/products/jigsaw-puzzles" element={<JigsawPuzzlesPage />} />
         
-        <Route path="/products/makeup-boxes" element={<MakeupBoxesPage />} />
+        <Route path="/products/cosmetic-boxes" element={<CosmeticBoxesPage />} />
         <Route path="/products/jewelery-boxes" element={<JeweleryBoxesPage />} />
         <Route path="/products/gift-boxes" element={<GiftBoxesPage />} />
         <Route path="/products/gift-bags" element={<GiftBagsPage />} />
