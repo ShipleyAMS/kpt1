@@ -39,9 +39,9 @@ export const products: Product[] = [
   },
   {
     id: 6,
-    name: "Gift Box",
-    image: "/lovable-uploads/9ac49b3f-55f6-4fd1-a2f8-de698f05988c.png",
-    description: "Custom gift boxes with precise die-cutting and premium finishes.",
+    name: "Product Packaging",
+    image: "/lovable-uploads/4a00c030-1150-4412-9bd5-501f1c8882a8.png",
+    description: "Custom product packaging with precise die-cutting and premium finishes.",
     link: "/products/gift-boxes"
   },
   {
@@ -176,7 +176,7 @@ export const filterProductsByCategory = (products: Product[], categoryId: string
   
   if (categoryId === 'packaging') {
     return products.filter(product => 
-      ['Jewelry Box', 'Gift Box', 'Gift Bag', 'Wine Box', 'Wooden Box', 'Cosmetic Box', 'Fragrance Box', 'Watch Box'].includes(product.name)
+      ['Jewelry Box', 'Product Packaging', 'Gift Bag', 'Wine Box', 'Wooden Box', 'Cosmetic Box', 'Fragrance Box', 'Watch Box'].includes(product.name)
     );
   }
   
