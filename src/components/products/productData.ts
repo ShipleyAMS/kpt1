@@ -1,4 +1,3 @@
-
 import { Product, Category } from './types';
 
 export const products: Product[] = [
@@ -67,10 +66,10 @@ export const products: Product[] = [
   },
   {
     id: 10,
-    name: "Shopping Bag",
+    name: "Gift Bag",
     image: "/lovable-uploads/6806d7dc-b1b9-4350-a861-2e3bfd62ae75.png",
-    description: "Durable and stylish shopping bags with custom designs.",
-    link: "/products/shopping-bags"
+    description: "Elegant gift bags for special occasions with premium finishes.",
+    link: "/products/gift-bags"
   },
   {
     id: 11,
@@ -134,6 +133,20 @@ export const products: Product[] = [
     image: "/placeholder.svg",
     description: "Professional catalogues with high-quality printing and binding options.",
     link: "/products/catalogues"
+  },
+  {
+    id: 20,
+    name: "Fragrance Box",
+    image: "/placeholder.svg",
+    description: "Luxurious packaging solutions for perfumes and fragrances.",
+    link: "/products/fragrance-boxes"
+  },
+  {
+    id: 21,
+    name: "Watch Box",
+    image: "/placeholder.svg",
+    description: "Elegant boxes designed specifically for premium watches and timepieces.",
+    link: "/products/watch-boxes"
   }
 ];
 
@@ -162,7 +175,7 @@ export const filterProductsByCategory = (products: Product[], categoryId: string
   
   if (categoryId === 'packaging') {
     return products.filter(product => 
-      ['Jewelry Box', 'Gift Box', 'Shopping Bag', 'Wine Box', 'Wooden Box', 'Make-up Box', 'Gift Bag'].includes(product.name)
+      ['Jewelry Box', 'Gift Box', 'Gift Bag', 'Wine Box', 'Wooden Box', 'Make-up Box', 'Fragrance Box', 'Watch Box'].includes(product.name)
     );
   }
   

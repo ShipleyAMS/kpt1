@@ -26,9 +26,11 @@ import JigsawPuzzlesPage from '@/pages/products/JigsawPuzzlesPage';
 import MakeupBoxesPage from '@/pages/products/MakeupBoxesPage';
 import JeweleryBoxesPage from '@/pages/products/JeweleryBoxesPage';
 import GiftBoxesPage from '@/pages/products/GiftBoxesPage';
+import GiftBagsPage from '@/pages/products/GiftBagsPage';
 import WineBoxesPage from '@/pages/products/WineBoxesPage';
 import WoodenBoxesPage from '@/pages/products/WoodenBoxesPage';
-import ShoppingBagsPage from '@/pages/products/ShoppingBagsPage';
+import FragranceBoxesPage from '@/pages/products/FragranceBoxesPage';
+import WatchBoxesPage from '@/pages/products/WatchBoxesPage';
 import NotebooksPage from '@/pages/products/NotebooksPage';
 import JournalsPage from '@/pages/products/JournalsPage';
 import PlannersPage from '@/pages/products/PlannersPage';
@@ -63,9 +65,11 @@ function App() {
         <Route path="/products/makeup-boxes" element={<MakeupBoxesPage />} />
         <Route path="/products/jewelery-boxes" element={<JeweleryBoxesPage />} />
         <Route path="/products/gift-boxes" element={<GiftBoxesPage />} />
+        <Route path="/products/gift-bags" element={<GiftBagsPage />} />
         <Route path="/products/wine-boxes" element={<WineBoxesPage />} />
         <Route path="/products/wooden-boxes" element={<WoodenBoxesPage />} />
-        <Route path="/products/shopping-bags" element={<ShoppingBagsPage />} />
+        <Route path="/products/fragrance-boxes" element={<FragranceBoxesPage />} />
+        <Route path="/products/watch-boxes" element={<WatchBoxesPage />} />
         
         <Route path="/products/notebooks" element={<NotebooksPage />} />
         <Route path="/products/journals" element={<JournalsPage />} />

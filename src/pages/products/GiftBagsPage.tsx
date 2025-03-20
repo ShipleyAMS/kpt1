@@ -2,11 +2,11 @@
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
-const ShoppingBagsPage = () => {
+const GiftBagsPage = () => {
   return (
     <ProductDetailLayout
-      title="Shopping Bags"
-      description="Our premium shopping bags combine durability with elegant design. Available in paper, fabric, and eco-friendly materials, these bags feature reinforced handles, custom printing, and various finish options - perfect for retail, events, or promotional purposes."
+      title="Gift Bags"
+      description="Our premium gift bags combine durability with elegant design. Available in paper, fabric, and eco-friendly materials, these bags feature reinforced handles, custom printing, and various finish options - perfect for retail, events, or promotional purposes."
       images={["/lovable-uploads/6806d7dc-b1b9-4350-a861-2e3bfd62ae75.png", "/lovable-uploads/ec48376c-2d1f-499d-a57d-da6f1b634ac2.png"]}
       specifications={[
         { name: "Materials", description: "Kraft, Art paper, Cotton, Jute, Eco-friendly options" },
@@ -41,4 +41,4 @@ const ShoppingBagsPage = () => {
   );
 };
 
-export default ShoppingBagsPage;
+export default GiftBagsPage;
