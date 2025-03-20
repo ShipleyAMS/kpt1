@@ -1,3 +1,4 @@
+
 import { Product, Category } from './types';
 
 export const products: Product[] = [
@@ -24,8 +25,8 @@ export const products: Product[] = [
   },
   {
     id: 4,
-    name: "Make-up Box",
-    image: "/lovable-uploads/212a47c2-8686-42ba-aa2e-94eea5da96bc.png",
+    name: "Cosmetic Box",
+    image: "/lovable-uploads/b6e8fc28-653d-4228-9fa9-b1b99a5a25aa.png",
     description: "Elegant cosmetic boxes with premium finishes and secure closures.",
     link: "/products/cosmetic-boxes"
   },
@@ -175,7 +176,7 @@ export const filterProductsByCategory = (products: Product[], categoryId: string
   
   if (categoryId === 'packaging') {
     return products.filter(product => 
-      ['Jewelry Box', 'Gift Box', 'Gift Bag', 'Wine Box', 'Wooden Box', 'Make-up Box', 'Fragrance Box', 'Watch Box'].includes(product.name)
+      ['Jewelry Box', 'Gift Box', 'Gift Bag', 'Wine Box', 'Wooden Box', 'Cosmetic Box', 'Fragrance Box', 'Watch Box'].includes(product.name)
     );
   }
   

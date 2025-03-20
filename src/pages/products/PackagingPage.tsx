@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
@@ -6,7 +7,7 @@ import { Package } from 'lucide-react';
 
 const PackagingPage = () => {
   const packagingProducts = [
-    { name: "Make-up Boxes", image: "/lovable-uploads/212a47c2-8686-42ba-aa2e-94eea5da96bc.png", link: "/products/makeup-boxes" },
+    { name: "Cosmetic Boxes", image: "/lovable-uploads/b6e8fc28-653d-4228-9fa9-b1b99a5a25aa.png", link: "/products/cosmetic-boxes" },
     { name: "Jewelery Boxes", image: "/lovable-uploads/b9086efc-629a-47ed-8b95-068140735132.png", link: "/products/jewelery-boxes" },
     { name: "Fragrance Boxes", image: "/placeholder.svg", link: "/products/fragrance-boxes" },
     { name: "Watch Boxes", image: "/lovable-uploads/faafb5be-1211-4112-a124-756086434ba0.png", link: "/products/watch-boxes" },
