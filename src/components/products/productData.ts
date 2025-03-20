@@ -54,7 +54,7 @@ export const products: Product[] = [
   {
     id: 8,
     name: "Jewelry Box",
-    image: "/lovable-uploads/b9086efc-629a-47ed-8b95-068140735132.png",
+    image: "/lovable-uploads/bd0c61b8-a405-4055-954d-857f892c3b15.png",
     description: "Customized jewelry boxes with bespoke designs and premium materials.",
     link: "/products/jewelery-boxes"
   },

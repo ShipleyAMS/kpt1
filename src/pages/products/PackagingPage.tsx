@@ -8,7 +8,7 @@ import { Package } from 'lucide-react';
 const PackagingPage = () => {
   const packagingProducts = [
     { name: "Cosmetic Boxes", image: "/lovable-uploads/b6e8fc28-653d-4228-9fa9-b1b99a5a25aa.png", link: "/products/cosmetic-boxes" },
-    { name: "Jewelery Boxes", image: "/lovable-uploads/b9086efc-629a-47ed-8b95-068140735132.png", link: "/products/jewelery-boxes" },
+    { name: "Jewelery Boxes", image: "/lovable-uploads/bd0c61b8-a405-4055-954d-857f892c3b15.png", link: "/products/jewelery-boxes" },
     { name: "Fragrance Boxes", image: "/placeholder.svg", link: "/products/fragrance-boxes" },
     { name: "Watch Boxes", image: "/lovable-uploads/faafb5be-1211-4112-a124-756086434ba0.png", link: "/products/watch-boxes" },
     { name: "Gift Boxes", image: "/lovable-uploads/9ac49b3f-55f6-4fd1-a2f8-de698f05988c.png", link: "/products/gift-boxes" },
