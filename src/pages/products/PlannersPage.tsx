@@ -12,7 +12,11 @@ const PlannersPage = () => {
     <ProductDetailLayout
       title="Planners"
       description="Our planners are designed to boost productivity with intuitive layouts and premium construction. Available in daily, weekly, and monthly formats with customizable covers and layouts, these planners feature high-quality paper and durable binding to support your organization all year long."
-      images={["/placeholder.svg", "/lovable-uploads/e3399284-14ec-4e5a-9139-92cd61ed0d70.png"]}
+      images={[
+        "/lovable-uploads/559afcce-3c6a-4840-a647-4efeba9173f0.png", 
+        "/lovable-uploads/d85e5bc0-ceb4-4e66-8d99-3075077afa6b.png",
+        "/lovable-uploads/3ab6adeb-b4af-4acf-8a3e-d1ebf16cbd85.png"
+      ]}
       specifications={[
         { name: "Format Options", description: "Daily, Weekly, Monthly, Academic, Project" },
         { name: "Size Options", description: "A5, A4, B5, Pocket size, Custom" },
