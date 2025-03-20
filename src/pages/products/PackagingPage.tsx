@@ -13,7 +13,7 @@ const PackagingPage = () => {
     { name: "Watch Boxes", image: "/placeholder.svg", link: "/products/watch-boxes" },
     { name: "Gift Boxes", image: "/lovable-uploads/9ac49b3f-55f6-4fd1-a2f8-de698f05988c.png", link: "/products/gift-boxes" },
     { name: "Gift Bags", image: "/lovable-uploads/6806d7dc-b1b9-4350-a861-2e3bfd62ae75.png", link: "/products/gift-bags" },
-    { name: "Wine Boxes", image: "/lovable-uploads/7d6d05ad-2a4e-49fa-b367-5206277f9e19.png", link: "/products/wine-boxes" },
+    { name: "Wine Boxes", image: "/lovable-uploads/f237a227-533c-40ac-a7df-36908496434e.png", link: "/products/wine-boxes" },
     { name: "Wooden Boxes", image: "/lovable-uploads/33abf773-6299-4658-aea2-6515350a7907.png", link: "/products/wooden-boxes" },
   ];
 

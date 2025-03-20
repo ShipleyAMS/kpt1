@@ -89,7 +89,7 @@ export const products: Product[] = [
   {
     id: 11,
     name: "Wine Box",
-    image: "/lovable-uploads/7d6d05ad-2a4e-49fa-b367-5206277f9e19.png",
+    image: "/lovable-uploads/f237a227-533c-40ac-a7df-36908496434e.png",
     description: "Elegant wine boxes with premium finishes and secure closures.",
     link: "/products/wine-boxes"
   },
