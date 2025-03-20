@@ -1,13 +1,8 @@
 
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
-import { products } from '@/components/products/productData';
 
 const CalendarPage = () => {
-  const featuredProducts = products.filter(product => 
-    ['Books', 'Planners', 'Journals'].includes(product.name)
-  );
-
   return (
     <ProductDetailLayout
       title="Calendar"
@@ -21,7 +16,7 @@ const CalendarPage = () => {
         { name: "Special Features", description: "Special date marking, Custom holidays" },
         { name: "Customization", description: "Corporate branding, Custom imagery" },
       ]}
-      featuredProducts={featuredProducts}
+      featuredProducts={[]}
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">

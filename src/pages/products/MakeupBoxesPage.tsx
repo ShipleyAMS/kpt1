@@ -1,13 +1,8 @@
 
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
-import { products } from '@/components/products/productData';
 
 const MakeupBoxesPage = () => {
-  const featuredProducts = products.filter(product => 
-    ['Jewelery Boxes', 'Gift Boxes', 'Shopping Bags'].includes(product.name)
-  );
-
   return (
     <ProductDetailLayout
       title="Make-up Boxes"
@@ -21,7 +16,7 @@ const MakeupBoxesPage = () => {
         { name: "Special Features", description: "Windows, Custom inserts, Magnetic closures" },
         { name: "Minimum Order", description: "100 boxes" },
       ]}
-      featuredProducts={featuredProducts}
+      featuredProducts={[]}
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">
