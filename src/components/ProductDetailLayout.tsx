@@ -96,27 +96,29 @@ const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
             </section>
           )}
 
-          {/* Featured Products Section */}
-          <section className="mb-16">
-            <h2 className="text-2xl font-semibold text-[#007041] text-center mb-8">Featured Products</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {featuredProducts.map((product) => (
-                <div key={product.id} className="bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-[#EAF3E8]">
-                  <div className="h-48 overflow-hidden">
-                    <img 
-                      src={product.image} 
-                      alt={product.name} 
-                      className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105" 
-                    />
+          {/* Featured Products Section - only show if there are featured products */}
+          {featuredProducts.length > 0 && (
+            <section className="mb-16">
+              <h2 className="text-2xl font-semibold text-[#007041] text-center mb-8">Featured Products</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {featuredProducts.map((product) => (
+                  <div key={product.id} className="bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-[#EAF3E8]">
+                    <div className="h-48 overflow-hidden">
+                      <img 
+                        src={product.image} 
+                        alt={product.name} 
+                        className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105" 
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h3 className="text-lg font-semibold text-[#007041] mb-2">{product.name}</h3>
+                      <p className="text-sm text-gray-600">{product.description}</p>
+                    </div>
                   </div>
-                  <div className="p-4">
-                    <h3 className="text-lg font-semibold text-[#007041] mb-2">{product.name}</h3>
-                    <p className="text-sm text-gray-600">{product.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* CTA Section */}
           <section className="py-10 bg-[#F8F7F2] rounded-lg">

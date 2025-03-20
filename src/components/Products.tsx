@@ -50,7 +50,7 @@ const Products = () => {
       icon: <BookOpen className="h-8 w-8 text-[#007041] mb-2" />,
       image: "/lovable-uploads/e3399284-14ec-4e5a-9139-92cd61ed0d70.png",
       products: [
-        { name: "Notebooks", image: "/placeholder.svg", link: "/products/notebooks" },
+        { name: "Notebooks", image: "/lovable-uploads/48e550bc-0d5f-4553-9aea-82970612ef16.png", link: "/products/notebooks" },
         { name: "Journals", image: "/lovable-uploads/0b092d75-12e1-469a-8aee-6e42bf1cdb30.png", link: "/products/journals" },
         { name: "Planners", image: "/placeholder.svg", link: "/products/planners" },
       ]

@@ -89,7 +89,7 @@ export const products: Product[] = [
   {
     id: 13,
     name: "Notebook",
-    image: "/placeholder.svg",
+    image: "/lovable-uploads/48e550bc-0d5f-4553-9aea-82970612ef16.png",
     description: "High-quality notebooks with premium paper and customizable covers.",
     link: "/products/notebooks"
   },
