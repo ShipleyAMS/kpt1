@@ -1,4 +1,3 @@
-
 import { Product, Category } from './types';
 
 export const products: Product[] = [
@@ -68,7 +67,7 @@ export const products: Product[] = [
   {
     id: 21,
     name: "Watch Box",
-    image: "/placeholder.svg",
+    image: "/lovable-uploads/faafb5be-1211-4112-a124-756086434ba0.png",
     description: "Elegant boxes designed specifically for premium watches and timepieces.",
     link: "/products/watch-boxes"
   },

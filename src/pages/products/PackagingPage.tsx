@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
@@ -10,7 +9,7 @@ const PackagingPage = () => {
     { name: "Make-up Boxes", image: "/lovable-uploads/212a47c2-8686-42ba-aa2e-94eea5da96bc.png", link: "/products/makeup-boxes" },
     { name: "Jewelery Boxes", image: "/lovable-uploads/b9086efc-629a-47ed-8b95-068140735132.png", link: "/products/jewelery-boxes" },
     { name: "Fragrance Boxes", image: "/placeholder.svg", link: "/products/fragrance-boxes" },
-    { name: "Watch Boxes", image: "/placeholder.svg", link: "/products/watch-boxes" },
+    { name: "Watch Boxes", image: "/lovable-uploads/faafb5be-1211-4112-a124-756086434ba0.png", link: "/products/watch-boxes" },
     { name: "Gift Boxes", image: "/lovable-uploads/9ac49b3f-55f6-4fd1-a2f8-de698f05988c.png", link: "/products/gift-boxes" },
     { name: "Gift Bags", image: "/lovable-uploads/6806d7dc-b1b9-4350-a861-2e3bfd62ae75.png", link: "/products/gift-bags" },
     { name: "Wine Boxes", image: "/lovable-uploads/f237a227-533c-40ac-a7df-36908496434e.png", link: "/products/wine-boxes" },
@@ -60,7 +59,6 @@ const PackagingPage = () => {
             </div>
           </div>
 
-          {/* CTA Section */}
           <section className="py-10 bg-[#F8F7F2] rounded-lg">
             <div className="container mx-auto px-4 text-center">
               <h3 className="text-xl font-semibold text-[#007041] mb-5">Ready to Get Started?</h3>
