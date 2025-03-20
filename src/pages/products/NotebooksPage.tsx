@@ -8,9 +8,9 @@ const NotebooksPage = () => {
       title="Notebooks"
       description="Our premium notebooks combine functionality with stylish design. Available in various sizes, paper types, and binding options, these notebooks feature customizable covers, high-quality paper, and durable construction - perfect for personal use, corporate gifts, or retail."
       images={[
-        "/lovable-uploads/d0add415-21d2-4656-8c56-cb812eca49a6.png", 
         "/lovable-uploads/34846106-4bd4-464a-8c86-6e9d5a049fea.png",
         "/lovable-uploads/9cac2a34-a2db-45df-a18a-dcd7526fe480.png",
+        "/lovable-uploads/d0add415-21d2-4656-8c56-cb812eca49a6.png", 
         "/lovable-uploads/48e550bc-0d5f-4553-9aea-82970612ef16.png"
       ]}
       specifications={[
