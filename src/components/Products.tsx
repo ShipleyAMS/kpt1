@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Printer, Package, BookOpen } from 'lucide-react';
@@ -38,12 +39,12 @@ const Products = () => {
       products: [
         { name: "Make-up Boxes", image: "/lovable-uploads/212a47c2-8686-42ba-aa2e-94eea5da96bc.png", link: "/products/makeup-boxes" },
         { name: "Jewelery Boxes", image: "/lovable-uploads/b9086efc-629a-47ed-8b95-068140735132.png", link: "/products/jewelery-boxes" },
+        { name: "Fragrance Boxes", image: "/placeholder.svg", link: "/products/fragrance-boxes" },
+        { name: "Watch Boxes", image: "/placeholder.svg", link: "/products/watch-boxes" },
         { name: "Gift Boxes", image: "/lovable-uploads/9ac49b3f-55f6-4fd1-a2f8-de698f05988c.png", link: "/products/gift-boxes" },
         { name: "Gift Bags", image: "/lovable-uploads/6806d7dc-b1b9-4350-a861-2e3bfd62ae75.png", link: "/products/gift-bags" },
         { name: "Wine Boxes", image: "/lovable-uploads/7d6d05ad-2a4e-49fa-b367-5206277f9e19.png", link: "/products/wine-boxes" },
         { name: "Wooden Boxes", image: "/lovable-uploads/9821a74b-7319-4c79-bf2b-8e28872a8561.png", link: "/products/wooden-boxes" },
-        { name: "Fragrance Boxes", image: "/placeholder.svg", link: "/products/fragrance-boxes" },
-        { name: "Watch Boxes", image: "/placeholder.svg", link: "/products/watch-boxes" },
       ]
     },
     {

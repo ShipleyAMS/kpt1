@@ -58,6 +58,20 @@ export const products: Product[] = [
     link: "/products/jewelery-boxes"
   },
   {
+    id: 20,
+    name: "Fragrance Box",
+    image: "/placeholder.svg",
+    description: "Luxurious packaging solutions for perfumes and fragrances.",
+    link: "/products/fragrance-boxes"
+  },
+  {
+    id: 21,
+    name: "Watch Box",
+    image: "/placeholder.svg",
+    description: "Elegant boxes designed specifically for premium watches and timepieces.",
+    link: "/products/watch-boxes"
+  },
+  {
     id: 9,
     name: "Journal",
     image: "/lovable-uploads/0b092d75-12e1-469a-8aee-6e42bf1cdb30.png",
@@ -134,20 +148,6 @@ export const products: Product[] = [
     description: "Professional catalogues with high-quality printing and binding options.",
     link: "/products/catalogues"
   },
-  {
-    id: 20,
-    name: "Fragrance Box",
-    image: "/placeholder.svg",
-    description: "Luxurious packaging solutions for perfumes and fragrances.",
-    link: "/products/fragrance-boxes"
-  },
-  {
-    id: 21,
-    name: "Watch Box",
-    image: "/placeholder.svg",
-    description: "Elegant boxes designed specifically for premium watches and timepieces.",
-    link: "/products/watch-boxes"
-  }
 ];
 
 export const categories: Category[] = [
