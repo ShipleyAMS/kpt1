@@ -1,3 +1,4 @@
+
 import { Product, Category } from './types';
 
 export const products: Product[] = [
@@ -11,7 +12,7 @@ export const products: Product[] = [
   {
     id: 2,
     name: "Children's Books",
-    image: "/lovable-uploads/1948b893-30bb-4e91-a6cc-d590d2eee7e5.png",
+    image: "/lovable-uploads/31bacdc3-7a65-46fa-9cfa-1ffcc2d85fd4.png",
     description: "Colorful and engaging children's books with vibrant illustrations.",
     link: "/products/books"
   },

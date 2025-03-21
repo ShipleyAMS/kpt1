@@ -22,7 +22,6 @@ const Products = () => {
       image: "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png",
       products: [
         { name: "Catalogues", link: "/products/catalogues" },
-        { name: "Leaflets", link: "/products/leaflets" },
         { name: "Books", link: "/products/books" },
         { name: "Bibles", link: "/products/bibles" },
         { name: "Calendars", link: "/products/calendar" },
