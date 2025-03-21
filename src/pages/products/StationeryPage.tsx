@@ -7,9 +7,9 @@ import { BookOpen } from 'lucide-react';
 
 const StationeryPage = () => {
   const stationeryProducts = [
-    { name: "Notebooks", image: "/images/stationery/notebooks/2e228353-624a-40eb-873c-01d1de7088fb.png", link: "/products/notebooks" },
-    { name: "Journals", image: "/images/stationery/journals/cea7e9e9-d0c6-4839-9680-4963d79b91c3.png", link: "/products/journals" },
-    { name: "Planners", image: "/images/stationery/planners/559afcce-3c6a-4840-a647-4efeba9173f0.png", link: "/products/planners" },
+    { name: "Notebooks", image: "/lovable-uploads/2e228353-624a-40eb-873c-01d1de7088fb.png", link: "/products/notebooks" },
+    { name: "Journals", image: "/lovable-uploads/cea7e9e9-d0c6-4839-9680-4963d79b91c3.png", link: "/products/journals" },
+    { name: "Planners", image: "/lovable-uploads/559afcce-3c6a-4840-a647-4efeba9173f0.png", link: "/products/planners" },
   ];
 
   return (
