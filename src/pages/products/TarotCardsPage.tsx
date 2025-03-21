@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -6,7 +7,12 @@ const TarotCardsPage = () => {
     <ProductDetailLayout
       title="Tarot Cards"
       description="Our tarot cards are crafted with attention to detail and spiritual reverence. Printed on premium cardstock with luxurious finishes, our tarot decks feature vibrant colors and crisp imagery, perfect for professional readers or personal use."
-      images={["/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png"]}
+      images={[
+        "/lovable-uploads/32bcdf42-a5c3-4cfa-bc1f-9182b3bfc322.png",
+        "/lovable-uploads/5b538952-58df-486f-9e58-9b5fc27a5746.png",
+        "/lovable-uploads/fff180c8-c4b8-4bde-8173-5171af770698.png",
+        "/lovable-uploads/121911f7-0061-47cb-b810-54e92ebbe734.png"
+      ]}
       specifications={[
         { name: "Card Size", description: "Standard tarot size, Custom sizes available" },
         { name: "Card Stock", description: "350gsm premium stock with linen texture" },

@@ -1,3 +1,4 @@
+
 import { Product, Category } from './types';
 
 export const products: Product[] = [
@@ -147,6 +148,13 @@ export const products: Product[] = [
     image: "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png",
     description: "Professional catalogues with high-quality printing and binding options.",
     link: "/products/catalogues"
+  },
+  {
+    id: 22,
+    name: "Tarot Cards",
+    image: "/lovable-uploads/32bcdf42-a5c3-4cfa-bc1f-9182b3bfc322.png",
+    description: "Premium tarot cards with intricate designs and high-quality finishes.",
+    link: "/products/tarot-cards"
   },
 ];
 

@@ -7,15 +7,15 @@ import { Printer } from 'lucide-react';
 
 const PrintingPage = () => {
   const printingProducts = [
-    { name: "Catalogues", image: "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png", link: "/products/catalogues" },
-    { name: "Leaflets", image: "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png", link: "/products/leaflets" },
-    { name: "Books", image: "/lovable-uploads/7dd0ed77-bef4-4667-88b1-5f8a749589f2.png", link: "/products/books" },
-    { name: "Bibles", image: "/lovable-uploads/b98f5f4b-72df-44dc-af9a-311dbd32d7b9.png", link: "/products/bibles" },
-    { name: "Calendars", image: "/lovable-uploads/513a1818-3b90-4839-979b-a7279d2b013e.png", link: "/products/calendar" },
-    { name: "Game Cards", image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png", link: "/products/game-cards" },
-    { name: "Greeting Cards", image: "/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png", link: "/products/greeting-cards" },
-    { name: "Tarot Cards", image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png", link: "/products/tarot-cards" },
-    { name: "Jigsaw Puzzles", image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png", link: "/products/jigsaw-puzzles" },
+    { name: "Catalogues", link: "/products/catalogues" },
+    { name: "Leaflets", link: "/products/leaflets" },
+    { name: "Books", link: "/products/books" },
+    { name: "Bibles", link: "/products/bibles" },
+    { name: "Calendars", link: "/products/calendar" },
+    { name: "Game Cards", link: "/products/game-cards" },
+    { name: "Greeting Cards", link: "/products/greeting-cards" },
+    { name: "Tarot Cards", link: "/products/tarot-cards" },
+    { name: "Jigsaw Puzzles", link: "/products/jigsaw-puzzles" },
   ];
 
   return (
@@ -44,18 +44,9 @@ const PrintingPage = () => {
                 <Link 
                   key={index}
                   to={product.link}
-                  className="bg-white rounded-lg overflow-hidden shadow-md border border-[#EAF3E8] flex flex-col h-full"
+                  className="bg-white rounded-lg shadow-md border border-[#EAF3E8] p-6 flex items-center justify-center bg-[#EAF3E8] transition-transform hover:scale-105"
                 >
-                  <div className="h-48 overflow-hidden">
-                    <img 
-                      src={product.image} 
-                      alt={product.name} 
-                      className="w-full h-full object-cover" 
-                    />
-                  </div>
-                  <div className="p-4 flex items-center justify-center bg-[#EAF3E8]">
-                    <h3 className="text-lg font-medium text-[#007041]">{product.name}</h3>
-                  </div>
+                  <h3 className="text-lg font-medium text-[#007041]">{product.name}</h3>
                 </Link>
               ))}
             </div>
