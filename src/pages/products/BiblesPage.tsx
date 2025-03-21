@@ -8,13 +8,13 @@ const BiblesPage = () => {
       title="Bibles"
       description="Our premium Bible printing service offers exceptional quality with the reverence these sacred texts deserve. We use ultra-thin Bible paper, premium binding techniques, and offer various customization options including gilded edges and ribbon markers."
       images={[
-        "/lovable-uploads/555d640f-d874-4ac3-9aec-5eb6c9240c07.png",
-        "/lovable-uploads/e6192e30-4db7-4b1c-8fad-259b1fd4bb28.png",
-        "/lovable-uploads/a193dad8-6c48-4d41-ac92-d368f2ce3be9.png",
-        "/lovable-uploads/64a0f792-dc35-4288-8329-4cc153e6e769.png",
-        "/lovable-uploads/05f695dd-831c-411e-a183-c87c663e1289.png",
-        "/lovable-uploads/26dfa810-dcb0-41af-9ac4-3a4748040e8a.png",
-        "/lovable-uploads/ad2a942a-c748-4bd4-be0e-2baf93f9c897.png"
+        "/images/printing/bibles/bibles-main.png",
+        "/images/printing/bibles/bibles-1.png",
+        "/images/printing/bibles/bibles-2.png",
+        "/images/printing/bibles/bibles-3.png",
+        "/images/printing/bibles/bibles-4.png",
+        "/images/printing/bibles/bibles-5.png",
+        "/images/printing/bibles/bibles-6.png"
       ]}
       specifications={[
         { name: "Size Options", description: "Standard Bible sizes, Compact, Large print" },

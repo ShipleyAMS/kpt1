@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -6,7 +7,7 @@ const CataloguesPage = () => {
     <ProductDetailLayout
       title="Catalogues"
       description="Our high-quality catalogues are perfect for showcasing your products and services. We offer a range of paper types, finishes, and binding options to create catalogues that make a lasting impression on your customers."
-      images={["/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png"]}
+      images={["/images/printing/catalogues/catalogues-main.png"]}
       specifications={[
         { name: "Size Options", description: "A4, A5, Custom sizes available" },
         { name: "Paper Types", description: "Gloss, Matte, Silk, Recycled" },

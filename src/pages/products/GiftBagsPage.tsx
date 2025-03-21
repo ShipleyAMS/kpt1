@@ -8,11 +8,11 @@ const GiftBagsPage = () => {
       title="Gift Bags"
       description="Our premium gift bags combine durability with elegant design. Available in paper, fabric, and eco-friendly materials, these bags feature reinforced handles, custom printing, and various finish options - perfect for retail, events, or promotional purposes."
       images={[
-        "/lovable-uploads/397f328c-f306-42e6-b2d2-2c04434346ee.png", 
-        "/lovable-uploads/ee468134-879a-490c-9b45-e57f02f9ce69.png",
-        "/lovable-uploads/b08ea8e5-1dbd-4854-acd2-ae05b0bce7ae.png",
-        "/lovable-uploads/d63318b7-4d58-4d30-b3c6-3cfe773439bb.png",
-        "/lovable-uploads/95036f72-eee6-430f-bae0-90b5233726a8.png"
+        "/images/packaging/gift-bags/gift-bags-main.png", 
+        "/images/packaging/gift-bags/gift-bags-1.png",
+        "/images/packaging/gift-bags/gift-bags-2.png",
+        "/images/packaging/gift-bags/gift-bags-3.png",
+        "/images/packaging/gift-bags/gift-bags-4.png"
       ]}
       specifications={[
         { name: "Materials", description: "Kraft, Art paper, Cotton, Jute, Eco-friendly options" },

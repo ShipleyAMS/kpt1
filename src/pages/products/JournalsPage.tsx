@@ -8,10 +8,10 @@ const JournalsPage = () => {
       title="Journals"
       description="Our premium journals offer the perfect blend of style and practicality. Featuring high-quality paper, elegant covers, and durable binding, these journals are ideal for writing, sketching, or journaling. Available with various page designs and customization options for personal or corporate use."
       images={[
-        "/lovable-uploads/cea7e9e9-d0c6-4839-9680-4963d79b91c3.png", 
-        "/lovable-uploads/371d83cc-b84e-4777-be68-5fd51c91e882.png",
-        "/lovable-uploads/4b37b5ff-eb06-41a5-a0dc-b8eb90726b82.png", 
-        "/lovable-uploads/3be67a5b-7d42-4a81-a42d-3d5d655bd43c.png"
+        "/images/stationery/journals/journals-main.png", 
+        "/images/stationery/journals/journals-1.png",
+        "/images/stationery/journals/journals-2.png", 
+        "/images/stationery/journals/journals-3.png"
       ]}
       specifications={[
         { name: "Size Options", description: "A5, B5, A4, Custom sizes available" },

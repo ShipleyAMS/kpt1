@@ -19,7 +19,7 @@ const Products = () => {
     {
       name: "PRINTING",
       icon: <Printer className="h-8 w-8 text-[#007041] mb-2" />,
-      image: "/lovable-uploads/ef8912ba-ad99-40c3-b65d-03e93a57155c.png",
+      image: "/images/categories/printing-category.png",
       products: [
         { name: "Catalogues", link: "/products/catalogues" },
         { name: "Books", link: "/products/books" },
@@ -34,26 +34,26 @@ const Products = () => {
     {
       name: "PACKAGING",
       icon: <Package className="h-8 w-8 text-[#007041] mb-2" />,
-      image: "/lovable-uploads/51f0b84b-08de-467e-b210-35b58d2d85c2.png",
+      image: "/images/categories/packaging-category.png",
       products: [
-        { name: "Cosmetic Boxes", image: "/lovable-uploads/b6e8fc28-653d-4228-9fa9-b1b99a5a25aa.png", link: "/products/cosmetic-boxes" },
-        { name: "Jewelery Boxes", image: "/lovable-uploads/bd0c61b8-a405-4055-954d-857f892c3b15.png", link: "/products/jewelery-boxes" },
-        { name: "Fragrance Boxes", image: "/lovable-uploads/1ca11ca6-fd55-4f7a-ae09-9a92a9e4fd24.png", link: "/products/fragrance-boxes" },
-        { name: "Watch Boxes", image: "/lovable-uploads/faafb5be-1211-4112-a124-756086434ba0.png", link: "/products/watch-boxes" },
-        { name: "Gift Boxes", image: "/lovable-uploads/4a00c030-1150-4412-9bd5-501f1c8882a8.png", link: "/products/gift-boxes" },
-        { name: "Gift Bags", image: "/lovable-uploads/397f328c-f306-42e6-b2d2-2c04434346ee.png", link: "/products/gift-bags" },
-        { name: "Wine Boxes", image: "/lovable-uploads/f237a227-533c-40ac-a7df-36908496434e.png", link: "/products/wine-boxes" },
-        { name: "Wooden Boxes", image: "/lovable-uploads/33abf773-6299-4658-aea2-6515350a7907.png", link: "/products/wooden-boxes" },
+        { name: "Cosmetic Boxes", image: "/images/packaging/cosmetic-boxes/cosmetic-boxes-main.png", link: "/products/cosmetic-boxes" },
+        { name: "Jewelery Boxes", image: "/images/packaging/jewelery-boxes/jewelery-boxes-main.png", link: "/products/jewelery-boxes" },
+        { name: "Fragrance Boxes", image: "/images/packaging/fragrance-boxes/fragrance-boxes-main.png", link: "/products/fragrance-boxes" },
+        { name: "Watch Boxes", image: "/images/packaging/watch-boxes/watch-boxes-main.png", link: "/products/watch-boxes" },
+        { name: "Gift Boxes", image: "/images/packaging/gift-boxes/gift-boxes-main.png", link: "/products/gift-boxes" },
+        { name: "Gift Bags", image: "/images/packaging/gift-bags/gift-bags-main.png", link: "/products/gift-bags" },
+        { name: "Wine Boxes", image: "/images/packaging/wine-boxes/wine-boxes-main.png", link: "/products/wine-boxes" },
+        { name: "Wooden Boxes", image: "/images/packaging/wooden-boxes/wooden-boxes-main.png", link: "/products/wooden-boxes" },
       ]
     },
     {
       name: "STATIONERY",
       icon: <BookOpen className="h-8 w-8 text-[#007041] mb-2" />,
-      image: "/lovable-uploads/8bb72b96-16ef-4e70-8451-25ef42e29b83.png",
+      image: "/images/categories/stationery-category.png",
       products: [
-        { name: "Notebooks", image: "/lovable-uploads/2e228353-624a-40eb-873c-01d1de7088fb.png", link: "/products/notebooks" },
-        { name: "Journals", image: "/lovable-uploads/cea7e9e9-d0c6-4839-9680-4963d79b91c3.png", link: "/products/journals" },
-        { name: "Planners", image: "/lovable-uploads/559afcce-3c6a-4840-a647-4efeba9173f0.png", link: "/products/planners" },
+        { name: "Notebooks", image: "/images/stationery/notebooks/notebooks-main.png", link: "/products/notebooks" },
+        { name: "Journals", image: "/images/stationery/journals/journals-main.png", link: "/products/journals" },
+        { name: "Planners", image: "/images/stationery/planners/planners-main.png", link: "/products/planners" },
       ]
     }
   ];
