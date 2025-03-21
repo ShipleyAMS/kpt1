@@ -32,7 +32,7 @@ export const products: Product[] = [
   {
     id: 5,
     name: "Game Cards",
-    image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png",
+    image: "/lovable-uploads/0d846d1b-bb50-46e6-b470-34d6a2e11ae0.png",
     description: "High-quality game cards with vibrant colors and durable coating.",
     link: "/products/game-cards"
   },
