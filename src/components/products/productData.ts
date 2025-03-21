@@ -1,4 +1,3 @@
-
 import { Product, Category } from './types';
 
 export const products: Product[] = [
@@ -47,7 +46,7 @@ export const products: Product[] = [
   {
     id: 7,
     name: "Greeting Cards",
-    image: "/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png",
+    image: "/lovable-uploads/048818fd-ebcb-4883-8ee0-cfc0e2f2ff6f.png",
     description: "Premium greeting cards with custom designs and special finishes.",
     link: "/products/greeting-cards"
   },
