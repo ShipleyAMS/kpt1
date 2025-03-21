@@ -7,15 +7,15 @@ import { Printer } from 'lucide-react';
 
 const PrintingPage = () => {
   const printingProducts = [
-    { name: "Catalogues", link: "/products/catalogues" },
-    { name: "Leaflets", link: "/products/leaflets" },
-    { name: "Books", link: "/products/books" },
-    { name: "Bibles", link: "/products/bibles" },
-    { name: "Calendars", link: "/products/calendar" },
-    { name: "Game Cards", link: "/products/game-cards" },
-    { name: "Greeting Cards", link: "/products/greeting-cards" },
-    { name: "Tarot Cards", link: "/products/tarot-cards", image: "/lovable-uploads/32bcdf42-a5c3-4cfa-bc1f-9182b3bfc322.png" },
-    { name: "Jigsaw Puzzles", link: "/products/jigsaw-puzzles" },
+    { name: "Catalogues", image: "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png", link: "/products/catalogues" },
+    { name: "Leaflets", image: "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png", link: "/products/leaflets" },
+    { name: "Books", image: "/lovable-uploads/7dd0ed77-bef4-4667-88b1-5f8a749589f2.png", link: "/products/books" },
+    { name: "Bibles", image: "/lovable-uploads/b98f5f4b-72df-44dc-af9a-311dbd32d7b9.png", link: "/products/bibles" },
+    { name: "Calendars", image: "/lovable-uploads/513a1818-3b90-4839-979b-a7279d2b013e.png", link: "/products/calendar" },
+    { name: "Game Cards", image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png", link: "/products/game-cards" },
+    { name: "Greeting Cards", image: "/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png", link: "/products/greeting-cards" },
+    { name: "Tarot Cards", image: "/lovable-uploads/32bcdf42-a5c3-4cfa-bc1f-9182b3bfc322.png", link: "/products/tarot-cards" },
+    { name: "Jigsaw Puzzles", image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png", link: "/products/jigsaw-puzzles" },
   ];
 
   return (
@@ -39,23 +39,23 @@ const PrintingPage = () => {
               <h2 className="text-2xl font-semibold text-[#007041]">Our Printing Products</h2>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {printingProducts.map((product, index) => (
                 <Link 
                   key={index}
                   to={product.link}
-                  className="bg-white rounded-lg shadow-md border border-[#EAF3E8] p-6 flex flex-col items-center justify-center bg-[#EAF3E8] transition-transform hover:scale-105"
+                  className="bg-white rounded-lg overflow-hidden shadow-md border border-[#EAF3E8] flex flex-col h-full"
                 >
-                  {product.image && (
-                    <div className="mb-3 w-full h-36 overflow-hidden rounded-md">
-                      <img 
-                        src={product.image} 
-                        alt={product.name} 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  )}
-                  <h3 className="text-lg font-medium text-[#007041]">{product.name}</h3>
+                  <div className="h-48 overflow-hidden">
+                    <img 
+                      src={product.image} 
+                      alt={product.name} 
+                      className="w-full h-full object-cover" 
+                    />
+                  </div>
+                  <div className="p-4 flex items-center justify-center bg-[#EAF3E8]">
+                    <h3 className="text-lg font-medium text-[#007041]">{product.name}</h3>
+                  </div>
                 </Link>
               ))}
             </div>
