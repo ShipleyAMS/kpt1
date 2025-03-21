@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -24,6 +25,7 @@ const FragranceBoxesPage = () => {
         { name: "Special Features", description: "Magnetic closure, Foam inserts, Windows" },
       ]}
       featuredProducts={[]}
+      exampleProducts="Perfume Gift Box, Luxury Fragrance Box, Scented Candle Box, Sample Fragrance Box, Miniature Perfume Box, Cologne Gift Set Box"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">

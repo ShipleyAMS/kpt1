@@ -20,7 +20,7 @@ const WatchBoxesPage = () => {
         { name: "Special Features", description: "Magnetic closure, Pillow inserts, Display window" },
       ]}
       featuredProducts={[]}
-      exampleProducts="Single Watch Box, Dual Watch Box, Collector's Watch Box, Travel Watch Box"
+      exampleProducts="Single Watch Box, Multi-Watch Display Box, Wooden Watch Box, Travel Watch Case, Luxury Watch Box"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">

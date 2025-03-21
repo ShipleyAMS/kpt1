@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -21,6 +22,7 @@ const GiftBagsPage = () => {
         { name: "Finish Options", description: "Matte, Gloss, Spot UV, Lamination" },
       ]}
       featuredProducts={[]}
+      exampleProducts="Paper Gift Bag, Fabric Gift Bag, Wedding Gift Bag, Christmas Gift Bag, Reusable Gift Bag, Small Gift Bag"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">

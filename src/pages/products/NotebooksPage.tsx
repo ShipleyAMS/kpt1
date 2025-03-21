@@ -21,7 +21,7 @@ const NotebooksPage = () => {
         { name: "Cover Options", description: "Hardcover, Softcover, PU leather, Fabric" },
       ]}
       featuredProducts={[]}
-      exampleProducts="Paperback Notebook, Hardback Notebook, Wiro Notebook, Layflat Notebook, PU Notebook"
+      exampleProducts="Spiral Notebook, Leather-bound Notebook, Bullet Journal, Composition Notebook, Travel Journal Notebook, Sketchbook"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">

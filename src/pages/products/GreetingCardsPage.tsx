@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -22,6 +23,7 @@ const GreetingCardsPage = () => {
         { name: "Envelopes", description: "Included with matching or contrasting options" },
       ]}
       featuredProducts={[]}
+      exampleProducts="3D Cards, 2D Cards, Christmas Cards, Congratulations Cards"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">

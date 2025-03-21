@@ -25,6 +25,9 @@ const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
 }) => {
   const [mainImage, setMainImage] = useState(images[0]);
 
+  // Process example products into an array if provided
+  const exampleProductsArray = exampleProducts ? exampleProducts.split(',').map(product => product.trim()) : [];
+
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -89,11 +92,20 @@ const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
           </div>
           
           {/* Example Products Section */}
-          {exampleProducts && (
+          {exampleProductsArray.length > 0 && (
             <section className="py-10 bg-[#F8F7F2] rounded-lg mb-16">
               <div className="container mx-auto px-4">
                 <h2 className="text-2xl font-semibold text-[#007041] text-center mb-6">Example Products</h2>
-                <p className="text-center text-gray-700 max-w-4xl mx-auto">{exampleProducts}</p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  {exampleProductsArray.map((product, index) => (
+                    <div 
+                      key={index} 
+                      className="bg-white py-2 px-4 rounded-full shadow-sm border border-[#EAF3E8] text-[#007041]"
+                    >
+                      {product}
+                    </div>
+                  ))}
+                </div>
               </div>
             </section>
           )}

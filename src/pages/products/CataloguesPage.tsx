@@ -16,7 +16,7 @@ const CataloguesPage = () => {
         { name: "Custom Features", description: "Die-cutting, Embossing, Custom shapes available" },
       ]}
       featuredProducts={[]}
-      exampleProducts="Product Catalogues, Service Catalogues, Seasonal Catalogues, Price Lists, Fashion Catalogues"
+      exampleProducts="Product Catalogue, Fashion Catalogue, Art Exhibition Catalogue, Furniture Catalogue, Automotive Parts Catalogue, Travel and Tour Catalogue"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">

@@ -21,7 +21,7 @@ const GameCardsPage = () => {
         { name: "Special Features", description: "Custom shapes, Rounded corners, Edge coloring" },
       ]}
       featuredProducts={[]}
-      exampleProducts="Family Game Cards, Study Cards, Learning Cards"
+      exampleProducts="Flashcards, Study Cards, Language Cards, Card Games"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">

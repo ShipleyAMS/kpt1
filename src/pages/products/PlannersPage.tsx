@@ -21,6 +21,7 @@ const PlannersPage = () => {
         { name: "Special Features", description: "Tabs, Pockets, Elastic closure, Ribbon markers" },
       ]}
       featuredProducts={[]}
+      exampleProducts="Daily Planner, Weekly Planner, Monthly Planner, Academic Planner, Fitness Planner"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">

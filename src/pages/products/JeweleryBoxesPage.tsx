@@ -30,7 +30,7 @@ const JeweleryBoxesPage = () => {
         { name: "Finish Options", description: "Foil stamping, Embossing, Spot UV" },
       ]}
       featuredProducts={[]}
-      exampleProducts="Necklace Box, Braclet Box, Earring Box, Ring Box"
+      exampleProducts="Earring Box, Necklace Box, Ring Box, Bracelet Box, Multi-compartment Jewelry Box"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">
