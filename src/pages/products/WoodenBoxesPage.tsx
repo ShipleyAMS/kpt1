@@ -8,14 +8,14 @@ const WoodenBoxesPage = () => {
       title="Wooden Boxes"
       description="Our wooden boxes combine natural beauty with superior craftsmanship. Made from sustainably sourced woods and available with various finishes, these boxes offer a premium packaging solution for luxury products, special gifts, or keepsakes with options for custom engraving and personalization."
       images={[
-        "/lovable-uploads/33abf773-6299-4658-aea2-6515350a7907.png", 
-        "/lovable-uploads/d68069c1-2cef-43ad-aa0e-5a9e2e1e96b5.png",
-        "/lovable-uploads/a492b7e6-8175-400b-8e6e-13f77a5c0197.png",
-        "/lovable-uploads/39917ffc-4b0b-49e4-8381-67a06a1d4ba3.png",
-        "/lovable-uploads/dfa9017b-8909-41d8-810c-e522135114af.png",
-        "/lovable-uploads/a13d0179-4dcc-4491-86cb-6feb84804fac.png",
-        "/lovable-uploads/1268ce49-0a47-42ad-918f-6a9e3416e75d.png",
-        "/lovable-uploads/049cc80f-8281-410a-bd28-18b7fc715a20.png"
+        "/images/packaging/wooden-boxes/33abf773-6299-4658-aea2-6515350a7907.png", 
+        "/images/packaging/wooden-boxes/d68069c1-2cef-43ad-aa0e-5a9e2e1e96b5.png",
+        "/images/packaging/wooden-boxes/a492b7e6-8175-400b-8e6e-13f77a5c0197.png",
+        "/images/packaging/wooden-boxes/39917ffc-4b0b-49e4-8381-67a06a1d4ba3.png",
+        "/images/packaging/wooden-boxes/dfa9017b-8909-41d8-810c-e522135114af.png",
+        "/images/packaging/wooden-boxes/a13d0179-4dcc-4491-86cb-6feb84804fac.png",
+        "/images/packaging/wooden-boxes/1268ce49-0a47-42ad-918f-6a9e3416e75d.png",
+        "/images/packaging/wooden-boxes/049cc80f-8281-410a-bd28-18b7fc715a20.png"
       ]}
       specifications={[
         { name: "Wood Types", description: "Pine, Oak, Bamboo, Walnut, Custom options" },

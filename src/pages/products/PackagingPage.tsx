@@ -7,14 +7,14 @@ import { Package } from 'lucide-react';
 
 const PackagingPage = () => {
   const packagingProducts = [
-    { name: "Cosmetic Boxes", image: "/lovable-uploads/b6e8fc28-653d-4228-9fa9-b1b99a5a25aa.png", link: "/products/cosmetic-boxes" },
-    { name: "Jewelery Boxes", image: "/lovable-uploads/bd0c61b8-a405-4055-954d-857f892c3b15.png", link: "/products/jewelery-boxes" },
-    { name: "Fragrance Boxes", image: "/lovable-uploads/1ca11ca6-fd55-4f7a-ae09-9a92a9e4fd24.png", link: "/products/fragrance-boxes" },
-    { name: "Watch Boxes", image: "/lovable-uploads/faafb5be-1211-4112-a124-756086434ba0.png", link: "/products/watch-boxes" },
-    { name: "Product Packaging", image: "/lovable-uploads/4a00c030-1150-4412-9bd5-501f1c8882a8.png", link: "/products/gift-boxes" },
-    { name: "Gift Bags", image: "/lovable-uploads/397f328c-f306-42e6-b2d2-2c04434346ee.png", link: "/products/gift-bags" },
-    { name: "Wine Boxes", image: "/lovable-uploads/f237a227-533c-40ac-a7df-36908496434e.png", link: "/products/wine-boxes" },
-    { name: "Wooden Boxes", image: "/lovable-uploads/33abf773-6299-4658-aea2-6515350a7907.png", link: "/products/wooden-boxes" },
+    { name: "Cosmetic Boxes", image: "/images/packaging/cosmetic-boxes/b6e8fc28-653d-4228-9fa9-b1b99a5a25aa.png", link: "/products/cosmetic-boxes" },
+    { name: "Jewelery Boxes", image: "/images/packaging/jewelery-boxes/bd0c61b8-a405-4055-954d-857f892c3b15.png", link: "/products/jewelery-boxes" },
+    { name: "Fragrance Boxes", image: "/images/packaging/fragrance-boxes/1ca11ca6-fd55-4f7a-ae09-9a92a9e4fd24.png", link: "/products/fragrance-boxes" },
+    { name: "Watch Boxes", image: "/images/packaging/watch-boxes/faafb5be-1211-4112-a124-756086434ba0.png", link: "/products/watch-boxes" },
+    { name: "Product Packaging", image: "/images/packaging/gift-boxes/4a00c030-1150-4412-9bd5-501f1c8882a8.png", link: "/products/gift-boxes" },
+    { name: "Gift Bags", image: "/images/packaging/gift-bags/397f328c-f306-42e6-b2d2-2c04434346ee.png", link: "/products/gift-bags" },
+    { name: "Wine Boxes", image: "/images/packaging/wine-boxes/f237a227-533c-40ac-a7df-36908496434e.png", link: "/products/wine-boxes" },
+    { name: "Wooden Boxes", image: "/images/packaging/wooden-boxes/33abf773-6299-4658-aea2-6515350a7907.png", link: "/products/wooden-boxes" },
   ];
 
   return (

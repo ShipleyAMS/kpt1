@@ -1,151 +1,150 @@
-
 import { Product, Category } from './types';
 
 export const products: Product[] = [
   {
     id: 1,
     name: "Bible",
-    image: "/lovable-uploads/b98f5f4b-72df-44dc-af9a-311dbd32d7b9.png",
+    image: "/images/printing/bibles/b98f5f4b-72df-44dc-af9a-311dbd32d7b9.png",
     description: "High-quality Bibles with premium printing and binding.",
     link: "/products/bibles"
   },
   {
     id: 2,
     name: "Children's Books",
-    image: "/lovable-uploads/7dd0ed77-bef4-4667-88b1-5f8a749589f2.png",
+    image: "/images/printing/books/7dd0ed77-bef4-4667-88b1-5f8a749589f2.png",
     description: "Colorful and engaging children's books with vibrant illustrations.",
     link: "/products/books"
   },
   {
     id: 3,
     name: "Calendar",
-    image: "/lovable-uploads/513a1818-3b90-4839-979b-a7279d2b013e.png",
+    image: "/images/printing/calendars/513a1818-3b90-4839-979b-a7279d2b013e.png",
     description: "Custom calendars with beautiful designs and durable construction.",
     link: "/products/calendars"
   },
   {
     id: 4,
     name: "Cosmetic Box",
-    image: "/lovable-uploads/b6e8fc28-653d-4228-9fa9-b1b99a5a25aa.png",
+    image: "/images/packaging/cosmetic-boxes/b6e8fc28-653d-4228-9fa9-b1b99a5a25aa.png",
     description: "Elegant cosmetic boxes with premium finishes and secure closures.",
     link: "/products/cosmetic-boxes"
   },
   {
     id: 5,
     name: "Game Cards",
-    image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png",
+    image: "/images/games/game-cards/870c440a-98b9-472a-9f5c-021a5818c907.png",
     description: "High-quality game cards with vibrant colors and durable coating.",
     link: "/products/game-cards"
   },
   {
     id: 6,
     name: "Product Packaging",
-    image: "/lovable-uploads/4a00c030-1150-4412-9bd5-501f1c8882a8.png",
+    image: "/images/packaging/gift-boxes/4a00c030-1150-4412-9bd5-501f1c8882a8.png",
     description: "Custom product packaging with precise die-cutting and premium finishes.",
     link: "/products/gift-boxes"
   },
   {
     id: 7,
     name: "Greeting Cards",
-    image: "/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png",
+    image: "/images/printing/greeting-cards/7d99bcd5-099a-42f0-8760-70f056733a9d.png",
     description: "Premium greeting cards with custom designs and special finishes.",
     link: "/products/greeting-cards"
   },
   {
     id: 8,
     name: "Jewelry Box",
-    image: "/lovable-uploads/bd0c61b8-a405-4055-954d-857f892c3b15.png",
+    image: "/images/packaging/jewelery-boxes/bd0c61b8-a405-4055-954d-857f892c3b15.png",
     description: "Customized jewelry boxes with bespoke designs and premium materials.",
     link: "/products/jewelery-boxes"
   },
   {
     id: 20,
     name: "Fragrance Box",
-    image: "/placeholder.svg",
+    image: "/images/packaging/fragrance-boxes/1ca11ca6-fd55-4f7a-ae09-9a92a9e4fd24.png",
     description: "Luxurious packaging solutions for perfumes and fragrances.",
     link: "/products/fragrance-boxes"
   },
   {
     id: 21,
     name: "Watch Box",
-    image: "/lovable-uploads/faafb5be-1211-4112-a124-756086434ba0.png",
+    image: "/images/packaging/watch-boxes/faafb5be-1211-4112-a124-756086434ba0.png",
     description: "Elegant boxes designed specifically for premium watches and timepieces.",
     link: "/products/watch-boxes"
   },
   {
     id: 9,
     name: "Journal",
-    image: "/lovable-uploads/0b092d75-12e1-469a-8aee-6e42bf1cdb30.png",
+    image: "/images/stationery/journals/cea7e9e9-d0c6-4839-9680-4963d79b91c3.png",
     description: "Premium notebooks with various cover options and high-quality paper.",
     link: "/products/journals"
   },
   {
     id: 10,
     name: "Gift Bag",
-    image: "/lovable-uploads/6806d7dc-b1b9-4350-a861-2e3bfd62ae75.png",
+    image: "/images/packaging/gift-bags/397f328c-f306-42e6-b2d2-2c04434346ee.png",
     description: "Elegant gift bags for special occasions with premium finishes.",
     link: "/products/gift-bags"
   },
   {
     id: 11,
     name: "Wine Box",
-    image: "/lovable-uploads/f237a227-533c-40ac-a7df-36908496434e.png",
+    image: "/images/packaging/wine-boxes/f237a227-533c-40ac-a7df-36908496434e.png",
     description: "Elegant wine boxes with premium finishes and secure closures.",
     link: "/products/wine-boxes"
   },
   {
     id: 12,
     name: "Wooden Box",
-    image: "/lovable-uploads/33abf773-6299-4658-aea2-6515350a7907.png",
+    image: "/images/packaging/wooden-boxes/33abf773-6299-4658-aea2-6515350a7907.png",
     description: "Luxurious wooden boxes with custom engraving and premium finishes.",
     link: "/products/wooden-boxes"
   },
   {
     id: 13,
     name: "Notebook",
-    image: "/lovable-uploads/48e550bc-0d5f-4553-9aea-82970612ef16.png",
+    image: "/images/stationery/notebooks/2e228353-624a-40eb-873c-01d1de7088fb.png",
     description: "High-quality notebooks with premium paper and customizable covers.",
     link: "/products/notebooks"
   },
   {
     id: 14,
     name: "Planner",
-    image: "/placeholder.svg",
+    image: "/images/stationery/planners/559afcce-3c6a-4840-a647-4efeba9173f0.png",
     description: "Organizational planners with practical layouts and premium binding.",
     link: "/products/planners"
   },
   {
     id: 15,
     name: "Gift Bag",
-    image: "/placeholder.svg",
+    image: "/images/packaging/gift-bags/397f328c-f306-42e6-b2d2-2c04434346ee.png",
     description: "Elegant gift bags for special occasions with premium finishes.",
     link: "/products/gift-bags"
   },
   {
     id: 16,
     name: "Card Game",
-    image: "/placeholder.svg",
+    image: "/images/placeholder.svg",
     description: "Custom card games with high-quality printing and finishes.",
     link: "/products/card-games"
   },
   {
     id: 17,
     name: "Jigsaw",
-    image: "/placeholder.svg",
+    image: "/images/placeholder.svg",
     description: "Custom jigsaw puzzles with vibrant printing and precision cutting.",
     link: "/products/jigsaws"
   },
   {
     id: 18,
     name: "3D Card",
-    image: "/placeholder.svg",
+    image: "/images/placeholder.svg",
     description: "Innovative 3D cards with special effects and premium materials.",
     link: "/products/3d-cards"
   },
   {
     id: 19,
     name: "Catalogues",
-    image: "/placeholder.svg",
+    image: "/images/placeholder.svg",
     description: "Professional catalogues with high-quality printing and binding options.",
     link: "/products/catalogues"
   },

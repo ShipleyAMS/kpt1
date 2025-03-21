@@ -7,7 +7,7 @@ const JigsawPuzzlesPage = () => {
     <ProductDetailLayout
       title="Jigsaw Puzzles"
       description="Our custom jigsaw puzzles are professionally crafted with precision-cut pieces and vibrant printing. Perfect for promotional gifts, family photos, or retail products, our puzzles are available in various piece counts and packaging options."
-      images={["/placeholder.svg", "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png"]}
+      images={["/images/placeholder.svg", "/images/games/jigsaw-puzzles/870c440a-98b9-472a-9f5c-021a5818c907.png"]}
       specifications={[
         { name: "Sizes", description: "Standard sizes or custom dimensions" },
         { name: "Piece Count", description: "24, 50, 100, 200, 500, 1000 pieces" },

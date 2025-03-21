@@ -7,7 +7,7 @@ const LeafletsPage = () => {
     <ProductDetailLayout
       title="Leaflets"
       description="Our leaflets are perfect for promotional campaigns, events, and information distribution. Available in various sizes and paper types, our leaflets are designed to grab attention and deliver your message effectively."
-      images={["/placeholder.svg", "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png"]}
+      images={["/images/placeholder.svg", "/images/printing/leaflets/5711bd98-36d2-4420-80b8-76d8febe0aec.png"]}
       specifications={[
         { name: "Size Options", description: "A4, A5, A6, DL, Custom sizes" },
         { name: "Paper Types", description: "Standard, Recycled, Gloss, Matte" },
