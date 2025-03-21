@@ -19,7 +19,7 @@ const Products = () => {
     {
       name: "PRINTING",
       icon: <Printer className="h-8 w-8 text-[#007041] mb-2" />,
-      image: "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png",
+      image: "/lovable-uploads/ef8912ba-ad99-40c3-b65d-03e93a57155c.png",
       products: [
         { name: "Catalogues", link: "/products/catalogues" },
         { name: "Books", link: "/products/books" },
@@ -34,7 +34,7 @@ const Products = () => {
     {
       name: "PACKAGING",
       icon: <Package className="h-8 w-8 text-[#007041] mb-2" />,
-      image: "/lovable-uploads/ec48376c-2d1f-499d-a57d-da6f1b634ac2.png",
+      image: "/lovable-uploads/51f0b84b-08de-467e-b210-35b58d2d85c2.png",
       products: [
         { name: "Cosmetic Boxes", image: "/lovable-uploads/b6e8fc28-653d-4228-9fa9-b1b99a5a25aa.png", link: "/products/cosmetic-boxes" },
         { name: "Jewelery Boxes", image: "/lovable-uploads/bd0c61b8-a405-4055-954d-857f892c3b15.png", link: "/products/jewelery-boxes" },
@@ -49,7 +49,7 @@ const Products = () => {
     {
       name: "STATIONERY",
       icon: <BookOpen className="h-8 w-8 text-[#007041] mb-2" />,
-      image: "/lovable-uploads/e3399284-14ec-4e5a-9139-92cd61ed0d70.png",
+      image: "/lovable-uploads/8bb72b96-16ef-4e70-8451-25ef42e29b83.png",
       products: [
         { name: "Notebooks", image: "/lovable-uploads/2e228353-624a-40eb-873c-01d1de7088fb.png", link: "/products/notebooks" },
         { name: "Journals", image: "/lovable-uploads/cea7e9e9-d0c6-4839-9680-4963d79b91c3.png", link: "/products/journals" },
