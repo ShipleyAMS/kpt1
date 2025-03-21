@@ -14,7 +14,7 @@ const PrintingPage = () => {
     { name: "Calendars", link: "/products/calendar" },
     { name: "Game Cards", link: "/products/game-cards" },
     { name: "Greeting Cards", link: "/products/greeting-cards" },
-    { name: "Tarot Cards", link: "/products/tarot-cards" },
+    { name: "Tarot Cards", link: "/products/tarot-cards", image: "/lovable-uploads/32bcdf42-a5c3-4cfa-bc1f-9182b3bfc322.png" },
     { name: "Jigsaw Puzzles", link: "/products/jigsaw-puzzles" },
   ];
 
@@ -44,8 +44,17 @@ const PrintingPage = () => {
                 <Link 
                   key={index}
                   to={product.link}
-                  className="bg-white rounded-lg shadow-md border border-[#EAF3E8] p-6 flex items-center justify-center bg-[#EAF3E8] transition-transform hover:scale-105"
+                  className="bg-white rounded-lg shadow-md border border-[#EAF3E8] p-6 flex flex-col items-center justify-center bg-[#EAF3E8] transition-transform hover:scale-105"
                 >
+                  {product.image && (
+                    <div className="mb-3 w-full h-36 overflow-hidden rounded-md">
+                      <img 
+                        src={product.image} 
+                        alt={product.name} 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  )}
                   <h3 className="text-lg font-medium text-[#007041]">{product.name}</h3>
                 </Link>
               ))}
