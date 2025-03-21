@@ -8,15 +8,13 @@ const BooksPage = () => {
       title="Books"
       description="Our custom book printing services deliver professional quality for all types of books, from novels to children's books. We offer various binding options and paper types to bring your story to life with vibrant colors and crisp text."
       images={[
-        "/lovable-uploads/31bacdc3-7a65-46fa-9cfa-1ffcc2d85fd4.png", 
-        "/lovable-uploads/fc2070f3-6ed1-4aae-83e2-d4929faa9892.png",
-        "/lovable-uploads/802085c6-c3eb-4b37-b9cd-aa7fa45e7573.png",
-        "/lovable-uploads/2b8953e5-bb56-4954-98c9-f1f5f4beca50.png",
-        "/lovable-uploads/cbb377f4-36f8-4174-897d-9348c58c8e1c.png",
-        "/lovable-uploads/327f0286-fc06-4f5e-8afb-fe9438c1f1c3.png",
-        "/lovable-uploads/0de63f49-ec42-433e-889c-842579a6a99b.png",
-        "/lovable-uploads/17307e7f-027e-4a8a-a523-4a58520ca55d.png",
-        "/lovable-uploads/6489355c-e448-4a78-a2a0-2ffca929ef9a.png"
+        "/lovable-uploads/1f68b178-a318-4525-ab8d-a1b460ddcc01.png", 
+        "/lovable-uploads/70b06e06-ad0e-42d6-a027-62479529c8a8.png",
+        "/lovable-uploads/1c1a35fa-b827-4969-97f4-afe383b1d024.png",
+        "/lovable-uploads/41987e09-f4e5-40ab-bfa6-09c00864b182.png",
+        "/lovable-uploads/d64c2332-2c2d-4d1d-86b1-39fbad88fed7.png",
+        "/lovable-uploads/ed4945d5-4393-4cc8-b95a-cd368af35ec4.png",
+        "/lovable-uploads/449bf80a-fa42-4547-803a-4800ebb3a5b0.png"
       ]}
       specifications={[
         { name: "Size Options", description: "Standard book sizes, Custom sizes available" },
