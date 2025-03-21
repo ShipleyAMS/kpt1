@@ -131,7 +131,7 @@ export const products: Product[] = [
   {
     id: 17,
     name: "Jigsaw",
-    image: "/lovable-uploads/870c440a-98b9-472a-9f5c-021a5818c907.png",
+    image: "/lovable-uploads/71785627-ea7b-4afd-a519-5ba658396519.png",
     description: "Custom jigsaw puzzles with vibrant printing and precision cutting.",
     link: "/products/jigsaws"
   },
