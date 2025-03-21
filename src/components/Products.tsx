@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Printer, Package, BookOpen } from 'lucide-react';
@@ -36,14 +35,14 @@ const Products = () => {
       icon: <Package className="h-8 w-8 text-[#007041] mb-2" />,
       image: "/images/categories/packaging-category.png",
       products: [
-        { name: "Cosmetic Boxes", image: "/images/packaging/cosmetic-boxes/cosmetic-boxes-main.png", link: "/products/cosmetic-boxes" },
-        { name: "Jewelery Boxes", image: "/images/packaging/jewelery-boxes/jewelery-boxes-main.png", link: "/products/jewelery-boxes" },
-        { name: "Fragrance Boxes", image: "/images/packaging/fragrance-boxes/fragrance-boxes-main.png", link: "/products/fragrance-boxes" },
-        { name: "Watch Boxes", image: "/images/packaging/watch-boxes/watch-boxes-main.png", link: "/products/watch-boxes" },
-        { name: "Gift Boxes", image: "/images/packaging/gift-boxes/gift-boxes-main.png", link: "/products/gift-boxes" },
-        { name: "Gift Bags", image: "/images/packaging/gift-bags/gift-bags-main.png", link: "/products/gift-bags" },
-        { name: "Wine Boxes", image: "/images/packaging/wine-boxes/wine-boxes-main.png", link: "/products/wine-boxes" },
-        { name: "Wooden Boxes", image: "/images/packaging/wooden-boxes/wooden-boxes-main.png", link: "/products/wooden-boxes" },
+        { name: "Cosmetic Boxes", link: "/products/cosmetic-boxes" },
+        { name: "Jewelery Boxes", link: "/products/jewelery-boxes" },
+        { name: "Fragrance Boxes", link: "/products/fragrance-boxes" },
+        { name: "Watch Boxes", link: "/products/watch-boxes" },
+        { name: "Gift Boxes", link: "/products/gift-boxes" },
+        { name: "Gift Bags", link: "/products/gift-bags" },
+        { name: "Wine Boxes", link: "/products/wine-boxes" },
+        { name: "Wooden Boxes", link: "/products/wooden-boxes" },
       ]
     },
     {
@@ -51,9 +50,9 @@ const Products = () => {
       icon: <BookOpen className="h-8 w-8 text-[#007041] mb-2" />,
       image: "/images/categories/stationery-category.png",
       products: [
-        { name: "Notebooks", image: "/images/stationery/notebooks/notebooks-main.png", link: "/products/notebooks" },
-        { name: "Journals", image: "/images/stationery/journals/journals-main.png", link: "/products/journals" },
-        { name: "Planners", image: "/images/stationery/planners/planners-main.png", link: "/products/planners" },
+        { name: "Notebooks", link: "/products/notebooks" },
+        { name: "Journals", link: "/products/journals" },
+        { name: "Planners", link: "/products/planners" },
       ]
     }
   ];
