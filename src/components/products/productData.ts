@@ -4,7 +4,7 @@ export const products: Product[] = [
   {
     id: 1,
     name: "Bible",
-    image: "/lovable-uploads/b98f5f4b-72df-44dc-af9a-311dbd32d7b9.png",
+    image: "/lovable-uploads/555d640f-d874-4ac3-9aec-5eb6c9240c07.png",
     description: "High-quality Bibles with premium printing and binding.",
     link: "/products/bibles"
   },

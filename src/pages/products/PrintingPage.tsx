@@ -10,7 +10,7 @@ const PrintingPage = () => {
     { name: "Catalogues", image: "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png", link: "/products/catalogues" },
     { name: "Leaflets", image: "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png", link: "/products/leaflets" },
     { name: "Books", image: "/lovable-uploads/7dd0ed77-bef4-4667-88b1-5f8a749589f2.png", link: "/products/books" },
-    { name: "Bibles", image: "/lovable-uploads/b98f5f4b-72df-44dc-af9a-311dbd32d7b9.png", link: "/products/bibles" },
+    { name: "Bibles", image: "/lovable-uploads/555d640f-d874-4ac3-9aec-5eb6c9240c07.png", link: "/products/bibles" },
     { name: "Calendars", image: "/lovable-uploads/730c8a7d-9d8b-431a-9b5f-66522ef22f31.png", link: "/products/calendar" },
     { name: "Game Cards", image: "/lovable-uploads/0d846d1b-bb50-46e6-b470-34d6a2e11ae0.png", link: "/products/game-cards" },
     { name: "Greeting Cards", image: "/lovable-uploads/048818fd-ebcb-4883-8ee0-cfc0e2f2ff6f.png", link: "/products/greeting-cards" },
