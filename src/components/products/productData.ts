@@ -18,7 +18,7 @@ export const products: Product[] = [
   {
     id: 3,
     name: "Calendar",
-    image: "/lovable-uploads/513a1818-3b90-4839-979b-a7279d2b013e.png",
+    image: "/lovable-uploads/730c8a7d-9d8b-431a-9b5f-66522ef22f31.png",
     description: "Custom calendars with beautiful designs and durable construction.",
     link: "/products/calendars"
   },
