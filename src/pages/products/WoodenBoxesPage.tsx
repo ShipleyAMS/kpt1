@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -23,7 +22,6 @@ const WoodenBoxesPage = () => {
         { name: "Size Options", description: "Small to large, Custom dimensions" },
         { name: "Finish Options", description: "Natural, Stained, Painted, Lacquered" },
         { name: "Customization", description: "Laser engraving, Branding, Custom inserts" },
-        { name: "Minimum Order", description: "25 boxes" },
       ]}
       featuredProducts={[]}
       productionProcess={

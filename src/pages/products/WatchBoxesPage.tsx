@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -18,7 +17,6 @@ const WatchBoxesPage = () => {
         { name: "Interior", description: "Velvet, Suede, Silk cushions and lining" },
         { name: "Printing", description: "Hot stamping, Foil stamping, Embossing" },
         { name: "Special Features", description: "Magnetic closure, Pillow inserts, Display window" },
-        { name: "Minimum Order", description: "250 boxes" },
       ]}
       featuredProducts={[]}
       productionProcess={

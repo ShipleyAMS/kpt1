@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -21,7 +20,6 @@ const GreetingCardsPage = () => {
         { name: "Fold Options", description: "Single fold, Tri-fold, Pop-up" },
         { name: "Finish Options", description: "Gloss, Matte, Spot UV, Foil stamping" },
         { name: "Envelopes", description: "Included with matching or contrasting options" },
-        { name: "Minimum Order", description: "25 cards" },
       ]}
       featuredProducts={[]}
       productionProcess={

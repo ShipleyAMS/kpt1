@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -12,7 +13,6 @@ const CataloguesPage = () => {
         { name: "Paper Types", description: "Gloss, Matte, Silk, Recycled" },
         { name: "Binding Options", description: "Saddle-stitched, Perfect bound, Wire-o, Spiral" },
         { name: "Finish Options", description: "Lamination (gloss/matte), Spot UV, Foiling" },
-        { name: "Minimum Order", description: "50 copies" },
         { name: "Custom Features", description: "Die-cutting, Embossing, Custom shapes available" },
       ]}
       featuredProducts={[]}

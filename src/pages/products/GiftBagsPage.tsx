@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -20,7 +19,6 @@ const GiftBagsPage = () => {
         { name: "Handle Types", description: "Paper twisted, Ribbon, Cotton, Rope" },
         { name: "Printing", description: "Full color, Spot color, Foil stamping, Embossing" },
         { name: "Finish Options", description: "Matte, Gloss, Spot UV, Lamination" },
-        { name: "Minimum Order", description: "250 bags" },
       ]}
       featuredProducts={[]}
       productionProcess={

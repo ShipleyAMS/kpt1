@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -23,7 +22,6 @@ const FragranceBoxesPage = () => {
         { name: "Printing", description: "Full color, Spot color, Foil stamping" },
         { name: "Finish Options", description: "Matte, Gloss, Soft-touch, Embossing, Debossing" },
         { name: "Special Features", description: "Magnetic closure, Foam inserts, Windows" },
-        { name: "Minimum Order", description: "500 boxes" },
       ]}
       featuredProducts={[]}
       productionProcess={

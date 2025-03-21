@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -26,7 +25,6 @@ const WineBoxesPage = () => {
         { name: "Insert Options", description: "EVA foam, Die-cut cardboard, Custom molded" },
         { name: "Finish Options", description: "Wood stain, Print, Foil stamping, Engraving" },
         { name: "Special Features", description: "Hinged lids, Sliding drawers, Display windows" },
-        { name: "Minimum Order", description: "25 boxes" },
       ]}
       featuredProducts={[]}
       productionProcess={

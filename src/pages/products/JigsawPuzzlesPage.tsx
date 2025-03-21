@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -19,7 +18,6 @@ const JigsawPuzzlesPage = () => {
         { name: "Material", description: "Premium puzzle board with linen texture" },
         { name: "Packaging", description: "Box with display image, Pouch, Custom packaging" },
         { name: "Customization", description: "Custom shapes, Special cut patterns" },
-        { name: "Minimum Order", description: "25 puzzles" },
       ]}
       featuredProducts={[]}
       productionProcess={

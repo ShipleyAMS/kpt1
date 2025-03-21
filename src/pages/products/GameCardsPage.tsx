@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -19,7 +18,6 @@ const GameCardsPage = () => {
         { name: "Finish Options", description: "Linen texture, Smooth, Plastic coated" },
         { name: "Packaging", description: "Tuck boxes, Plastic cases, Tins" },
         { name: "Special Features", description: "Custom shapes, Rounded corners, Edge coloring" },
-        { name: "Minimum Order", description: "100 cards (single deck)" },
       ]}
       featuredProducts={[]}
       productionProcess={

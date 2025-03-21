@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -22,7 +21,6 @@ const CosmeticBoxesPage = () => {
         { name: "Printing", description: "Full color CMYK, Pantone matching, Foil stamping" },
         { name: "Finish Options", description: "Matte, Gloss, Soft-touch, Embossing" },
         { name: "Special Features", description: "Windows, Custom inserts, Magnetic closures" },
-        { name: "Minimum Order", description: "100 boxes" },
       ]}
       featuredProducts={[]}
       productionProcess={

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -21,7 +20,6 @@ const BooksPage = () => {
         { name: "Paper Types", description: "Book wove, Cream, Premium white, Recycled" },
         { name: "Binding Options", description: "Perfect bound, Case bound, Saddle-stitched" },
         { name: "Cover Options", description: "Paperback, Hardcover with dust jacket" },
-        { name: "Minimum Order", description: "25 copies" },
         { name: "Special Features", description: "Embossing, Foil stamping, Special endpapers" },
       ]}
       featuredProducts={[]}

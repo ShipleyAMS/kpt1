@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -28,7 +27,6 @@ const GiftBoxesPage = () => {
         { name: "Size Options", description: "Small, Medium, Large, Custom sizes" },
         { name: "Finish Options", description: "Matte, Gloss, Soft-touch, Specialty finishes" },
         { name: "Special Features", description: "Ribbons, Windows, Inserts, Magnetic closures" },
-        { name: "Minimum Order", description: "100 boxes" },
       ]}
       featuredProducts={[]}
       productionProcess={

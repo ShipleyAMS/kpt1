@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -28,7 +27,6 @@ const JeweleryBoxesPage = () => {
         { name: "Lining Options", description: "Velvet, Silk, Foam, Custom inserts" },
         { name: "Closure Types", description: "Magnetic, Ribbon tie, Box and lid" },
         { name: "Finish Options", description: "Foil stamping, Embossing, Spot UV" },
-        { name: "Minimum Order", description: "50 boxes" },
       ]}
       featuredProducts={[]}
       productionProcess={
