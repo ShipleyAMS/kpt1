@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -29,6 +30,7 @@ const GiftBoxesPage = () => {
         { name: "Special Features", description: "Ribbons, Windows, Inserts, Magnetic closures" },
       ]}
       featuredProducts={[]}
+      exampleProducts="Child Safe Gift Boxes, Display Boxes, Hinged Boxes"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">

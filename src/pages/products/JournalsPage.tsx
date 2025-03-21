@@ -22,6 +22,7 @@ const JournalsPage = () => {
         { name: "Special Features", description: "Ribbon markers, Pocket, Elastic closure" },
       ]}
       featuredProducts={[]}
+      exampleProducts="Paperback Journal, Hardback Journal, Cloth Hardcore Journal, Wiro Journal, Layflat Journal, PU Journal"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">

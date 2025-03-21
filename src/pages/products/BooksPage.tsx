@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -23,6 +24,7 @@ const BooksPage = () => {
         { name: "Special Features", description: "Embossing, Foil stamping, Special endpapers" },
       ]}
       featuredProducts={[]}
+      exampleProducts="Educational Books, Cook Books, Puzzle Books, Sound Board Books, Work Books, Story Books, Picture Books, Board Books"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">

@@ -11,6 +11,7 @@ interface ProductDetailLayoutProps {
   specifications: { name: string; description: string }[];
   featuredProducts: { id: number; name: string; image: string; description: string }[];
   productionProcess?: React.ReactNode;
+  exampleProducts?: string;
 }
 
 const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
@@ -20,6 +21,7 @@ const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
   specifications,
   featuredProducts,
   productionProcess,
+  exampleProducts,
 }) => {
   const [mainImage, setMainImage] = useState(images[0]);
 
@@ -85,6 +87,16 @@ const ProductDetailLayout: React.FC<ProductDetailLayoutProps> = ({
               </div>
             </div>
           </div>
+          
+          {/* Example Products Section */}
+          {exampleProducts && (
+            <section className="py-10 bg-[#F8F7F2] rounded-lg mb-16">
+              <div className="container mx-auto px-4">
+                <h2 className="text-2xl font-semibold text-[#007041] text-center mb-6">Example Products</h2>
+                <p className="text-center text-gray-700 max-w-4xl mx-auto">{exampleProducts}</p>
+              </div>
+            </section>
+          )}
           
           {/* Production Process Section - if provided */}
           {productionProcess && (

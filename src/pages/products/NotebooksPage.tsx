@@ -19,9 +19,9 @@ const NotebooksPage = () => {
         { name: "Paper Weight", description: "70gsm, 80gsm, 90gsm, 100gsm options" },
         { name: "Binding Types", description: "Perfect bound, Wire-o, Thread sewn, Spiral" },
         { name: "Cover Options", description: "Hardcover, Softcover, PU leather, Fabric" },
-        { name: "Minimum Order", description: "50 notebooks" },
       ]}
       featuredProducts={[]}
+      exampleProducts="Paperback Notebook, Hardback Notebook, Wiro Notebook, Layflat Notebook, PU Notebook"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">

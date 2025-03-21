@@ -25,6 +25,7 @@ const BiblesPage = () => {
         { name: "Customization", description: "Custom covers, Personalization, Family records" },
       ]}
       featuredProducts={[]}
+      exampleProducts="Children's Bibles, Story Bibles, PU Bibles, Silk Screen Bibles, Gold Glide Bibles, Thumb Notch Bibles"
       productionProcess={
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
           <div className="bg-white p-4 rounded-lg shadow-sm">
