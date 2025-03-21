@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Printer, Package, BookOpen } from 'lucide-react';
