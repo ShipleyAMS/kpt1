@@ -7,7 +7,17 @@ const BooksPage = () => {
     <ProductDetailLayout
       title="Books"
       description="Our custom book printing services deliver professional quality for all types of books, from novels to children's books. We offer various binding options and paper types to bring your story to life with vibrant colors and crisp text."
-      images={["/lovable-uploads/7dd0ed77-bef4-4667-88b1-5f8a749589f2.png", "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png"]}
+      images={[
+        "/lovable-uploads/1948b893-30bb-4e91-a6cc-d590d2eee7e5.png", 
+        "/lovable-uploads/3cd34b2b-7625-48db-a067-3c7460ceff95.png",
+        "/lovable-uploads/e31b8d66-6946-42c6-a8f9-ab04d7871e60.png",
+        "/lovable-uploads/79a0d8ac-d9b6-4641-a169-d9fe4bac5698.png",
+        "/lovable-uploads/384bb614-94c1-4b8c-93a2-676d86582e22.png",
+        "/lovable-uploads/a7ed8dea-c96c-49bd-a111-07ddc89dd919.png",
+        "/lovable-uploads/0dac731d-7f77-48a3-b2ca-f96c62963297.png",
+        "/lovable-uploads/5cbba6ea-d938-4baf-b15f-ab4b126ef6b7.png",
+        "/lovable-uploads/16eaab79-8b35-4881-a545-4fc99d0364e2.png"
+      ]}
       specifications={[
         { name: "Size Options", description: "Standard book sizes, Custom sizes available" },
         { name: "Paper Types", description: "Book wove, Cream, Premium white, Recycled" },
