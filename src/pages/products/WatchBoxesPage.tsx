@@ -8,9 +8,9 @@ const WatchBoxesPage = () => {
       title="Watch Boxes"
       description="Our watch boxes are crafted with precision and elegance to showcase timepieces. Featuring premium materials, plush interiors, and custom branding options, these boxes provide the perfect presentation for luxury watches."
       images={[
-        "/images/packaging/watch-boxes/faafb5be-1211-4112-a124-756086434ba0.png", 
-        "/images/packaging/watch-boxes/8882dbac-3137-4bfd-a13e-ee650cff677e.png",
-        "/images/packaging/watch-boxes/ec48376c-2d1f-499d-a57d-da6f1b634ac2.png"
+        "/lovable-uploads/faafb5be-1211-4112-a124-756086434ba0.png", 
+        "/lovable-uploads/8882dbac-3137-4bfd-a13e-ee650cff677e.png",
+        "/lovable-uploads/ec48376c-2d1f-499d-a57d-da6f1b634ac2.png"
       ]}
       specifications={[
         { name: "Materials", description: "Rigid cardboard, Leatherette, Premium paper" },

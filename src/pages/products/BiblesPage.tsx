@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -6,7 +7,7 @@ const BiblesPage = () => {
     <ProductDetailLayout
       title="Bibles"
       description="Our premium Bible printing service offers exceptional quality with the reverence these sacred texts deserve. We use ultra-thin Bible paper, premium binding techniques, and offer various customization options including gilded edges and ribbon markers."
-      images={["/images/printing/bibles/b98f5f4b-72df-44dc-af9a-311dbd32d7b9.png", "/images/printing/bibles/5711bd98-36d2-4420-80b8-76d8febe0aec.png"]}
+      images={["/lovable-uploads/b98f5f4b-72df-44dc-af9a-311dbd32d7b9.png", "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png"]}
       specifications={[
         { name: "Size Options", description: "Standard Bible sizes, Compact, Large print" },
         { name: "Paper Type", description: "Ultra-thin Bible paper (India paper)" },

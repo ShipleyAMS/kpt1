@@ -7,7 +7,7 @@ const GreetingCardsPage = () => {
     <ProductDetailLayout
       title="Greeting Cards"
       description="Our greeting cards are printed on premium card stock with vibrant colors and crisp details. Whether for personal use or corporate gifting, we offer various sizes, finishes, and customization options to create the perfect card for any occasion."
-      images={["/images/printing/greeting-cards/7d99bcd5-099a-42f0-8760-70f056733a9d.png", "/images/printing/greeting-cards/5711bd98-36d2-4420-80b8-76d8febe0aec.png"]}
+      images={["/lovable-uploads/7d99bcd5-099a-42f0-8760-70f056733a9d.png", "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png"]}
       specifications={[
         { name: "Size Options", description: "A6, A5, Square, Custom sizes" },
         { name: "Paper Types", description: "Premium card stock, Textured, Recycled" },

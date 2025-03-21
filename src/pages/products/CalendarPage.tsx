@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -6,7 +7,7 @@ const CalendarPage = () => {
     <ProductDetailLayout
       title="Calendar"
       description="Our calendars combine functionality with beautiful design. Available in various formats including wall calendars, desk calendars, and year planners, each calendar is printed on high-quality paper with vibrant colors and durable binding."
-      images={["/images/printing/calendars/513a1818-3b90-4839-979b-a7279d2b013e.png", "/images/printing/leaflets/5711bd98-36d2-4420-80b8-76d8febe0aec.png"]}
+      images={["/lovable-uploads/513a1818-3b90-4839-979b-a7279d2b013e.png", "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png"]}
       specifications={[
         { name: "Types", description: "Wall calendars, Desk calendars, Year planners" },
         { name: "Size Options", description: "A3, A4, A5, Custom sizes available" },

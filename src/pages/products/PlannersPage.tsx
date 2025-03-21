@@ -8,9 +8,9 @@ const PlannersPage = () => {
       title="Planners"
       description="Our planners are designed to boost productivity with intuitive layouts and premium construction. Available in daily, weekly, and monthly formats with customizable covers and layouts, these planners feature high-quality paper and durable binding to support your organization all year long."
       images={[
-        "/images/stationery/planners/559afcce-3c6a-4840-a647-4efeba9173f0.png", 
-        "/images/stationery/planners/d85e5bc0-ceb4-4e66-8d99-3075077afa6b.png",
-        "/images/stationery/planners/3ab6adeb-b4af-4acf-8a3e-d1ebf16cbd85.png"
+        "/lovable-uploads/559afcce-3c6a-4840-a647-4efeba9173f0.png", 
+        "/lovable-uploads/d85e5bc0-ceb4-4e66-8d99-3075077afa6b.png",
+        "/lovable-uploads/3ab6adeb-b4af-4acf-8a3e-d1ebf16cbd85.png"
       ]}
       specifications={[
         { name: "Format Options", description: "Daily, Weekly, Monthly, Academic, Project" },

@@ -8,14 +8,14 @@ const FragranceBoxesPage = () => {
       title="Fragrance Boxes"
       description="Our luxury fragrance boxes are designed to enhance the presentation of perfumes and scented products. With premium materials and exquisite finishing options, these boxes provide the perfect housing for high-end fragrances."
       images={[
-        "/images/packaging/fragrance-boxes/1ca11ca6-fd55-4f7a-ae09-9a92a9e4fd24.png",
-        "/images/packaging/fragrance-boxes/afe21ec4-4ea2-402d-95ba-958bade4d266.png",
-        "/images/packaging/fragrance-boxes/955cb2ec-eb7f-405b-89b5-2819a70dfeba.png",
-        "/images/packaging/fragrance-boxes/3e432d10-b6bb-4236-ab34-807363c0e288.png",
-        "/images/packaging/fragrance-boxes/2546ab6c-a53c-4aef-94c8-95d248ea4a40.png",
-        "/images/packaging/fragrance-boxes/0f7f1443-d7bd-48de-b893-0820b17fee51.png",
-        "/images/packaging/fragrance-boxes/574cb988-d0f5-433a-b7e3-9a3cbd77418a.png",
-        "/images/packaging/fragrance-boxes/d53daf32-61e4-428d-b92e-bd3d0d54307f.png"
+        "/lovable-uploads/1ca11ca6-fd55-4f7a-ae09-9a92a9e4fd24.png",
+        "/lovable-uploads/afe21ec4-4ea2-402d-95ba-958bade4d266.png",
+        "/lovable-uploads/955cb2ec-eb7f-405b-89b5-2819a70dfeba.png",
+        "/lovable-uploads/3e432d10-b6bb-4236-ab34-807363c0e288.png",
+        "/lovable-uploads/2546ab6c-a53c-4aef-94c8-95d248ea4a40.png",
+        "/lovable-uploads/0f7f1443-d7bd-48de-b893-0820b17fee51.png",
+        "/lovable-uploads/574cb988-d0f5-433a-b7e3-9a3cbd77418a.png",
+        "/lovable-uploads/d53daf32-61e4-428d-b92e-bd3d0d54307f.png"
       ]}
       specifications={[
         { name: "Materials", description: "Premium cardboard, Art paper, Specialty papers" },

@@ -8,13 +8,13 @@ const CosmeticBoxesPage = () => {
       title="Cosmetic Boxes"
       description="Our premium cosmetic boxes combine elegant design with sturdy construction. Perfect for beauty brands, these boxes feature high-quality printing, premium finishes, and customizable inserts to showcase your products beautifully."
       images={[
-        "/images/packaging/cosmetic-boxes/b6e8fc28-653d-4228-9fa9-b1b99a5a25aa.png",
-        "/images/packaging/cosmetic-boxes/cafd74c7-3272-4fd0-94a1-264c837cdf1b.png",
-        "/images/packaging/cosmetic-boxes/e49dc655-cdd6-494c-87cf-c9f9f85e3dc2.png",
-        "/images/packaging/cosmetic-boxes/c023e2ad-4c07-4dd9-8d1e-bf365f282863.png",
-        "/images/packaging/cosmetic-boxes/88a5a924-4f50-4a50-aa1d-1a607dafbf7b.png",
-        "/images/packaging/cosmetic-boxes/031e59f4-c1af-40b2-ab81-e901f38116e1.png",
-        "/images/packaging/cosmetic-boxes/2332fc4c-7cad-40b5-92ca-601b645718f5.png"
+        "/lovable-uploads/b6e8fc28-653d-4228-9fa9-b1b99a5a25aa.png",
+        "/lovable-uploads/cafd74c7-3272-4fd0-94a1-264c837cdf1b.png",
+        "/lovable-uploads/e49dc655-cdd6-494c-87cf-c9f9f85e3dc2.png",
+        "/lovable-uploads/c023e2ad-4c07-4dd9-8d1e-bf365f282863.png",
+        "/lovable-uploads/88a5a924-4f50-4a50-aa1d-1a607dafbf7b.png",
+        "/lovable-uploads/031e59f4-c1af-40b2-ab81-e901f38116e1.png",
+        "/lovable-uploads/2332fc4c-7cad-40b5-92ca-601b645718f5.png"
       ]}
       specifications={[
         { name: "Materials", description: "Premium card, Rigid board, Eco-friendly options" },

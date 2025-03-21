@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ProductDetailLayout from '@/components/ProductDetailLayout';
 
@@ -6,7 +7,7 @@ const BooksPage = () => {
     <ProductDetailLayout
       title="Books"
       description="Our custom book printing services deliver professional quality for all types of books, from novels to children's books. We offer various binding options and paper types to bring your story to life with vibrant colors and crisp text."
-      images={["/images/printing/books/7dd0ed77-bef4-4667-88b1-5f8a749589f2.png", "/images/printing/leaflets/5711bd98-36d2-4420-80b8-76d8febe0aec.png"]}
+      images={["/lovable-uploads/7dd0ed77-bef4-4667-88b1-5f8a749589f2.png", "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png"]}
       specifications={[
         { name: "Size Options", description: "Standard book sizes, Custom sizes available" },
         { name: "Paper Types", description: "Book wove, Cream, Premium white, Recycled" },
