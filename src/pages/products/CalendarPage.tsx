@@ -8,13 +8,13 @@ const CalendarPage = () => {
       title="Calendar"
       description="Our calendars combine functionality with beautiful design. Available in various formats including wall calendars, desk calendars, and year planners, each calendar is printed on high-quality paper with vibrant colors and durable binding."
       images={[
-        "/images/printing/calendars/calendars-main.png", 
-        "/images/printing/calendars/calendars-1.png", 
-        "/images/printing/calendars/calendars-2.png", 
-        "/images/printing/calendars/calendars-3.png",
-        "/images/printing/calendars/calendars-4.png",
-        "/images/printing/calendars/calendars-5.png",
-        "/images/printing/calendars/calendars-6.png"
+        "/lovable-uploads/730c8a7d-9d8b-431a-9b5f-66522ef22f31.png", 
+        "/lovable-uploads/58c9329b-4e3d-4c77-aee1-a1f6949460c4.png", 
+        "/lovable-uploads/5609e6da-e888-4937-93b7-e4735b0ab66d.png", 
+        "/lovable-uploads/c95b3a94-f7af-4b29-9808-dc56f25ab6ff.png",
+        "/lovable-uploads/0ec05fee-4030-4bc0-bf83-6b14f314e476.png",
+        "/lovable-uploads/99e8d61c-e0c1-4121-8345-c4e6009030ca.png",
+        "/lovable-uploads/71baa567-f0c0-4681-90e9-aa2b0309ccdf.png"
       ]}
       specifications={[
         { name: "Types", description: "Wall calendars, Desk calendars, Year planners" },

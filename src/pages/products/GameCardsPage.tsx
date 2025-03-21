@@ -8,10 +8,10 @@ const GameCardsPage = () => {
       title="Game Cards"
       description="Our game cards are professionally printed on durable cardstock with premium finishes for long-lasting play. Perfect for card games, educational flashcards, or promotional playing cards, we offer various sizes and packaging options."
       images={[
-        "/images/printing/game-cards/game-cards-main.png", 
-        "/images/printing/game-cards/game-cards-1.png",
-        "/images/printing/game-cards/game-cards-2.png",
-        "/images/printing/game-cards/game-cards-3.png"
+        "/lovable-uploads/0d846d1b-bb50-46e6-b470-34d6a2e11ae0.png", 
+        "/lovable-uploads/8e5084e7-4201-4b07-8b4f-abcf5043b815.png",
+        "/lovable-uploads/44d4fb0e-97f2-4901-8ecc-3731fca0ab68.png",
+        "/lovable-uploads/1a1f9fc7-68bc-419b-9071-2b348229e15e.png"
       ]}
       specifications={[
         { name: "Card Sizes", description: "Poker, Bridge, Custom sizes available" },
