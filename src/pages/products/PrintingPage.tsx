@@ -7,7 +7,6 @@ import { Printer } from 'lucide-react';
 
 const PrintingPage = () => {
   const printingProducts = [
-    { name: "Catalogues", image: "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png", link: "/products/catalogues" },
     { name: "Books", image: "/lovable-uploads/1f68b178-a318-4525-ab8d-a1b460ddcc01.png", link: "/products/books" },
     { name: "Bibles", image: "/lovable-uploads/555d640f-d874-4ac3-9aec-5eb6c9240c07.png", link: "/products/bibles" },
     { name: "Calendars", image: "/lovable-uploads/730c8a7d-9d8b-431a-9b5f-66522ef22f31.png", link: "/products/calendar" },
@@ -28,7 +27,7 @@ const PrintingPage = () => {
             <div className="mt-2 h-1 w-24 bg-[#007041] mx-auto rounded-full"></div>
             <p className="mt-4 text-lg text-forest-700 max-w-3xl mx-auto">
               Explore our comprehensive range of high-quality printing solutions, 
-              from catalogues and books to cards and promotional materials.
+              from books and bibles to cards and promotional materials.
             </p>
           </div>
 

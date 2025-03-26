@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Printer, Package, BookOpen } from 'lucide-react';
@@ -21,7 +20,6 @@ const Products = () => {
       icon: <Printer className="h-8 w-8 text-[#007041] mb-2" />,
       image: "/lovable-uploads/ef8912ba-ad99-40c3-b65d-03e93a57155c.png",
       products: [
-        { name: "Catalogues", link: "/products/catalogues" },
         { name: "Books", link: "/products/books" },
         { name: "Bibles", link: "/products/bibles" },
         { name: "Calendars", link: "/products/calendar" },

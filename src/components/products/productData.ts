@@ -171,7 +171,7 @@ export const filterProductsByCategory = (products: Product[], categoryId: string
   
   if (categoryId === 'printing') {
     return products.filter(product => 
-      ['Bible', 'Children\'s Books', 'Calendar', 'Catalogues'].includes(product.name)
+      ['Bible', 'Children\'s Books', 'Calendar'].includes(product.name)
     );
   }
   
