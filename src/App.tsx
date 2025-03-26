@@ -14,7 +14,6 @@ import PackagingPage from '@/pages/products/PackagingPage';
 import StationeryPage from '@/pages/products/StationeryPage';
 
 // Product Pages
-import CataloguesPage from '@/pages/products/CataloguesPage';
 import BooksPage from '@/pages/products/BooksPage';
 import BiblesPage from '@/pages/products/BiblesPage';
 import CalendarPage from '@/pages/products/CalendarPage';
@@ -51,7 +50,6 @@ function App() {
         <Route path="/products/stationery" element={<StationeryPage />} />
         
         {/* Product routes */}
-        <Route path="/products/catalogues" element={<CataloguesPage />} />
         <Route path="/products/books" element={<BooksPage />} />
         <Route path="/products/bibles" element={<BiblesPage />} />
         <Route path="/products/calendar" element={<CalendarPage />} />

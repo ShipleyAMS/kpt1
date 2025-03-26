@@ -143,13 +143,6 @@ export const products: Product[] = [
     link: "/products/3d-cards"
   },
   {
-    id: 19,
-    name: "Catalogues",
-    image: "/lovable-uploads/5711bd98-36d2-4420-80b8-76d8febe0aec.png",
-    description: "Professional catalogues with high-quality printing and binding options.",
-    link: "/products/catalogues"
-  },
-  {
     id: 22,
     name: "Tarot Cards",
     image: "/lovable-uploads/32bcdf42-a5c3-4cfa-bc1f-9182b3bfc322.png",
