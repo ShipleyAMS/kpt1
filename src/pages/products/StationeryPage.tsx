@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { BookOpen } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 const StationeryPage = () => {
   const stationeryProducts = [
@@ -14,6 +15,11 @@ const StationeryPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <SEO 
+        title="Premium Stationery Products"
+        description="Explore our premium stationery collection including notebooks, journals, and planners. Quality materials and elegant designs for personal use, corporate gifts, or retail."
+        keywords="stationery, notebooks, journals, planners, custom stationery, premium notebooks"
+      />
       <Header />
       
       <main className="flex-grow pt-24 pb-16">

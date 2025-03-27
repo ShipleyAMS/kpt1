@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Printer, Package, BookOpen } from 'lucide-react';
@@ -47,7 +48,7 @@ const Products = () => {
     {
       name: "STATIONERY",
       icon: <BookOpen className="h-8 w-8 text-[#007041] mb-2" />,
-      image: "/lovable-uploads/8bb72b96-16ef-4e70-8451-25ef42e29b83.png",
+      image: "/lovable-uploads/ab632fdc-44a6-4aff-ba40-eff54e815b88.png",
       products: [
         { name: "Notebooks", image: "/lovable-uploads/2e228353-624a-40eb-873c-01d1de7088fb.png", link: "/products/notebooks" },
         { name: "Journals", image: "/lovable-uploads/cea7e9e9-d0c6-4839-9680-4963d79b91c3.png", link: "/products/journals" },
