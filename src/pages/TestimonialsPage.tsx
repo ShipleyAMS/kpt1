@@ -1,17 +1,19 @@
+
 import React from 'react';
 import Navbar from '@/components/navbar/Navbar';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 import { Link } from 'react-router-dom';
 
 const TestimonialsPage = () => {
-  // Update document title
-  React.useEffect(() => {
-    document.title = 'Testimonials | King Tai Printing & Packaging';
-  }, []);
-
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Client Testimonials"
+        description="Read what our clients have to say about King Tai's printing and packaging solutions. Testimonials from satisfied customers worldwide."
+        keywords="printing testimonials, packaging reviews, client feedback, customer reviews, printing services"
+      />
       <Navbar />
       
       <div className="pt-24 pb-8 bg-forest-50">

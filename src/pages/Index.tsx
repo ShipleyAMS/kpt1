@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Navbar from '@/components/navbar/Navbar';
 import Hero from '@/components/Hero';
@@ -5,6 +6,7 @@ import Products from '@/components/Products';
 import Contact from '@/components/Contact';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 
 const Index = () => {
   // Smooth scrolling for anchor links
@@ -27,13 +29,13 @@ const Index = () => {
     return () => document.removeEventListener('click', handleAnchorClick);
   }, []);
 
-  // Update document title
-  useEffect(() => {
-    document.title = 'King Tai Printing & Packaging';
-  }, []);
-
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Premium Printing & Packaging Solutions"
+        description="King Tai offers premium printing and packaging solutions with factories in Hong Kong, Dongguan, Guangzhou, and Foshan. Quality printing for books, packaging, and more."
+        keywords="printing, packaging, books, bibles, cards, boxes, printing factory, custom printing, premium packaging"
+      />
       <Navbar />
       <Hero />
       <Products />

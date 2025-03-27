@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 import { Package } from 'lucide-react';
 
 const PackagingPage = () => {
@@ -19,6 +20,12 @@ const PackagingPage = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <SEO 
+        title="Premium Packaging Solutions"
+        description="Discover our premium packaging solutions including cosmetic boxes, jewelry boxes, fragrance boxes, gift bags, wine boxes, and wooden boxes - expertly crafted for elegance and functionality."
+        keywords="packaging solutions, cosmetic boxes, jewelry boxes, gift bags, wine boxes, wooden boxes, premium packaging, custom packaging"
+        type="website"
+      />
       <Header />
       
       <main className="flex-grow pt-24 pb-16">
