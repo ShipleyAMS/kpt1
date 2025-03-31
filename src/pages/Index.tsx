@@ -4,7 +4,6 @@ import Navbar from '@/components/navbar/Navbar';
 import Hero from '@/components/Hero';
 import Products from '@/components/Products';
 import Contact from '@/components/Contact';
-import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
 
@@ -39,7 +38,6 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Products />
-      <Testimonials limit={2} />
       <Contact />
       <Footer />
     </div>
