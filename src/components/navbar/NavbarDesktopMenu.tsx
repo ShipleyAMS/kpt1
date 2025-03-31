@@ -38,16 +38,6 @@ export const NavbarDesktopMenu: React.FC<NavbarDesktopMenuProps> = ({ isScrolled
         </Link>
         
         <Link
-          to="/testimonials"
-          className={cn(
-            'text-sm font-medium nav-link transition-colors',
-            isScrolled ? 'text-[#007041]' : 'text-[#007041]'
-          )}
-        >
-          TESTIMONIALS
-        </Link>
-        
-        <Link
           to="/#contact"
           className={cn(
             'text-sm font-medium nav-link transition-colors',

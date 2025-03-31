@@ -48,7 +48,7 @@ const Footer = () => {
                 <a href="#contact" className="text-gray-600 hover:text-kingTai-primary transition-colors">Contact Us</a>
               </li>
               <li>
-                <a href="/testimonials" className="text-gray-600 hover:text-kingTai-primary transition-colors">Testimonials</a>
+                <a href="#testimonials" className="text-gray-600 hover:text-kingTai-primary transition-colors">Testimonials</a>
               </li>
             </ul>
           </div>

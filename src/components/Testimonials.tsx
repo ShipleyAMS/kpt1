@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Link } from 'react-router-dom';
 
 interface Testimonial {
   id: number;
@@ -71,14 +70,6 @@ const Testimonials = ({ limit, showControls = true }: { limit?: number, showCont
             <p className="mt-4 text-forest-600 max-w-2xl mx-auto text-sm md:text-base">
               Hear what our clients have to say about their experience working with King Tai.
             </p>
-            <div className="mt-4">
-              <Link
-                to="/testimonials"
-                className="text-forest-700 hover:text-king-primary transition-colors underline"
-              >
-                View all testimonials
-              </Link>
-            </div>
           </div>
 
           <div className="max-w-3xl mx-auto">
@@ -155,7 +146,7 @@ const Testimonials = ({ limit, showControls = true }: { limit?: number, showCont
     );
   }
   
-  // For testimonials page with all testimonials displayed in a grid
+  // For displaying all testimonials in a grid
   return (
     <section className="py-12 bg-forest-50">
       <div className="container mx-auto px-4">
